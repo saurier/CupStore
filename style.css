@@ -282,8 +282,8 @@ body {
 }
 
 
-@media(max-width: 991px) {
+/* @media(max-width: 991px) {
   .accordion-content {
     gap: var(--dl-space-space-unit);
   }
-}
+} */
