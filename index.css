@@ -233,7 +233,6 @@
 }
 .home-container01 {
   width: 100vw;
-  height: 40vh;
   display: flex;
   position: relative;
   align-items: center;
@@ -243,47 +242,25 @@
 .top-text{
   position: relative;
   z-index: 5;
-  transform: translate(-20%);
-  width: 100%;
-  left: 25%;
-  top: -45%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  transform: translate(65%, 0%);
+  width: 484px;
+  height: 278px;
 }
 
 .home-heading {
   top: var(--dl-space-space-sixunits);
-  /* transform: translate(-50%, -50%);
-  left: 32%; */
   color: rgb(17, 68, 37);
-  z-index: 100;
-  position: absolute;
   font-size: 3rem;
-  text-align: center;
   font-family: "Impact";
   text-transform: capitalize;
+  margin-bottom: 40px;
 }
 .home-text02 {
-  /* transform: translate(-50%, -50%);
-  left: 34%; */
-  top: 9rem;
-  z-index: 5;
-  position: absolute;
   font-size: 1.6rem;
   font-stretch: 75%;
 }
 .home-btn {
-  /* transform: translate(-50%, -50%);
-  left: 28%; */
-  top: 13rem;
-  display: flex;
-  z-index: 5;
-  position: absolute;
-  align-self: flex-start;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-end;
+  margin-top: 80px;
 }
 .home-button {
   color: var(--dl-color-gray-black);
@@ -311,19 +288,24 @@
   left: 0px;
   z-index: 4;
   position: absolute;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 490px;
   object-fit: cover;
 }
 .home-slider {
-  width: 2600px;
-  min-height: 350px;
+  width: 1115px;
+  /* min-height: 350px; */
   height: 350px;
   display: inline-block;
   box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.7);
   margin-top: var(--dl-space-space-fourunits);
   margin-right: 0px;
 }
+
+.swiper-wrapper{
+  height: 350px;
+}
+
 .home-slider-slide {
   width: 1990px;
   display: flex;
@@ -439,6 +421,7 @@
   width: 800px;
   position: relative;
   margin: 0 auto;
+  height: 450px;
 }
 
 .swiper_products {
