@@ -5,7 +5,8 @@ const swiper_text = new Swiper('.swiper_text', {
     allowTouchMove: false,
     spaceBetween: 10,
   })
-  const swiper_img = new Swiper('.swiper_products', {
+  
+const swiper_img = new Swiper('.swiper_products', {
     direction: 'horizontal',
     loop: true,
     grabCursor: true,
@@ -35,3 +36,17 @@ const swiper_text = new Swiper('.swiper_text', {
       swiper: swiper_text,
     },
   })
+
+  const swiper_detail = new Swiper('.detail-slider', { 
+    loop: true,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    lazyLoading: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  }) 
+

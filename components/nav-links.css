@@ -14,6 +14,7 @@
   font-family: "Bahnschrift";
   font-stretch: 75%;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .nav-links-link1 {
   color: #ffeed3;
@@ -21,6 +22,7 @@
   font-family: "Bahnschrift";
   font-stretch: 75%;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .nav-links-link2 {
   color: #ffeed3;
@@ -28,6 +30,7 @@
   font-family: "Bahnschrift";
   font-stretch: 75%;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .nav-links-link3 {
   color: #ffeed3;
@@ -35,6 +38,7 @@
   font-family: "Bahnschrift";
   font-stretch: 75%;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .nav-links-link4 {
   color: #ffeed3;
@@ -42,8 +46,9 @@
   font-family: "Bahnschrift";
   font-stretch: 75%;
   text-transform: capitalize;
+  text-decoration: none;
 }
-@media(max-width: 1600px) {
+/* @media(max-width: 1600px) {
   .nav-links-links {
     gap: var(--dl-space-space-fourunits);
     justify-content: center;
@@ -52,6 +57,7 @@
 @media(max-width: 1200px) {
   .nav-links-links {
     gap: var(--dl-space-space-twounits);
+    width: 600px;
     justify-content: space-between;
   }
 }
@@ -65,12 +71,9 @@
   .nav-links-link2 {
     padding-right: var(--dl-space-space-twounits);
   }
-  .nav-links-link3 {
-    padding-right: var(--dl-space-space-twounits);
-  }
 }
 @media(max-width: 767px) {
   .nav-links-links {
     display: none;
   }
-}
+} */

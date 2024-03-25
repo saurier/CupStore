@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <title>Новини - Cup Store</title>
+  <meta property="og:title" content="Новини - Cup Store" />
+  <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: "Bahnschrift";
+      font-size: 20px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 75%;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="./news.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="news-container">
+    <div class="news-wrapper">
+      <header class="news-header">
+        <div class="news-navbar">
+          <header data-thq="thq-navbar" class="news-navbar-interactive">
+            <div class="news-branding">
+              <a href="index.html" class="news-navlink">
+                <img alt="logo" src="public/MyFolder/logo.svg" class="news-image" />
+              </a>
+            </div>
+            <div data-thq="thq-navbar-nav" data-role="Nav" class="news-desktop-menu">
+              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="news-nav">
+                <nav class="nav-links-links">
+                  <a href="#about" class="nav-links-link navLink">
+                    <span>Про нас</span>
+                  </a>
+                  <a href="#product" class="nav-links-link1 navLink">
+                    <span>Продукція</span>
+                  </a>
+                  <a href="#branding" class="nav-links-link2 navLink">
+                    <span>Брендування</span>
+                  </a>
+                  <a href="#news" class="nav-links-link3 navLink">
+                    <span>Новини</span>
+                  </a>
+                  <a href="#contacts" class="nav-links-link4 navLink">
+                    <span>Контакти</span>
+                  </a>
+                </nav>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="news-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="news-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                </path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="news-mobile-menu">
+              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="news-nav1">
+                <div class="news-top">
+                  <div class="news-branding1">
+                    <span class="news-text">Cup Store</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="news-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="news-icon2">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="news-middle">
+                  <div class="news-links">
+                    <a href="#about" class="news-link navLink">Про нас</a>
+                    <a href="#product" class="news-link1 navLink">
+                      Продукція
+                    </a>
+                    <a href="#branding" class="news-link2 navLink">
+                      Брендування
+                    </a>
+                    <a href="#news" class="news-link3 navLink">Новини</a>
+                    <a href="#contacts" class="news-link4 navLink">
+                      Контакти
+                    </a>
+                  </div>
+                  <button class="news-work-with-us button">
+                    <span class="news-text1">Замовити</span>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      </header>
+      <div class="news-crumbs">
+        <div class="news-crumbs-inner">
+          <img alt="image" src="public/MyFolder/crumbs-img-200h.png" class="news-image1" />
+          <a href="news.html" class="news-navlink1">Новини</a>
+        </div>
+      </div>
+      <section class="news-news">
+        <div class="news-cards">
+          <div class="news-cards-col">
+            <div class="news-card-blog-post-card">
+              <div class="news-card-container">
+                <div class="news-card-container1">
+                  <img alt="image" src="public/MyFolder/blog-1-900w.jpg" class="news-card-image" />
+                  <span class="news-card-text">
+                    <span>Заголовок статті</span>
+                  </span>
+                </div>
+                <div class="news-card-container2">
+                  <div class="news-card-container3">
+                    <p class="news-card-text-blog">
+                      <span>
+                        Паперові стакани від компанії «WestCupGroup»
+                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                        280 мл, 420 мл, 500 мл. Виробництво якісних
+                        паперових стаканчиків відбувається виключно на
+                        високоякісному обладнанні, що є гарантом високої
+                        якості кінцевого продукту. Європейський картон не
+                        дає паперовому стакану зіпсуватись навіть після його
+                        тривалого контакту з напоєм.
+                      </span>
+                    </p>
+                  </div>
+                  <div class="news-card-container4">
+                    <button type="button" class="news-card-button button">
+                      <span class="news-card-text1">
+                        <span>Читати далі</span>
+                      </span>
+                      <img alt="image" src="public/MyFolder/arrow-right.svg" class="news-card-image1" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-blog-post-card">
+              <div class="news-card-container">
+                <div class="news-card-container1">
+                  <img alt="image" src="public/MyFolder/blog-2.jpg" class="news-card-image" />
+                  <span class="news-card-text">
+                    <span>Заголовок статті</span>
+                  </span>
+                </div>
+                <div class="news-card-container2">
+                  <div class="news-card-container3">
+                    <p class="news-card-text-blog">
+                      <span>
+                        Паперові стакани від компанії «WestCupGroup»
+                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                        280 мл, 420 мл, 500 мл. Виробництво якісних
+                        паперових стаканчиків відбувається виключно на
+                        високоякісному обладнанні, що є гарантом високої
+                        якості кінцевого продукту. Європейський картон не
+                        дає паперовому стакану зіпсуватись навіть після його
+                        тривалого контакту з напоєм.
+                      </span>
+                    </p>
+                  </div>
+                  <div class="news-card-container4">
+                    <button type="button" class="news-card-button button">
+                      <span class="news-card-text1">
+                        <span>Читати далі</span>
+                      </span>
+                      <img alt="image" src="public/MyFolder/arrow-right.svg" class="news-card-image1" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-blog-post-card">
+              <div class="news-card-container">
+                <div class="news-card-container1">
+                  <img alt="image" src="public/MyFolder/blog-3.jpg" class="news-card-image" />
+                  <span class="news-card-text">
+                    <span>Заголовок статті</span>
+                  </span>
+                </div>
+                <div class="news-card-container2">
+                  <div class="news-card-container3">
+                    <p class="news-card-text-blog">
+                      <span>
+                        Паперові стакани від компанії «WestCupGroup»
+                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                        280 мл, 420 мл, 500 мл. Виробництво якісних
+                        паперових стаканчиків відбувається виключно на
+                        високоякісному обладнанні, що є гарантом високої
+                        якості кінцевого продукту. Європейський картон не
+                        дає паперовому стакану зіпсуватись навіть після його
+                        тривалого контакту з напоєм.
+                      </span>
+                    </p>
+                  </div>
+                  <div class="news-card-container4">
+                    <button type="button" class="news-card-button button">
+                      <span class="news-card-text1">
+                        <span>Читати далі</span>
+                      </span>
+                      <img alt="image" src="public/MyFolder/arrow-right.svg" class="news-card-image1" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="news-footer">
+        <div class="news-copy">
+          <img alt="image" src="public/MyFolder/copyright.svg" class="news-copy-text" />
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
+</html>
