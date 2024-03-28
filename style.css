@@ -1,9 +1,14 @@
 @font-face {
   font-family: "Bahnschrift";
   font-style: normal;
-  font-format: truetype;
   font-weight: 400;
   src: url("public/fonts/bahnschrift.ttf") ;
+}
+@font-face {
+  font-family: "Impact";
+  font-style: normal;
+  font-weight: 400;
+  src: url("public/fonts/Impact.ttf") ;
 }
 :root {
   --dl-color-gray-500: #595959;
@@ -28,6 +33,8 @@
   --dl-color-primary-500: #14A9FF;
   --dl-color-primary-700: #85DCFF;
   --dl-color-success-300: #199033;
+  --dl-color-green: #114425;
+  --dl-color-beige: 255, 238, 211;
   --dl-color-success-500: #32A94C;
   --dl-color-success-700: #4CC366;
   --dl-radius-radius-round: 50%;

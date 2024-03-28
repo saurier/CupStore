@@ -1,885 +1,821 @@
 <!DOCTYPE html>
 <html lang="ua">
-  <head>
-    <title>CupStore</title>
-    <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
-    <meta charset="utf-8" />
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: "Bahnschrift";
-        font-size: 20px;
-      }
 
-      body {
-        min-width:1400px;/*!!fixed adaptive!!*/
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: 75%;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+<head>
+  <title>CupStore</title>
+  <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta charset="utf-8" />
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32"/>
-    <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="./css/slick.css"/>
-    <link rel="stylesheet" href="./css/slick-theme.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" data-tag="font"/>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+    body {
+      margin: 0;
+    }
 
-  <body>
-      <main class="home-container">
-        <div class="home-wrapper">
-          <header class="header-header header-root-class-name1">
-            <div class="header-navbar">
-              <header data-thq="thq-navbar" class="header-navbar-interactive">
-                <div class="header-branding">
-                  <a href="index.html" class="header-navlink">
-                    <img
-                      alt="logo"
-                      src="public/MyFolder/logo.svg"
-                      class="header-image"
-                    />
-                  </a>
-                </div>
-                <div
-                  data-thq="thq-navbar-nav"
-                  data-role="Nav"
-                  class="header-desktop-menu"
-                >
-                  <nav
-                    data-thq="thq-navbar-nav-links"
-                    data-role="Nav"
-                    class="header-nav"
-                  >
-                    <nav class="nav-links-links">
-                      <a href="#about" class="nav-links-link navLink">
-                        <span>Про нас</span>
-                      </a>
-                      <a href="#product" class="nav-links-link1 navLink">
-                        <span>Продукція</span>
-                      </a>
-                      <a href="#branding" class="nav-links-link2 navLink">
-                        <span>Брендування</span>
-                      </a>
-                      <a href="#news" class="nav-links-link3 navLink">
-                        <span>Новини</span>
-                      </a>
-                      <a href="#contacts" class="nav-links-link4 navLink">
-                        <span>Контакти</span>
-                      </a>
-                    </nav>
-                  </nav>
-                </div>
-                <div data-thq="thq-burger-menu" class="header-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="header-icon">
-                    <path
-                      d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-                <div data-thq="thq-mobile-menu" class="header-mobile-menu">
-                  <div
-                    data-thq="thq-mobile-menu-nav"
-                    data-role="Nav"
-                    class="header-nav1"
-                  >
-                    <div class="header-top">
-                      <div class="header-branding1">
-                        <span class="header-text"><span>Cup Store</span></span>
-                      </div>
-                      <div data-thq="thq-close-menu" class="header-menu-close">
-                        <svg viewBox="0 0 1024 1024" class="header-icon2">
-                          <path
-                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <nav
-                      data-thq="thq-mobile-menu-nav-links"
-                      data-role="Nav"
-                      class="header-middle"
-                    >
-                      <div class="header-links">
-                        <a href="#about" class="header-link navLink">
-                          <span>Про нас</span>
-                        </a>
-                        <a href="#product" class="header-link1 navLink">
-                          <span>Продукція</span>
-                        </a>
-                        <a href="#branding" class="header-link2 navLink">
-                          <span>Брендування</span>
-                        </a>
-                        <a href="#news" class="header-link3 navLink">
-                          <span>Новини</span>
-                        </a>
-                        <a href="#contacts" class="header-link4 navLink">
-                          <span>Контакти</span>
-                        </a>
-                      </div>
-                      <button class="header-work-with-us button">
-                        <span class="header-text1"><span>Замовити</span></span>
-                      </button>
-                    </nav>
-                  </div>
-                </div>
-              </header>
-            </div>
-          </header>
-          <header class="home-header">
-            <div class="home-navbar">
-              <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <div class="home-branding">
-                  <a href="index.html" class="home-navlink">
-                    <img
-                      alt="logo"
-                      src="public/MyFolder/logo.svg"
-                      class="home-image"
-                    />
-                  </a>
-                </div>
-                <div
-                  data-thq="thq-navbar-nav"
-                  data-role="Nav"
-                  class="home-desktop-menu"
-                >
-                  <nav
-                    data-thq="thq-navbar-nav-links"
-                    data-role="Nav"
-                    class="home-nav"
-                  >
-                    <nav class="nav-links-links">
-                      <a href="#about" class="nav-links-link navLink">
-                        <span>Про нас</span>
-                      </a>
-                      <a href="#product" class="nav-links-link1 navLink">
-                        <span>Продукція</span>
-                      </a>
-                      <a href="#branding" class="nav-links-link2 navLink">
-                        <span>Брендування</span>
-                      </a>
-                      <a href="#news" class="nav-links-link3 navLink">
-                        <span>Новини</span>
-                      </a>
-                      <a href="#contacts" class="nav-links-link4 navLink">
-                        <span>Контакти</span>
-                      </a>
-                    </nav>
-                  </nav>
-                </div>
-                <div data-thq="thq-burger-menu" class="home-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="home-icon">
-                    <path
-                      d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-                <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-                  <div
-                    data-thq="thq-mobile-menu-nav"
-                    data-role="Nav"
-                    class="home-nav1"
-                  >
-                    <div class="home-top">
-                      <div class="home-branding1">
-                        <span class="home-text">Cup Store</span>
-                      </div>
-                      <div data-thq="thq-close-menu" class="home-menu-close">
-                        <svg viewBox="0 0 1024 1024" class="home-icon02">
-                          <path
-                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <nav
-                      data-thq="thq-mobile-menu-nav-links"
-                      data-role="Nav"
-                      class="home-middle"
-                    >
-                      <div class="home-links">
-                        <a href="#about" class="home-link navLink">Про нас</a>
-                        <a href="#product" class="home-link1 navLink">
-                          Продукція
-                        </a>
-                        <a href="#branding" class="home-link2 navLink">
-                          Брендування
-                        </a>
-                        <a href="#news" class="home-link3 navLink">Новини</a>
-                        <a href="#contacts" class="home-link4 navLink">
-                          Контакти
-                        </a>
-                      </div>
-                      <button class="home-work-with-us button">
-                        <span class="home-text01">Замовити</span>
-                      </button>
-                    </nav>
-                  </div>
-                </div>
-              </header>
-            </div>
-          </header>
-          <div class="home-section-top">
-            <div class="home-container01">
-              <h4 class="home-title">Брендування</h4>
-              <img
-                alt="image"
-                src="public/MyFolder/cover-1500h.png"
-                class="home-image01"
-              />
-              <button type="button" class="home-button button">
-                <span class="home-text02">Замовити</span>
-              </button>
-              <span class="home-descr">
-                Друк вашого дизайну на паперових стаканах
-              </span>
-              <div
-                data-thq="slider"
-                data-loop="true"
-                data-autoplay="true"
-                data-navigation="false"
-                data-pagination="false"
-                data-pause-autoplay-on-mouse-enter="true"
-                data-disable-autoplay-on-interaction="false"
-                class="home-slider swiper"
-              >
-                <div data-thq="slider-wrapper" class="swiper-wrapper home-slider-wrapper">
-                  <div data-thq="slider-slide" class="home-slider-slide swiper-slide"></div>
-                  <div data-thq="slider-slide" class="home-slider-slide1 swiper-slide"></div>
-                  <div data-thq="slider-slide" class="home-slider-slide2 swiper-slide"></div>
-                </div>
-                <div data-thq="slider-pagination" class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
-                  <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
-                </div>
-                <div data-thq="slider-button-prev" class="home-slider-button-prev swiper-button-prev"></div>
-                <div data-thq="slider-button-next" class="home-slider-button-next swiper-button-next"></div>
-              </div>
-            </div>
-          </div>
-          <div class="home-section-about">
-            <div class="home-container02">
-              <h4 id="about" class="home-heading">Про нас</h4>
-              <p class="home-descr1">
-                <span>
-                  Паперові стакани від компанії «WestCupGroup» виготовляються у
-                  наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
-                  Виробництво якісних паперових стаканчиків відбувається
-                  виключно на високоякісному обладнанні, що є гарантом високої
-                  якості кінцевого продукту. Ми виготовляємо як одношарові
-                  паперові стаканчики, так і двошарові паперові стаканчики.
-                  Європейський картон не дає паперовому стакану зіпсуватись
-                  навіть після його тривалого контакту з напоєм.
-                </span>
-                <span></span>
-              </p>
-              <div class="home-video">
-                <iframe
-                  src="https://www.youtube.com/embed/DeQkMK5LME4"
-                  class="home-iframe"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="home-section-products">
-            <div class="home-container03">
-              <h4 id="product" class="home-heading1">Продукція</h4>
-              <p class="home-descr2">
-                Паперові стакани від компанії «WestCupGroup» виготовляються у
-                наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
-                Виробництво якісних паперових стаканчиків відбувається виключно
-                на високоякісному обладнанні, що є гарантом високої якості
-                кінцевого продукту.
-              </p>
-              <div class="home-container04">
-                  <div class="home-container06">
-                    <div class="swiper-container">
-                      <div class="swiper swiper_products">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-1.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-3.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-1.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper-zoom-container">
-                              <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-button-prev">
-                        <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                            d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
-                            fill="black"></path>
-                        </svg>
-                      </div>
-                      <div class="swiper-button-next">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
-                            fill="black"></path>
-                        </svg>
-                      </div>
-    
-                      <div class="swiper swiper_text">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <p class="txt">Одношарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Двошарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Гофровані</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Двошарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Одношарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Двошарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Гофровані</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Двошарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Одношарові</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <p class="txt">Двошарові</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="home-container05">
-                <a href="product.html" class="home-navlink1 button">
-                  <span class="home-text05">Детальніше</span>
-                  <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image02"/>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="home-section-gallery">
-            <div class="home-container06">
-              <h4 id="branding" class="home-text06">Брендування</h4>
-              <span class="home-text07">
-                <span class="home-text08">
-                  Друк вашого дизайну на паперових стаканах
-                </span>
-                <span></span>
-              </span>
-              <div class="home-galleryitems">
-                <div class="home-gallery">
-                  <div class="home-all">
-                    <div class="home-row1">
-                      <div class="home-selfie">
-                        <div class="home-gallery-card">
-                          <img
-                            alt="image"
-                            src="public/MyFolder/gallery-1-500h.jpg"
-                            class="home-image03"
-                          />
-                        </div>
-                      </div>
-                      <div class="home-row1-other">
-                        <div class="home-yellow-and-spoon">
-                          <div class="home-gallery-card01">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-2-500w.jpg"
-                              class="home-image04"
-                            />
-                          </div>
-                          <div class="home-gallery-card02">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-3-300w.jpg"
-                              class="home-image05"
-                            />
-                          </div>
-                        </div>
-                        <div class="home-elk-and-diam">
-                          <div class="home-gallery-card03">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-4-300h.jpg"
-                              class="home-image06"
-                            />
-                          </div>
-                          <div class="home-gallery-card04">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-5-300h.jpg"
-                              class="home-image07"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="home-row2">
-                      <div class="home-col1">
-                        <div class="home-yellow-and-spoon1">
-                          <div class="home-gallery-card05">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-6-200h.jpg"
-                              class="home-image08"
-                            />
-                          </div>
-                          <div class="home-gallery-card06">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-7-300h.jpg"
-                              class="home-image09"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="home-col2">
-                        <div class="home-gallery-card07">
-                          <img
-                            alt="image"
-                            src="public/MyFolder/gallery-8-300w.jpg"
-                            class="home-image10"
-                          />
-                        </div>
-                      </div>
-                      <div class="home-col3">
-                        <div class="home-yellow-and-spoon2">
-                          <div class="home-gallery-card08">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-9-400h.jpg"
-                              class="home-image11"
-                            />
-                          </div>
-                          <div class="home-gallery-card09">
-                            <img
-                              alt="image"
-                              src="public/MyFolder/gallery-10-200h.jpg"
-                              class="home-image12"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="home-col4">
-                        <div class="home-gallery-card10">
-                          <img
-                            alt="image"
-                            src="public/MyFolder/gallery-11-500h.jpg"
-                            class="home-image13"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="home-container07">
-                  <div class="home-container08">
-                    <style>
-                      .glr {
-                        margin: 0;
-                        font-family: Arial;
-                      }
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
 
-                      .row {
-                        display: -ms-flexbox; /* IE10 */
-                        display: flex;
-                        -ms-flex-wrap: wrap; /* IE10 */
-                        flex-wrap: wrap;
-                        padding: 0 4px;
-                      }
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
 
-                      /* Create four equal columns that sits next to each other */
-                      .column {
-                        -ms-flex: 25%; /* IE10 */
-                        flex: 25%;
-                        max-width: 25%;
-                        padding: 0 4px;
-                      }
+    button {
+      background-color: transparent;
+    }
 
-                      .column img {
-                        margin-top: 8px;
-                        vertical-align: middle;
-                        width: 100%;
-                      }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
 
-                      /* Responsive layout - makes a two column-layout instead of four columns */
-                      @media screen and (max-width: 800px) {
-                        .column {
-                          -ms-flex: 50%;
-                          flex: 50%;
-                          max-width: 50%;
-                        }
-                      }
+    button,
+    select {
+      text-transform: none;
+    }
 
-                      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-                      @media screen and (max-width: 600px) {
-                        .column {
-                          -ms-flex: 100%;
-                          flex: 100%;
-                          max-width: 100%;
-                        }
-                      }
-                    </style>
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
 
-                    <!-- Photo Grid -->
-                    <div class="row">
-                      <div class="column">
-                        <img
-                          src="https://i.ibb.co/CJ4FNWz/gallery-1.jpg"
-                          style="width:100%"
-                        />
-                        <img
-                          src="https://i.ibb.co/VDKTx8w/gallery-6.jpg"
-                          style="width:100%"
-                        />
-                        <img
-                          src="https://i.ibb.co/LhTz7z4/gallery-7.jpg"
-                          style="width:100%"
-                        />
-                      </div>
-                      <div class="column">
-                        <img
-                          src="https://i.ibb.co/9Nmw3Xn/gallery-4.jpg"
-                          style="width:100%"
-                        />
-                        <img
-                          src="https://i.ibb.co/YNxY4KQ/gallery-9.jpg"
-                          style="width:100%"
-                        />
-                      </div>
-                      <div class="column">
-                        <img
-                          src="https://i.ibb.co/g6cQL5q/12.jpg"
-                          style="width:100%"
-                        />
-                        <img
-                          src="https://i.ibb.co/x2y3Pnq/gallery-3.jpg"
-                          style="width:100%"
-                        />
-                      </div>
-                      <div class="column">
-                        <img
-                          src="https://i.ibb.co/FnQrmnV/13.jpg"
-                          style="width:100%"
-                        />
-                        <img
-                          src="https://i.ibb.co/7GDyJ8S/gallery-8.jpg"
-                          style="width:100%"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="home-container09">
-                  <button type="button" class="home-button1 button">
-                    <span class="home-text10">Замовити</span>
-                  </button>
-                  <a href="branding.html" class="home-navlink2 button">
-                    <span class="home-text11">Більше прикладів</span>
-                    <img
-                      alt="image"
-                      src="public/MyFolder/arrow-right.svg"
-                      class="home-image14"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="home-section-blog">
-            <div class="home-container10">
-              <h4 id="news" class="home-text12">Новини</h4>
-              <div class="home-blogitems">
-                <div class="home-blog">
-                  <div class="home-container11">
-                    <div class="home-blog-post-card">
-                      <div class="home-container12">
-                        <img
-                          alt="image"
-                          src="public/MyFolder/blog-1-700w.jpg"
-                          class="home-image15"
-                        />
-                        <span class="home-text13">Заголовок статті</span>
-                      </div>
-                      <div class="home-container13">
-                        <div class="home-container14">
-                          <p class="home-text-blog">
-                            Паперові стакани від компанії «WestCupGroup»
-                            виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                            280 мл, 420 мл, 500 мл. Виробництво якісних
-                            паперових стаканчиків відбувається виключно на
-                            високоякісному обладнанні, що є гарантом високої
-                            якості кінцевого продукту...
-                          </p>
-                        </div>
-                        <div class="home-container15">
-                          <button type="button" class="home-button2 button">
-                            <span class="home-text14">Читати далі</span>
-                            <img
-                              alt="image"
-                              src="public/MyFolder/arrow-right.svg"
-                              class="home-image16"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-container16">
-                    <div class="home-blog-post-card1">
-                      <div class="home-container17">
-                        <img
-                          alt="image"
-                          src="public/MyFolder/blog-2-700w.jpg"
-                          class="home-image17"
-                        />
-                        <span class="home-text15">Заголовок статті</span>
-                      </div>
-                      <div class="home-container18">
-                        <div class="home-container19">
-                          <p class="home-text-blog1">
-                            Паперові стакани від компанії «WestCupGroup»
-                            виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                            280 мл, 420 мл, 500 мл. Виробництво якісних
-                            паперових стаканчиків відбувається виключно на
-                            високоякісному обладнанні, що є гарантом високої
-                            якості кінцевого продукту...
-                          </p>
-                        </div>
-                        <div class="home-container15">
-                          <button type="button" class="home-button2 button">
-                            <span class="home-text14">Читати далі</span>
-                            <img
-                              alt="image"
-                              src="public/MyFolder/arrow-right.svg"
-                              class="home-image18"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="home-container21">
-                  <a href="news.html" class="home-navlink3 button">
-                    <span class="home-text17">Більше новин</span>
-                    <svg
-                      viewBox="0 0 347.4285714285714 1024"
-                      class="home-icon08"
-                    >
-                      <path
-                        d="M340 548.571c0 4.571-2.286 9.714-5.714 13.143l-266.286 266.286c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-28.571-28.571c-3.429-3.429-5.714-8-5.714-13.143 0-4.571 2.286-9.714 5.714-13.143l224.571-224.571-224.571-224.571c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l28.571-28.571c3.429-3.429 8.571-5.714 13.143-5.714s9.714 2.286 13.143 5.714l266.286 266.286c3.429 3.429 5.714 8.571 5.714 13.143z"
-                      ></path>
-                    </svg>
-                    <img
-                      alt="image"
-                      src="public/MyFolder/arrow-right.svg"
-                      class="home-image19"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer id="contacts" class="home-footer">
-            <footer class="home-container22">
-              <div class="home-footer-inner">
-                <div class="home-info-list">
-                  <div class="home-info-item">
-                    <img
-                      alt="image"
-                      src="public/MyFolder/geo.svg"
-                      class="home-geo-icon"
-                    />
-                    <span class="home-geo-descr">
-                      <span>
-                        Адреса: м. Київ, вул. Богдана Хмельницького, 67
-                      </span>
-                      <br />
-                    </span>
-                  </div>
-                  <div class="home-info-item1">
-                    <img
-                      alt="image"
-                      src="public/MyFolder/phone.svg"
-                      class="home-phone-icon"
-                    />
-                    <span class="home-phone-descr">
-                      Телефон: +380 67 989 34 56
-                    </span>
-                  </div>
-                  <div class="home-info-item2">
-                    <img
-                      alt="image"
-                      src="public/MyFolder/email.svg"
-                      class="home-email-icon"
-                    />
-                    <span class="home-email-descr">
-                      <span>E-mail: lalalalal@gmail.com</span>
-                      <br />
-                    </span>
-                  </div>
-                  <div class="home-info-item3">
-                    <img
-                      alt="image"
-                      src="public/MyFolder/time.svg"
-                      class="home-time-icon"
-                    />
-                    <span class="home-time-descr">
-                      <span class="home-text22">Час роботи:</span>
-                      <br class="home-text23" />
-                      <span class="home-text24">Пн-Пт: 9:00 - 17:00</span>
-                      <br class="home-text25" />
-                      <span class="home-text26">Сб: 9:00 - 16:00</span>
-                      <br />
-                    </span>
-                  </div>
-                </div>
-                <ul class="home-ul list">
-                  <li class="home-li list-item">
-                    <div class="home-container23">
-                      <img
-                        alt="image"
-                        src="public/MyFolder/geo.svg"
-                        class="home-image20"
-                      />
-                      <span class="home-text28">
-                        <span class="home-text29">
-                          Адреса: м. Київ, вул. Богдана Хмельницького, 67
-                        </span>
-                        <span></span>
-                      </span>
-                    </div>
-                  </li>
-                  <li class="home-li1 list-item">
-                    <div class="home-container24">
-                      <img
-                        alt="image"
-                        src="public/MyFolder/phone.svg"
-                        class="home-image21"
-                      />
-                      <a href="tel:+380680000000" class="home-link5">
-                        Телефон: +380 67 989 34 56
-                      </a>
-                    </div>
-                  </li>
-                  <li class="home-li2 list-item">
-                    <div class="home-container25">
-                      <img
-                        alt="image"
-                        src="public/MyFolder/email.svg"
-                        class="home-image22"
-                      />
-                      <a
-                        href="mailto:info@cupstore.com?subject="
-                        class="home-link6"
-                      >
-                        E-mail: info@cupstore.com
-                      </a>
-                    </div>
-                  </li>
-                  <li class="home-li3 list-item">
-                    <div class="home-container26">
-                      <img
-                        alt="image"
-                        src="public/MyFolder/time.svg"
-                        class="home-image23"
-                      />
-                      <div class="home-container27">
-                        <span class="home-text31">
-                          <span>Час роботи:</span>
-                          <br />
-                        </span>
-                        <span class="home-text34">
-                          <span>Пн-Пт: 9:00 - 17:00</span>
-                          <br />
-                          <span>Сб: 9:00 - 16:00</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="home-container28">
-                  <div class="home-container29">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
-                      width="400"
-                      height="300"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div class="home-copy">
-                <a href="index.html" class="home-navlink4">
-                  <img
-                    alt="image"
-                    src="public/MyFolder/logo.svg"
-                    class="home-logo"
-                  />
-                </a>
-                <img
-                  alt="image"
-                  src="public/MyFolder/copyright.svg"
-                  class="home-copy-text"
-                />
-              </div>
-            </footer>
-          </footer>
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: "Bahnschrift";
+      font-size: 20px;
+    }
+
+    body {
+      min-width: 1400px;
+      /*!!fixed adaptive!!*/
+      min-height: 100%;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 75%;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    data-tag="font" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="/your-path-to-uicons/css/uicons-[your-style].css" > 
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <main class="home-container">
+    <div class="popup popup-order" id="popup-order">
+      <div class="popup__container">
+        <h2 class="popup-order__title">Lorem</h2>
+        <p class="popup-order__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia unde error dolorum
+          reprehenderit nobis suscipit quod porro, eos rerum, fugiat, obcaecati deleniti facere rem sapiente aut? Unde,
+          earum officia. Dignissimos.</p>
+          
+        <button type="button" class="popup-order__button-close button" onclick="toggle_order()">
+            <a class="popup-order__button-cross">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z" fill="black"/></svg>
+          </a>
+        </button>
+        <button type="button" class="popup-order__button-send button" onclick="toggle_accept()">
+          <a class="popup-order__button-text">Надіслати замовлення</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="popup popup-accepted" id="popup-accepted">
+      <div class="popup-accepted__container">
+        <div class="popup-accepted__decor">
+          <div class="popup-accepted__circle"><img class="popup-accepted__sign"
+              src="./public/MyFolder/img-thankyou-cup.png" alt="accepted"></div>
         </div>
-      </main>
+        <h2 class="popup-accepted__title">Ваше замовлення прийнято!</h2>
+        <p class="popup-accepted__descr">Наш менеджер зв'яжеться з Вами найближчим часом</p>
+        <button type="button" class="popup-accepted__button button" onclick="toggle_thankyou()">
+          <a class="popup-accepted__button-text">Дякую!</a>
+        </button>
+      </div>
+    </div>
 
 
-    <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
 
 
-  </body>
+
+
+
+
+
+    <div class="home-wrapper" id="blur">
+      <header class="header-header header-root-class-name1">
+        <div class="header-navbar">
+          <header data-thq="thq-navbar" class="header-navbar-interactive">
+            <div class="header-branding">
+              <a href="index.html" class="header-navlink">
+                <img alt="logo" src="public/MyFolder/logo.svg" class="header-image" />
+              </a>
+            </div>
+            <div data-thq="thq-navbar-nav" data-role="Nav" class="header-desktop-menu">
+              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="header-nav">
+                <nav class="nav-links-links">
+                  <a href="#about" class="nav-links-link navLink">
+                    <span>Про нас</span>
+                  </a>
+                  <a href="#product" class="nav-links-link1 navLink">
+                    <span>Продукція</span>
+                  </a>
+                  <a href="#branding" class="nav-links-link2 navLink">
+                    <span>Брендування</span>
+                  </a>
+                  <a href="#news" class="nav-links-link3 navLink">
+                    <span>Новини</span>
+                  </a>
+                  <a href="#contacts" class="nav-links-link4 navLink">
+                    <span>Контакти</span>
+                  </a>
+                </nav>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="header-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                </path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="header-mobile-menu">
+              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="header-nav1">
+                <div class="header-top">
+                  <div class="header-branding1">
+                    <span class="header-text"><span>Cup Store</span></span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="header-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="header-icon2">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="header-middle">
+                  <div class="header-links">
+                    <a href="#about" class="header-link navLink">
+                      <span>Про нас</span>
+                    </a>
+                    <a href="#product" class="header-link1 navLink">
+                      <span>Продукція</span>
+                    </a>
+                    <a href="#branding" class="header-link2 navLink">
+                      <span>Брендування</span>
+                    </a>
+                    <a href="#news" class="header-link3 navLink">
+                      <span>Новини</span>
+                    </a>
+                    <a href="#contacts" class="header-link4 navLink">
+                      <span>Контакти</span>
+                    </a>
+                  </div>
+                  <button class="header-work-with-us button">
+                    <span class="header-text1"><span>Замовити</span></span>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      </header>
+      <header class="home-header">
+        <div class="home-navbar">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <div class="home-branding">
+              <a href="index.html" class="home-navlink">
+                <img alt="logo" src="public/MyFolder/logo.svg" class="home-image" />
+              </a>
+            </div>
+            <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
+              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav">
+                <nav class="nav-links-links">
+                  <a href="#about" class="nav-links-link navLink">
+                    <span>Про нас</span>
+                  </a>
+                  <a href="#product" class="nav-links-link1 navLink">
+                    <span>Продукція</span>
+                  </a>
+                  <a href="#branding" class="nav-links-link2 navLink">
+                    <span>Брендування</span>
+                  </a>
+                  <a href="#news" class="nav-links-link3 navLink">
+                    <span>Новини</span>
+                  </a>
+                  <a href="#contacts" class="nav-links-link4 navLink">
+                    <span>Контакти</span>
+                  </a>
+                </nav>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                </path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="home-nav1">
+                <div class="home-top">
+                  <div class="home-branding1">
+                    <span class="home-text">Cup Store</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="home-middle">
+                  <div class="home-links">
+                    <a href="#about" class="home-link navLink">Про нас</a>
+                    <a href="#product" class="home-link1 navLink">Продукція</a>
+                    <a href="#branding" class="home-link2 navLink">Брендування</a>
+                    <a href="#news" class="home-link3 navLink">Новини</a>
+                    <a href="#contacts" class="home-link4 navLink">Контакти</a>
+                  </div>
+                  <button class="home-work-with-us button">
+                    <span class="home-text01">Замовити</span>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      </header>
+      <div class="home-section-top">
+        <div class="home-container01">
+          <h4 class="home-title">Брендування</h4>
+          <img alt="image" src="public/MyFolder/cover-1500h.png" class="home-image01" />
+          <button type="button" class="home-button button" onclick="toggle_order()">
+            <span class="home-text02">Замовити</span>
+          </button>
+          <span class="home-descr">
+            Друк вашого дизайну на паперових стаканах
+          </span>
+          <div data-thq="slider" data-loop="true" data-autoplay="true" data-navigation="false" data-pagination="false"
+            data-pause-autoplay-on-mouse-enter="true" data-disable-autoplay-on-interaction="false"
+            class="home-slider swiper">
+            <div data-thq="slider-wrapper" class="swiper-wrapper home-slider-wrapper">
+              <div data-thq="slider-slide" class="home-slider-slide swiper-slide"></div>
+              <div data-thq="slider-slide" class="home-slider-slide1 swiper-slide"></div>
+              <div data-thq="slider-slide" class="home-slider-slide2 swiper-slide"></div>
+            </div>
+            <div data-thq="slider-pagination"
+              class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+              <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet swiper-pagination-bullet-active">
+              </div>
+            </div>
+            <div data-thq="slider-button-prev" class="home-slider-button-prev swiper-button-prev"></div>
+            <div data-thq="slider-button-next" class="home-slider-button-next swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-section-about">
+        <div class="home-container02">
+          <h4 id="about" class="home-heading">Про нас</h4>
+          <p class="home-descr1">
+            <span>
+              Паперові стакани від компанії «WestCupGroup» виготовляються у
+              наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
+              Виробництво якісних паперових стаканчиків відбувається
+              виключно на високоякісному обладнанні, що є гарантом високої
+              якості кінцевого продукту. Ми виготовляємо як одношарові
+              паперові стаканчики, так і двошарові паперові стаканчики.
+              Європейський картон не дає паперовому стакану зіпсуватись
+              навіть після його тривалого контакту з напоєм.
+            </span>
+            <span></span>
+          </p>
+          <div class="home-video">
+            <iframe src="https://www.youtube.com/embed/DeQkMK5LME4" class="home-iframe"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="home-section-products">
+        <div class="home-container03">
+          <h4 id="product" class="home-heading1">Продукція</h4>
+          <p class="home-descr2">
+            Паперові стакани від компанії «WestCupGroup» виготовляються у
+            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
+            Виробництво якісних паперових стаканчиків відбувається виключно
+            на високоякісному обладнанні, що є гарантом високої якості
+            кінцевого продукту.
+          </p>
+          <div class="home-container04">
+            <div class="home-container06">
+              <div class="swiper-container">
+                <div class="swiper swiper_products">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
+                      fill="black"></path>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
+                      fill="black"></path>
+                  </svg>
+                </div>
+
+                <div class="swiper swiper_text">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p class="txt">Одношарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Двошарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Гофровані</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Двошарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Одношарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Двошарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Гофровані</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Двошарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Одношарові</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="txt">Двошарові</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-container05">
+            <a href="product.html" class="home-navlink1 button">
+              <span class="home-text05">Детальніше</span>
+              <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image02" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-section-gallery">
+        <div class="home-container06">
+          <h4 id="branding" class="home-text06">Брендування</h4>
+          <span class="home-text07">
+            <span class="home-text08">
+              Друк вашого дизайну на паперових стаканах
+            </span>
+            <span></span>
+          </span>
+          <div class="home-galleryitems">
+            <div class="home-gallery">
+              <div class="home-all">
+                <div class="home-row1">
+                  <div class="home-selfie">
+                    <div class="home-gallery-card">
+                      <img alt="image" src="public/MyFolder/gallery-1-500h.jpg" class="home-image03" />
+                    </div>
+                  </div>
+                  <div class="home-row1-other">
+                    <div class="home-yellow-and-spoon">
+                      <div class="home-gallery-card01">
+                        <img alt="image" src="public/MyFolder/gallery-2-500w.jpg" class="home-image04" />
+                      </div>
+                      <div class="home-gallery-card02">
+                        <img alt="image" src="public/MyFolder/gallery-3-300w.jpg" class="home-image05" />
+                      </div>
+                    </div>
+                    <div class="home-elk-and-diam">
+                      <div class="home-gallery-card03">
+                        <img alt="image" src="public/MyFolder/gallery-4-300h.jpg" class="home-image06" />
+                      </div>
+                      <div class="home-gallery-card04">
+                        <img alt="image" src="public/MyFolder/gallery-5-300h.jpg" class="home-image07" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-row2">
+                  <div class="home-col1">
+                    <div class="home-yellow-and-spoon1">
+                      <div class="home-gallery-card05">
+                        <img alt="image" src="public/MyFolder/gallery-6-200h.jpg" class="home-image08" />
+                      </div>
+                      <div class="home-gallery-card06">
+                        <img alt="image" src="public/MyFolder/gallery-7-300h.jpg" class="home-image09" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-col2">
+                    <div class="home-gallery-card07">
+                      <img alt="image" src="public/MyFolder/gallery-8-300w.jpg" class="home-image10" />
+                    </div>
+                  </div>
+                  <div class="home-col3">
+                    <div class="home-yellow-and-spoon2">
+                      <div class="home-gallery-card08">
+                        <img alt="image" src="public/MyFolder/gallery-9-400h.jpg" class="home-image11" />
+                      </div>
+                      <div class="home-gallery-card09">
+                        <img alt="image" src="public/MyFolder/gallery-10-200h.jpg" class="home-image12" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-col4">
+                    <div class="home-gallery-card10">
+                      <img alt="image" src="public/MyFolder/gallery-11-500h.jpg" class="home-image13" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-container07">
+              <div class="home-container08">
+                <style>
+                  .glr {
+                    margin: 0;
+                    font-family: Arial;
+                  }
+
+                  .row {
+                    display: -ms-flexbox;
+                    /* IE10 */
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    /* IE10 */
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                  }
+
+                  /* Create four equal columns that sits next to each other */
+                  .column {
+                    -ms-flex: 25%;
+                    /* IE10 */
+                    flex: 25%;
+                    max-width: 25%;
+                    padding: 0 4px;
+                  }
+
+                  .column img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+                  }
+
+                  /* Responsive layout - makes a two column-layout instead of four columns */
+                  @media screen and (max-width: 800px) {
+                    .column {
+                      -ms-flex: 50%;
+                      flex: 50%;
+                      max-width: 50%;
+                    }
+                  }
+
+                  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                  @media screen and (max-width: 600px) {
+                    .column {
+                      -ms-flex: 100%;
+                      flex: 100%;
+                      max-width: 100%;
+                    }
+                  }
+                </style>
+
+                <!-- Photo Grid -->
+                <div class="row">
+                  <div class="column">
+                    <img src="https://i.ibb.co/CJ4FNWz/gallery-1.jpg" style="width:100%" />
+                    <img src="https://i.ibb.co/VDKTx8w/gallery-6.jpg" style="width:100%" />
+                    <img src="https://i.ibb.co/LhTz7z4/gallery-7.jpg" style="width:100%" />
+                  </div>
+                  <div class="column">
+                    <img src="https://i.ibb.co/9Nmw3Xn/gallery-4.jpg" style="width:100%" />
+                    <img src="https://i.ibb.co/YNxY4KQ/gallery-9.jpg" style="width:100%" />
+                  </div>
+                  <div class="column">
+                    <img src="https://i.ibb.co/g6cQL5q/12.jpg" style="width:100%" />
+                    <img src="https://i.ibb.co/x2y3Pnq/gallery-3.jpg" style="width:100%" />
+                  </div>
+                  <div class="column">
+                    <img src="https://i.ibb.co/FnQrmnV/13.jpg" style="width:100%" />
+                    <img src="https://i.ibb.co/7GDyJ8S/gallery-8.jpg" style="width:100%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-container09">
+              <button type="button" class="home-button1 button" onclick="toggle_order()">
+                <span class="home-text10">Замовити</span>
+              </button>
+              <a href="branding.html" class="home-navlink2 button">
+                <span class="home-text11">Більше прикладів</span>
+                <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image14" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-section-blog">
+        <div class="home-container10">
+          <h4 id="news" class="home-text12">Новини</h4>
+          <div class="home-blogitems">
+            <div class="home-blog">
+              <div class="home-container11">
+                <div class="home-blog-post-card">
+                  <div class="home-container12">
+                    <img alt="image" src="public/MyFolder/blog-1-700w.jpg" class="home-image15" />
+                    <span class="home-text13">Заголовок статті</span>
+                  </div>
+                  <div class="home-container13">
+                    <div class="home-container14">
+                      <p class="home-text-blog">
+                        Паперові стакани від компанії «WestCupGroup»
+                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                        280 мл, 420 мл, 500 мл. Виробництво якісних
+                        паперових стаканчиків відбувається виключно на
+                        високоякісному обладнанні, що є гарантом високої
+                        якості кінцевого продукту...
+                      </p>
+                    </div>
+                    <div class="home-container15">
+                      <button type="button" class="home-button2 button">
+                        <span class="home-text14">Читати далі</span>
+                        <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image16" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container16">
+                <div class="home-blog-post-card1">
+                  <div class="home-container17">
+                    <img alt="image" src="public/MyFolder/blog-2-700w.jpg" class="home-image17" />
+                    <span class="home-text15">Заголовок статті</span>
+                  </div>
+                  <div class="home-container18">
+                    <div class="home-container19">
+                      <p class="home-text-blog1">
+                        Паперові стакани від компанії «WestCupGroup»
+                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                        280 мл, 420 мл, 500 мл. Виробництво якісних
+                        паперових стаканчиків відбувається виключно на
+                        високоякісному обладнанні, що є гарантом високої
+                        якості кінцевого продукту...
+                      </p>
+                    </div>
+                    <div class="home-container15">
+                      <button type="button" class="home-button2 button">
+                        <span class="home-text14">Читати далі</span>
+                        <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image18" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-container21">
+              <a href="news.html" class="home-navlink3 button">
+                <span class="home-text17">Більше новин</span>
+                <svg viewBox="0 0 347.4285714285714 1024" class="home-icon08">
+                  <path
+                    d="M340 548.571c0 4.571-2.286 9.714-5.714 13.143l-266.286 266.286c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-28.571-28.571c-3.429-3.429-5.714-8-5.714-13.143 0-4.571 2.286-9.714 5.714-13.143l224.571-224.571-224.571-224.571c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l28.571-28.571c3.429-3.429 8.571-5.714 13.143-5.714s9.714 2.286 13.143 5.714l266.286 266.286c3.429 3.429 5.714 8.571 5.714 13.143z">
+                  </path>
+                </svg>
+                <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image19" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="contacts" class="home-footer">
+        <footer class="home-container22">
+          <div class="home-footer-inner">
+            <div class="home-info-list">
+              <div class="home-info-item">
+                <img alt="image" src="public/MyFolder/geo.svg" class="home-geo-icon" />
+                <span class="home-geo-descr">
+                  <span>
+                    Адреса: м. Київ, вул. Богдана Хмельницького, 67
+                  </span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-info-item1">
+                <img alt="image" src="public/MyFolder/phone.svg" class="home-phone-icon" />
+                <span class="home-phone-descr">
+                  Телефон: +380 67 989 34 56
+                </span>
+              </div>
+              <div class="home-info-item2">
+                <img alt="image" src="public/MyFolder/email.svg" class="home-email-icon" />
+                <span class="home-email-descr">
+                  <span>E-mail: lalalalal@gmail.com</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-info-item3">
+                <img alt="image" src="public/MyFolder/time.svg" class="home-time-icon" />
+                <span class="home-time-descr">
+                  <span class="home-text22">Час роботи:</span>
+                  <br class="home-text23" />
+                  <span class="home-text24">Пн-Пт: 9:00 - 17:00</span>
+                  <br class="home-text25" />
+                  <span class="home-text26">Сб: 9:00 - 16:00</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <ul class="home-ul list">
+              <li class="home-li list-item">
+                <div class="home-container23">
+                  <img alt="image" src="public/MyFolder/geo.svg" class="home-image20" />
+                  <span class="home-text28">
+                    <span class="home-text29">
+                      Адреса: м. Київ, вул. Богдана Хмельницького, 67
+                    </span>
+                    <span></span>
+                  </span>
+                </div>
+              </li>
+              <li class="home-li1 list-item">
+                <div class="home-container24">
+                  <img alt="image" src="public/MyFolder/phone.svg" class="home-image21" />
+                  <a href="tel:+380680000000" class="home-link5">
+                    Телефон: +380 67 989 34 56
+                  </a>
+                </div>
+              </li>
+              <li class="home-li2 list-item">
+                <div class="home-container25">
+                  <img alt="image" src="public/MyFolder/email.svg" class="home-image22" />
+                  <a href="mailto:info@cupstore.com?subject=" class="home-link6">
+                    E-mail: info@cupstore.com
+                  </a>
+                </div>
+              </li>
+              <li class="home-li3 list-item">
+                <div class="home-container26">
+                  <img alt="image" src="public/MyFolder/time.svg" class="home-image23" />
+                  <div class="home-container27">
+                    <span class="home-text31">
+                      <span>Час роботи:</span>
+                      <br />
+                    </span>
+                    <span class="home-text34">
+                      <span>Пн-Пт: 9:00 - 17:00</span>
+                      <br />
+                      <span>Сб: 9:00 - 16:00</span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="home-container28">
+              <div class="home-container29">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="home-copy">
+            <a href="index.html" class="home-navlink4">
+              <img alt="image" src="public/MyFolder/logo.svg" class="home-logo" />
+            </a>
+            <img alt="image" src="public/MyFolder/copyright.svg" class="home-copy-text" />
+          </div>
+        </footer>
+      </footer>
+    </div>
+  </main>
+
+
+  <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
+
+
+</body>
+
 </html>
