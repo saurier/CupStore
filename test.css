@@ -1,0 +1,394 @@
+.branding {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-fiveunits);
+}
+
+.branding__inner {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.branding__title {
+    color: rgb(17, 68, 37);
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Impact";
+    text-transform: capitalize;
+}
+
+.home-text07 {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    font-stretch: 75%;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+
+.home-text08 {
+    font-size: 1.6rem;
+}
+
+.home-galleryitems {
+    width: 1358px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.home-gallery {
+    width: 1200px;
+    height: 996px;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--dl-size-size-1328px);
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-twounits);
+}
+
+.home-row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-selfie {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-gallery-card {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-image03 {
+    width: 500px;
+    height: 436px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    object-fit: cover;
+}
+
+.home-row1-other {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    flex-direction: column;
+}
+
+.home-yellow-and-spoon {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.home-gallery-card01 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-image04 {
+    width: 415px;
+    height: 190px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-gallery-card02 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image05 {
+    width: 265px;
+    height: 190px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-elk-and-diam {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.home-gallery-card03 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image06 {
+    width: 265px;
+    height: 230px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-gallery-card04 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image07 {
+    width: 415px;
+    height: 230px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-yellow-and-spoon1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-gallery-card05 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image08 {
+    width: 260px;
+    height: 168px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-gallery-card06 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image09 {
+    width: 260px;
+    height: 250px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-gallery-card07 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image10 {
+    width: 230px;
+    height: 434px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-col3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-yellow-and-spoon2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-gallery-card08 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    flex-direction: column;
+}
+
+.home-image11 {
+    width: 180px;
+    height: 305px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-gallery-card09 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image12 {
+    width: 180px;
+    height: 113px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-col4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-gallery-card10 {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    position: relative;
+    flex-direction: column;
+}
+
+.home-image13 {
+    width: 500px;
+    height: 434px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.home-container07 {
+    display: none;
+}
+
+.home-container08 {
+    display: contents;
+}
+
+.home-container09 {
+    width: 488px;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-button1 {
+    color: var(--dl-color-gray-black);
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Bahnschrift";
+    padding-top: var(--dl-space-space-halfunit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 4px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-halfunit);
+    text-transform: capitalize;
+}
+
+.home-text10 {
+    font-size: 1.6rem;
+    align-self: center;
+    font-family: "Bahnschrift";
+    font-stretch: 75%;
+}
+
+.home-navlink2 {
+    color: var(--dl-color-gray-black);
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Bahnschrift";
+    padding-top: var(--dl-space-space-halfunit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 4px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-halfunit);
+    justify-content: center;
+    text-decoration: none;
+}
+
+.home-text11 {
+    font-size: 1.6rem;
+    align-self: center;
+    font-family: "Bahnschrift";
+    font-stretch: 75%;
+}
+
+.home-image14 {
+    width: 0.65 rem;
+    height: 0.65 rem;
+    align-self: center;
+    object-fit: cover;
+    margin-left: 0.5rem;
+}
+
+.glr {
+    margin: 0;
+    font-family: Arial;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

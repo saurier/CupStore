@@ -18,6 +18,8 @@
       box-sizing: border-box;
       border-width: 0;
       border-style: solid;
+      border: 2px solid black;
+      /*---------------------------------------*/
     }
 
     p,
@@ -111,7 +113,7 @@
       font-style: normal;
       text-decoration: none;
       text-transform: none;
-      letter-spacing: 75%;
+      font-stretch: 75%;
       line-height: 1.15;
       color: var(--dl-color-gray-black);
       background-color: var(--dl-color-gray-white);
@@ -129,7 +131,7 @@
     data-tag="font" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="/your-path-to-uicons/css/uicons-[your-style].css">
+  
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./index.css" />
 </head>
@@ -138,9 +140,9 @@
   <main class="home-container">
     <div class="popup popup-order" id="popup-order">
       <div class="popup__container">
-        <form action="" class="order">
-          <ul class="popup-order__list">
-            <li class="popup-order__list-item">
+        <form id="order" method="POST" action="" class="order" autocomplete="off">
+          <ul class="popup-order__list-col">
+            <li class="popup-order__col-list-item">
               <div class="svg_container">
                 <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -149,9 +151,9 @@
                 </svg>
               </div>
               <label class="popup-order__input-label" for="fname">Ваше ім'я :<br></label>
-              <input class="popup-order__input" type="text">
+              <input class="popup-order__input" type="text" value="" pattern="[a-zA-Z\u0400-\u04FF\s]+" required>
             </li>
-            <li class="popup-order__list-item">
+            <li class="popup-order__col-list-item">
               <div class="svg_container">
                 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="47" height="46" viewBox="0 0 47 46"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,9 +163,9 @@
                 </svg>
               </div>
               <label class="popup-order__input-label" for="fname">Номер телефону :<br></label>
-              <input class="popup-order__input" type="tel">
+              <input class="popup-order__input" type="tel" value="" pattern="([0-9+])\w{10,13}+" required>
             </li>
-            <li class="popup-order__list-item">
+            <li class="popup-order__col-list-item">
               <div class="svg_container">
                 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="48" height="29" viewBox="0 0 48 29"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,76 +175,113 @@
                 </svg>
               </div>
               <label class="popup-order__input-label" for="fname">E-mail :<br></label>
-              <input class="popup-order__input" type="email">
+              <input class="popup-order__input" type="email" value="" pattern="[a-zA-Z0-9@_.-]+" required>
             </li>
           </ul>
           <ul class="popup-order__list-row">
-            <li class="popup-order__list-item">
-              <div class="svg_container">
-                <svg width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25 3H25.9085H27.0175L27.6049 3.94073L32.0127 11H34V15H30.9037H3.10234H1.50204e-05H0V14.1885L1.50204e-05 14.1885V11H1.99427L6.4103 3.93945L6.99788 3H8.10595H21V0H25V3ZM27.297 11H6.71222L9.21402 7H24.7994L27.297 11ZM5.26983 17H2.99339L3.28647 19.2575L6.79177 46.2575L7.01799 48H8.77512H25.2913H27.0514L27.2751 46.2542L30.7345 19.2542L31.0233 17H28.7507H5.26983ZM10.5323 44L7.54626 21H26.4781L23.5312 44H10.5323Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__row-input-label" for="fname">Тип продукту :</label>
-              <input class="popup-order__row-input" type="text">
-            </li>
-            <li class="popup-order__list-item">
-              <div class="svg_container">
-                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16 0L14 1.50001L3.33332 9.5001L0 12.0001L3.33334 14.5001L14 22.5L16 24V19.549L8.64942 14H39.3506L32 19.549V24L34 22.5L44.6667 14.5001L48 12.0001L44.6667 9.5001L34 1.50001L32 0V4.45093L39.3507 10H8.64928L16 4.45093V0Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__row-input-label" for="fname">Розмір :</label>
-              <input class="popup-order__row-input" type="text">
-            </li>
-            <li class="popup-order__list-item">
-              <div class="svg_container">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M38.2829 38C34.653 41.7027 29.5948 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C29.5948 4 34.653 6.29728 38.2829 10H43.4958C39.1391 3.94373 32.0301 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C32.0301 48 39.1391 44.0563 43.4958 38H38.2829ZM34 26V36H38V26H48V22H38V12H34V22H24V26H34ZM18 15.1111V34H13V38H27V34H22V10H22V9V8H18.2061L12 14.8268V20.7732L18 14.1732V15.1111H18Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__row-input-label" for="fname">Кількість :</label>
-              <input class="popup-order__row-input" type="number">
-            </li>
-          </ul>
-          <ul class="popup-order__list">
-            <li class="popup-order__list-item">
-              <label class="popup-order__row-input-label" for="fname">Завантажити файли у векторі :</label>
-              <label class="popup-order__custom-label-file-input" for="file-upload">
-                <div class="test">
+            <li class="popup-order__row-list-item">
+              <div class="popup-order__row-list-item__container">
                 <div class="svg_container">
-                  <svg width="63" height="52" viewBox="0 0 63 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M22.8301 19.3988C22.1495 17.9889 21.7679 16.4074 21.7679 14.7368C21.7679 8.80705 26.575 4 32.5048 4C37.5537 4 41.7887 7.48501 42.9355 12.1808C43.305 12.0594 43.6823 11.9554 44.0665 11.8696C45.032 11.6607 46.0394 11.5643 47.0739 11.5949C53.8986 11.7968 59.222 17.4466 59.0234 24.1582C58.876 29.1427 55.7228 33.3625 51.3142 35.1215V39.3473C57.9084 37.4268 62.8089 31.4689 63.0217 24.2765C63.2863 15.3309 56.1992 7.8631 47.1922 7.59665C46.5952 7.57898 46.0047 7.59341 45.4225 7.63834C42.915 3.08506 38.0702 0 32.5048 0C24.3801 0 17.7911 6.57478 17.768 14.694C15.0207 13.3368 11.7431 13.0041 8.56646 14.0156C2.13045 16.0648 -1.45378 22.8554 0.560859 29.1829C2.51842 35.3311 9.04181 38.7798 15.3142 37.0904V33.5399L11.8855 33.5188L11.8855 33.5169C8.48088 33.434 5.41856 31.2553 4.37233 27.9694C3.04728 23.8077 5.38765 19.2255 9.78002 17.827C13.5336 16.6319 17.4089 18.2003 19.2835 21.279C20.2199 20.5079 21.3125 19.8918 22.5331 19.4845C22.6316 19.4548 22.7306 19.4262 22.8301 19.3988ZM30.4529 23.159L33.0366 20L35.6204 23.159L44.4874 34L47.7591 38H42.5915H42.5629L35 28.4732V52H31V28.5655L23.5104 38H23.4818H18.3142L21.5859 34L30.4529 23.159Z"
+                      d="M25 3H25.9085H27.0175L27.6049 3.94073L32.0127 11H34V15H30.9037H3.10234H1.50204e-05H0V14.1885L1.50204e-05 14.1885V11H1.99427L6.4103 3.93945L6.99788 3H8.10595H21V0H25V3ZM27.297 11H6.71222L9.21402 7H24.7994L27.297 11ZM5.26983 17H2.99339L3.28647 19.2575L6.79177 46.2575L7.01799 48H8.77512H25.2913H27.0514L27.2751 46.2542L30.7345 19.2542L31.0233 17H28.7507H5.26983ZM10.5323 44L7.54626 21H26.4781L23.5312 44H10.5323Z"
                       fill="var(--dl-color-green)" />
                   </svg>
                 </div>
-                Завантажити
+                <label class="popup-order__row-select-label" for="typeOfProduct">Тип продукту :</label>
               </div>
-              </label>
-              <input class="popup-order__input" id="file-upload" type="file" accept="image/svg">
+              <div class="popup-order__row-custom-select">
+                <select class="popup-order__row-select" name="typeOfProduct" id="typeOfProduct" required>
+                  <option value="Не визначився">Не визначився</option>
+                  <option value="Одношаровий стакан">Одношаровий стакан</option>
+                  <option value="Двошаровий стакан">Двошаровий стакан</option>
+                  <option value="Гофрований стакан">Гофрований стакан</option>
+                  <option value="Тарілка">Тарілка</option>
+                </select>
+              </div>
+            </li>
+            <li class="popup-order__row-list-item">
+              <div class="popup-order__row-list-item__container" id="sizeLabel">
+                <div class="svg_container">
+                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 0L14 1.50001L3.33332 9.5001L0 12.0001L3.33334 14.5001L14 22.5L16 24V19.549L8.64942 14H39.3506L32 19.549V24L34 22.5L44.6667 14.5001L48 12.0001L44.6667 9.5001L34 1.50001L32 0V4.45093L39.3507 10H8.64928L16 4.45093V0Z"
+                      fill="var(--dl-color-green)" />
+                  </svg>
+                </div>
+                <label class="popup-order__row-select-label" for="sizeOfProduct">Розмір :</label>
+              </div>
+              <div class="popup-order__row-custom-select">
+                <select class="popup-order__row-select" name="sizeOfProduct" id="sizeOfProduct" required>
+                  <option value="Не визначився">Не визначився</option>
+                  <optgroup label="Стакан">
+                    <option value="110ml">110ml</option>
+                    <option value="185ml">185ml</option>
+                    <option value="255ml">255ml</option>
+                    <option value="340ml">340ml</option>
+                  </optgroup>
+                  <optgroup label="Тарілка">
+                    <option value="18cm">18cm</option>
+                    <option value="21cm">21cm</option>
+                    <option value="23cm">23cm</option>
+                    <option value="25cm">25cm</option>
+                  </optgroup>
+                </select>
+              </div>
+            </li>
+            <li class="popup-order__row-list-item">
+              <div class="popup-order__row-list-item__container">
+                <div class="svg_container">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M38.2829 38C34.653 41.7027 29.5948 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C29.5948 4 34.653 6.29728 38.2829 10H43.4958C39.1391 3.94373 32.0301 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C32.0301 48 39.1391 44.0563 43.4958 38H38.2829ZM34 26V36H38V26H48V22H38V12H34V22H24V26H34ZM18 15.1111V34H13V38H27V34H22V10H22V9V8H18.2061L12 14.8268V20.7732L18 14.1732V15.1111H18Z"
+                      fill="var(--dl-color-green)" />
+                  </svg>
+                </div>
+                <label class="popup-order__row-select-label" for="amount">Кількість :</label>
+              </div>
+              <div class="popup-order__row-custom-select">
+                <select class="popup-order__row-select" name="amount" id="amount" required>
+                  <option value="Не визначився">Не визначився</option>
+                  <option value="250">250</option>
+                  <option value="500">500</option>
+                  <option value="750">750</option>
+                  <option value="1000">1000</option>
+                </select>
+              </div>
             </li>
           </ul>
+          <ul class="popup-order__list-col">
+            <li class="popup-order__col-list-item">
+              <label class="popup-order__row-file-label" for="fname">Завантажити файли у векторі :</label>
+              <label class="popup-order__custom-label-file-input" for="file-upload">
+                <div class="box_container">
+                  <div class="svg_container">
+                    <svg width="63" height="52" viewBox="0 0 63 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.8301 19.3988C22.1495 17.9889 21.7679 16.4074 21.7679 14.7368C21.7679 8.80705 26.575 4 32.5048 4C37.5537 4 41.7887 7.48501 42.9355 12.1808C43.305 12.0594 43.6823 11.9554 44.0665 11.8696C45.032 11.6607 46.0394 11.5643 47.0739 11.5949C53.8986 11.7968 59.222 17.4466 59.0234 24.1582C58.876 29.1427 55.7228 33.3625 51.3142 35.1215V39.3473C57.9084 37.4268 62.8089 31.4689 63.0217 24.2765C63.2863 15.3309 56.1992 7.8631 47.1922 7.59665C46.5952 7.57898 46.0047 7.59341 45.4225 7.63834C42.915 3.08506 38.0702 0 32.5048 0C24.3801 0 17.7911 6.57478 17.768 14.694C15.0207 13.3368 11.7431 13.0041 8.56646 14.0156C2.13045 16.0648 -1.45378 22.8554 0.560859 29.1829C2.51842 35.3311 9.04181 38.7798 15.3142 37.0904V33.5399L11.8855 33.5188L11.8855 33.5169C8.48088 33.434 5.41856 31.2553 4.37233 27.9694C3.04728 23.8077 5.38765 19.2255 9.78002 17.827C13.5336 16.6319 17.4089 18.2003 19.2835 21.279C20.2199 20.5079 21.3125 19.8918 22.5331 19.4845C22.6316 19.4548 22.7306 19.4262 22.8301 19.3988ZM30.4529 23.159L33.0366 20L35.6204 23.159L44.4874 34L47.7591 38H42.5915H42.5629L35 28.4732V52H31V28.5655L23.5104 38H23.4818H18.3142L21.5859 34L30.4529 23.159Z"
+                        fill="var(--dl-color-green)" />
+                    </svg>
+                  </div>
+                  Завантажити
+                </div>
+              </label>
+              <input class="popup-order__input" id="file-upload" type="file" accept="image/svg" required>
+            </li>
+          </ul>
+          <button class="popup-order__button-close button" type="button" onclick="toggle_order()">
+            <a class="popup-order__button-cross">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z"
+                  fill="black" />
+              </svg>
+            </a>
+          </button>
+          <button class="popup-order__button-send button" type="submit" form="order" onclick="toggle_accept()">
+            <a class="popup-order__button-text">Надіслати замовлення</a>
+          </button>
         </form>
-
-        <button type="button" class="popup-order__button-close button" onclick="toggle_order()">
-          <a class="popup-order__button-cross">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z"
-                fill="black" />
-            </svg>
-          </a>
-        </button>
-        <button type="button" class="popup-order__button-send button" onclick="toggle_accept()">
-          <a class="popup-order__button-text">Надіслати замовлення</a>
-        </button>
       </div>
     </div>
 
@@ -259,7 +298,6 @@
         </button>
       </div>
     </div>
-
 
 
 
@@ -572,70 +610,65 @@
       <div class="home-section-gallery">
         <div class="home-container06">
           <h4 id="branding" class="home-text06">Брендування</h4>
-          <span class="home-text07">
-            <span class="home-text08">
-              Друк вашого дизайну на паперових стаканах
-            </span>
-            <span></span>
+          <span class="home-text08">
+            Друк вашого дизайну на паперових стаканах
           </span>
           <div class="home-galleryitems">
             <div class="home-gallery">
-              <div class="home-all">
-                <div class="home-row1">
-                  <div class="home-selfie">
-                    <div class="home-gallery-card">
-                      <img alt="image" src="public/MyFolder/gallery-1-500h.jpg" class="home-image03" />
+              <div class="home-row1">
+                <div class="home-selfie">
+                  <div class="home-gallery-card">
+                    <img alt="image" src="public/MyFolder/gallery-1-500h.jpg" class="home-image03" />
+                  </div>
+                </div>
+                <div class="home-row1-other">
+                  <div class="home-yellow-and-spoon">
+                    <div class="home-gallery-card01">
+                      <img alt="image" src="public/MyFolder/gallery-2-500w.jpg" class="home-image04" />
+                    </div>
+                    <div class="home-gallery-card02">
+                      <img alt="image" src="public/MyFolder/gallery-3-300w.jpg" class="home-image05" />
                     </div>
                   </div>
-                  <div class="home-row1-other">
-                    <div class="home-yellow-and-spoon">
-                      <div class="home-gallery-card01">
-                        <img alt="image" src="public/MyFolder/gallery-2-500w.jpg" class="home-image04" />
-                      </div>
-                      <div class="home-gallery-card02">
-                        <img alt="image" src="public/MyFolder/gallery-3-300w.jpg" class="home-image05" />
-                      </div>
+                  <div class="home-elk-and-diam">
+                    <div class="home-gallery-card03">
+                      <img alt="image" src="public/MyFolder/gallery-4-300h.jpg" class="home-image06" />
                     </div>
-                    <div class="home-elk-and-diam">
-                      <div class="home-gallery-card03">
-                        <img alt="image" src="public/MyFolder/gallery-4-300h.jpg" class="home-image06" />
-                      </div>
-                      <div class="home-gallery-card04">
-                        <img alt="image" src="public/MyFolder/gallery-5-300h.jpg" class="home-image07" />
-                      </div>
+                    <div class="home-gallery-card04">
+                      <img alt="image" src="public/MyFolder/gallery-5-300h.jpg" class="home-image07" />
                     </div>
                   </div>
                 </div>
-                <div class="home-row2">
-                  <div class="home-col1">
-                    <div class="home-yellow-and-spoon1">
-                      <div class="home-gallery-card05">
-                        <img alt="image" src="public/MyFolder/gallery-6-200h.jpg" class="home-image08" />
-                      </div>
-                      <div class="home-gallery-card06">
-                        <img alt="image" src="public/MyFolder/gallery-7-300h.jpg" class="home-image09" />
-                      </div>
+              </div>
+              <div class="home-row2">
+                <div class="home-col1">
+                  <div class="home-yellow-and-spoon1">
+                    <div class="home-gallery-card05">
+                      <img alt="image" src="public/MyFolder/gallery-6-200h.jpg" class="home-image08" />
+                    </div>
+                    <div class="home-gallery-card06">
+                      <img alt="image" src="public/MyFolder/gallery-7-300h.jpg" class="home-image09" />
                     </div>
                   </div>
-                  <div class="home-col2">
-                    <div class="home-gallery-card07">
-                      <img alt="image" src="public/MyFolder/gallery-8-300w.jpg" class="home-image10" />
+                </div>
+                <div class="home-col2">
+                  <div class="home-gallery-card07">
+                    <img alt="image" src="public/MyFolder/gallery-8-300w.jpg" class="home-image10" />
+                  </div>
+                </div>
+                <div class="home-col3">
+                  <div class="home-yellow-and-spoon2">
+                    <div class="home-gallery-card08">
+                      <img alt="image" src="public/MyFolder/gallery-9-400h.jpg" class="home-image11" />
+                    </div>
+                    <div class="home-gallery-card09">
+                      <img alt="image" src="public/MyFolder/gallery-10-200h.jpg" class="home-image12" />
                     </div>
                   </div>
-                  <div class="home-col3">
-                    <div class="home-yellow-and-spoon2">
-                      <div class="home-gallery-card08">
-                        <img alt="image" src="public/MyFolder/gallery-9-400h.jpg" class="home-image11" />
-                      </div>
-                      <div class="home-gallery-card09">
-                        <img alt="image" src="public/MyFolder/gallery-10-200h.jpg" class="home-image12" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-col4">
-                    <div class="home-gallery-card10">
-                      <img alt="image" src="public/MyFolder/gallery-11-500h.jpg" class="home-image13" />
-                    </div>
+                </div>
+                <div class="home-col4">
+                  <div class="home-gallery-card10">
+                    <img alt="image" src="public/MyFolder/gallery-11-500h.jpg" class="home-image13" />
                   </div>
                 </div>
               </div>
@@ -726,6 +759,17 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
       <div class="home-section-blog">
         <div class="home-container10">
           <h4 id="news" class="home-text12">Новини</h4>
