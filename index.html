@@ -131,7 +131,7 @@
     data-tag="font" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
+
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./index.css" />
 </head>
@@ -453,10 +453,10 @@
       </header>
       <div class="home-section-top">
         <div class="home-container01">
-          <h4 class="home-title">Брендування</h4>
+          <h4 class="section__title home-title">Брендування</h4>
           <img alt="image" src="public/MyFolder/cover-1500h.png" class="home-image01" />
-          <button type="button" class="home-button button" onclick="toggle_order()">
-            <span class="home-text02">Замовити</span>
+          <button type="button" class="home-button button button-showmore" onclick="toggle_order()">
+            <span>Замовити</span>
           </button>
           <span class="home-descr">
             Друк вашого дизайну на паперових стаканах
@@ -479,369 +479,271 @@
           </div>
         </div>
       </div>
-      <div class="home-section-about">
-        <div class="home-container02">
-          <h4 id="about" class="home-heading">Про нас</h4>
-          <p class="home-descr1">
-            <span>
-              Паперові стакани від компанії «WestCupGroup» виготовляються у
-              наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
-              Виробництво якісних паперових стаканчиків відбувається
-              виключно на високоякісному обладнанні, що є гарантом високої
-              якості кінцевого продукту. Ми виготовляємо як одношарові
-              паперові стаканчики, так і двошарові паперові стаканчики.
-              Європейський картон не дає паперовому стакану зіпсуватись
-              навіть після його тривалого контакту з напоєм.
-            </span>
-            <span></span>
+      
+      
+      
+      
+      <section class="about section">
+        <div class="section__inner">
+          <h4 class="section__title" id="about">Про нас</h4>
+          <p class="about__descr">
+            Паперові стакани від компанії «WestCupGroup» виготовляються у
+            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
+            Виробництво якісних паперових стаканчиків відбувається
+            виключно на високоякісному обладнанні, що є гарантом високої
+            якості кінцевого продукту. Ми виготовляємо як одношарові
+            паперові стаканчики, так і двошарові паперові стаканчики.
+            Європейський картон не дає паперовому стакану зіпсуватись
+            навіть після його тривалого контакту з напоєм.
           </p>
-          <div class="home-video">
-            <iframe src="https://www.youtube.com/embed/DeQkMK5LME4" class="home-iframe"></iframe>
-          </div>
+          <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4"></iframe>
         </div>
-      </div>
-      <div class="home-section-products">
-        <div class="home-container03">
-          <h4 id="product" class="home-heading1">Продукція</h4>
-          <p class="home-descr2">
+      </section>
+
+
+
+
+      <section class="products section">
+        <div class="section__inner">
+          <h4 class="section__title" id="product">Продукція</h4>
+          <p class="products__descr">
             Паперові стакани від компанії «WestCupGroup» виготовляються у
             наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
             Виробництво якісних паперових стаканчиків відбувається виключно
             на високоякісному обладнанні, що є гарантом високої якості
             кінцевого продукту.
           </p>
-          <div class="home-container04">
-            <div class="home-container06">
-              <div class="swiper-container">
-                <div class="swiper swiper_products">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-1.png" alt="" />
-                      </div>
+          <div class="products__slider">
+            <div class="swiper-container">
+              <div class="swiper swiper_products">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-1.png" alt="" />
                     </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-2.png" alt="" />
                     </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-3.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-3.png" alt="" />
                     </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-2.png" alt="" />
                     </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-1.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-1.png" alt="" />
                     </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img src="./public/MyFolder/products-slide-2.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./public/MyFolder/products-slide-2.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev">
-                  <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                      d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
-                      fill="black"></path>
-                  </svg>
-                </div>
-                <div class="swiper-button-next">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
-                      fill="black"></path>
-                  </svg>
-                </div>
+              </div>
+              <div class="swiper-button-prev">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
+                    fill="black"></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
+                    fill="black"></path>
+                </svg>
+              </div>
 
-                <div class="swiper swiper_text">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <p class="txt">Одношарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Двошарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Гофровані</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Двошарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Одношарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Двошарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Гофровані</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Двошарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Одношарові</p>
-                    </div>
-                    <div class="swiper-slide">
-                      <p class="txt">Двошарові</p>
-                    </div>
+              <div class="swiper swiper_text">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Гофровані</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Гофровані</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="home-container05">
-            <a href="product.html" class="home-navlink1 button">
-              <span class="home-text05">Детальніше</span>
-              <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image02" />
+          <div class="products__buttons">
+            <a class="button button-showmore" href="product.html">
+              <span>Детальніше</span>
+              <img class="button__arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
             </a>
           </div>
         </div>
-      </div>
-      <div class="home-section-gallery">
-        <div class="home-container06">
-          <h4 id="branding" class="home-text06">Брендування</h4>
-          <span class="home-text08">
-            Друк вашого дизайну на паперових стаканах
-          </span>
-          <div class="home-galleryitems">
-            <div class="home-gallery">
-              <div class="home-row1">
-                <div class="home-selfie">
-                  <div class="home-gallery-card">
-                    <img alt="image" src="public/MyFolder/gallery-1-500h.jpg" class="home-image03" />
+      </section>
+
+      <section class="branding section">
+        <div class="section__inner">
+          <h4 class="section__title branding__title" id="branding">Брендування</h4>
+          <span class="branding__descr">Друк вашого дизайну на паперових стаканах</span>
+          <div class="branding__content">
+            <div class="branding__gallery">
+              <div class="gallery-row1">
+                <div class="gallery-row1col1">
+                  <div class="gallery-card">
+                    <img class="image01" alt="image" src="public/MyFolder/gallery-1-500h.jpg" />
                   </div>
                 </div>
-                <div class="home-row1-other">
-                  <div class="home-yellow-and-spoon">
-                    <div class="home-gallery-card01">
-                      <img alt="image" src="public/MyFolder/gallery-2-500w.jpg" class="home-image04" />
+                <div class="gallery-row1col2">
+                  <div class="gallery-row1col2-row1">
+                    <div class="gallery-card">
+                      <img class="image02" alt="image" src="public/MyFolder/gallery-2-500w.jpg" />
                     </div>
-                    <div class="home-gallery-card02">
-                      <img alt="image" src="public/MyFolder/gallery-3-300w.jpg" class="home-image05" />
+                    <div class="gallery-card">
+                      <img class="image03" alt="image" src="public/MyFolder/gallery-3-300w.jpg" />
                     </div>
                   </div>
-                  <div class="home-elk-and-diam">
-                    <div class="home-gallery-card03">
-                      <img alt="image" src="public/MyFolder/gallery-4-300h.jpg" class="home-image06" />
+                  <div class="gallery-row1col2-row2">
+                    <div class="gallery-card">
+                      <img class="image04" alt="image" src="public/MyFolder/gallery-4-300h.jpg" />
                     </div>
-                    <div class="home-gallery-card04">
-                      <img alt="image" src="public/MyFolder/gallery-5-300h.jpg" class="home-image07" />
+                    <div class="gallery-card">
+                      <img class="image05" alt="image" src="public/MyFolder/gallery-5-300h.jpg" />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="home-row2">
-                <div class="home-col1">
-                  <div class="home-yellow-and-spoon1">
-                    <div class="home-gallery-card05">
-                      <img alt="image" src="public/MyFolder/gallery-6-200h.jpg" class="home-image08" />
-                    </div>
-                    <div class="home-gallery-card06">
-                      <img alt="image" src="public/MyFolder/gallery-7-300h.jpg" class="home-image09" />
-                    </div>
+              <div class="gallery-row2">
+                <div class="gallery-row2col1">
+                  <div class="gallery-card">
+                    <img class="image06" alt="image" src="public/MyFolder/gallery-6-200h.jpg" />
+                  </div>
+                  <div class="gallery-card">
+                    <img class="image07" alt="image" src="public/MyFolder/gallery-7-300h.jpg" />
                   </div>
                 </div>
-                <div class="home-col2">
-                  <div class="home-gallery-card07">
-                    <img alt="image" src="public/MyFolder/gallery-8-300w.jpg" class="home-image10" />
+                <div class="gallery-row2col2">
+                  <div class="gallery-card">
+                    <img class="image08" alt="image" src="public/MyFolder/gallery-8-300w.jpg" />
                   </div>
                 </div>
-                <div class="home-col3">
-                  <div class="home-yellow-and-spoon2">
-                    <div class="home-gallery-card08">
-                      <img alt="image" src="public/MyFolder/gallery-9-400h.jpg" class="home-image11" />
-                    </div>
-                    <div class="home-gallery-card09">
-                      <img alt="image" src="public/MyFolder/gallery-10-200h.jpg" class="home-image12" />
-                    </div>
+                <div class="gallery-row2col3">
+                  <div class="gallery-card">
+                    <img class="image09" alt="image" src="public/MyFolder/gallery-9-400h.jpg" />
+                  </div>
+                  <div class="gallery-card">
+                    <img class="image10" alt="image" src="public/MyFolder/gallery-10-200h.jpg" />
                   </div>
                 </div>
-                <div class="home-col4">
-                  <div class="home-gallery-card10">
-                    <img alt="image" src="public/MyFolder/gallery-11-500h.jpg" class="home-image13" />
+                <div class="gallery-row2col4">
+                  <div class="gallery-card">
+                    <img class="image11" alt="image" src="public/MyFolder/gallery-11-500h.jpg" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="home-container07">
-              <div class="home-container08">
-                <style>
-                  .glr {
-                    margin: 0;
-                    font-family: Arial;
-                  }
-
-                  .row {
-                    display: -ms-flexbox;
-                    /* IE10 */
-                    display: flex;
-                    -ms-flex-wrap: wrap;
-                    /* IE10 */
-                    flex-wrap: wrap;
-                    padding: 0 4px;
-                  }
-
-                  /* Create four equal columns that sits next to each other */
-                  .column {
-                    -ms-flex: 25%;
-                    /* IE10 */
-                    flex: 25%;
-                    max-width: 25%;
-                    padding: 0 4px;
-                  }
-
-                  .column img {
-                    margin-top: 8px;
-                    vertical-align: middle;
-                    width: 100%;
-                  }
-
-                  /* Responsive layout - makes a two column-layout instead of four columns */
-                  @media screen and (max-width: 800px) {
-                    .column {
-                      -ms-flex: 50%;
-                      flex: 50%;
-                      max-width: 50%;
-                    }
-                  }
-
-                  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-                  @media screen and (max-width: 600px) {
-                    .column {
-                      -ms-flex: 100%;
-                      flex: 100%;
-                      max-width: 100%;
-                    }
-                  }
-                </style>
-
-                <!-- Photo Grid -->
-                <div class="row">
-                  <div class="column">
-                    <img src="https://i.ibb.co/CJ4FNWz/gallery-1.jpg" style="width:100%" />
-                    <img src="https://i.ibb.co/VDKTx8w/gallery-6.jpg" style="width:100%" />
-                    <img src="https://i.ibb.co/LhTz7z4/gallery-7.jpg" style="width:100%" />
-                  </div>
-                  <div class="column">
-                    <img src="https://i.ibb.co/9Nmw3Xn/gallery-4.jpg" style="width:100%" />
-                    <img src="https://i.ibb.co/YNxY4KQ/gallery-9.jpg" style="width:100%" />
-                  </div>
-                  <div class="column">
-                    <img src="https://i.ibb.co/g6cQL5q/12.jpg" style="width:100%" />
-                    <img src="https://i.ibb.co/x2y3Pnq/gallery-3.jpg" style="width:100%" />
-                  </div>
-                  <div class="column">
-                    <img src="https://i.ibb.co/FnQrmnV/13.jpg" style="width:100%" />
-                    <img src="https://i.ibb.co/7GDyJ8S/gallery-8.jpg" style="width:100%" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-container09">
-              <button type="button" class="home-button1 button" onclick="toggle_order()">
-                <span class="home-text10">Замовити</span>
+            <div class="branding__buttons">
+              <button class="button" type="button" onclick="toggle_order()">
+                <span class="button__text">Замовити</span>
               </button>
-              <a href="branding.html" class="home-navlink2 button">
-                <span class="home-text11">Більше прикладів</span>
-                <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image14" />
+              <a href="branding.html" class="button button-showmore">
+                <span class="button__text">Більше прикладів</span>
+                <img class="button__arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-      <div class="home-section-blog">
-        <div class="home-container10">
-          <h4 id="news" class="home-text12">Новини</h4>
-          <div class="home-blogitems">
-            <div class="home-blog">
-              <div class="home-container11">
-                <div class="home-blog-post-card">
-                  <div class="home-container12">
-                    <img alt="image" src="public/MyFolder/blog-1-700w.jpg" class="home-image15" />
-                    <span class="home-text13">Заголовок статті</span>
-                  </div>
-                  <div class="home-container13">
-                    <div class="home-container14">
-                      <p class="home-text-blog">
-                        Паперові стакани від компанії «WestCupGroup»
-                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                        280 мл, 420 мл, 500 мл. Виробництво якісних
-                        паперових стаканчиків відбувається виключно на
-                        високоякісному обладнанні, що є гарантом високої
-                        якості кінцевого продукту...
-                      </p>
-                    </div>
-                    <div class="home-container15">
-                      <button type="button" class="home-button2 button">
-                        <span class="home-text14">Читати далі</span>
-                        <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image16" />
-                      </button>
-                    </div>
+      <section class="blog section">
+        <div class="section__inner">
+          <h4 class="section__title" id="news">Новини</h4>
+          <div class="blog__content">
+            <div class="blog__cards">
+              <div class="blog__card">
+                <div class="card__head">
+                  <img class="card__img" alt="image" src="public/MyFolder/blog-1-700w.jpg" />
+                  <span class="card__title">Заголовок статті</span>
+                </div>
+                <div class="card__content">
+                  <p class="card__descr">
+                    Паперові стакани від компанії «WestCupGroup»
+                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                    280 мл, 420 мл, 500 мл. Виробництво якісних
+                    паперових стаканчиків відбувається виключно на
+                    високоякісному обладнанні, що є гарантом високої
+                    якості кінцевого продукту...
+                  </p>
+                  <div class="card__button">
+                    <button class="button button-readnext" type="button">
+                      <span>Читати далі</span>
+                      <img class="button__arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="home-container16">
-                <div class="home-blog-post-card1">
-                  <div class="home-container17">
-                    <img alt="image" src="public/MyFolder/blog-2-700w.jpg" class="home-image17" />
-                    <span class="home-text15">Заголовок статті</span>
-                  </div>
-                  <div class="home-container18">
-                    <div class="home-container19">
-                      <p class="home-text-blog1">
-                        Паперові стакани від компанії «WestCupGroup»
-                        виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                        280 мл, 420 мл, 500 мл. Виробництво якісних
-                        паперових стаканчиків відбувається виключно на
-                        високоякісному обладнанні, що є гарантом високої
-                        якості кінцевого продукту...
-                      </p>
-                    </div>
-                    <div class="home-container15">
-                      <button type="button" class="home-button2 button">
-                        <span class="home-text14">Читати далі</span>
-                        <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image18" />
-                      </button>
-                    </div>
+              <div class="blog__card">
+                <div class="card__head">
+                  <img class="card__img" alt="image" src="public/MyFolder/blog-2-700w.jpg" />
+                  <span class="card__title">Заголовок статті</span>
+                </div>
+                <div class="card__content">
+                  <p class="card__descr">
+                    Паперові стакани від компанії «WestCupGroup»
+                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                    280 мл, 420 мл, 500 мл. Виробництво якісних
+                    паперових стаканчиків відбувається виключно на
+                    високоякісному обладнанні, що є гарантом високої
+                    якості кінцевого продукту...
+                  </p>
+                  <div class="card__button">
+                    <button class="button button-readnext" type="button">
+                      <span>Читати далі</span>
+                      <img class="button__arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="home-container21">
-              <a href="news.html" class="home-navlink3 button">
-                <span class="home-text17">Більше новин</span>
-                <svg viewBox="0 0 347.4285714285714 1024" class="home-icon08">
-                  <path
-                    d="M340 548.571c0 4.571-2.286 9.714-5.714 13.143l-266.286 266.286c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-28.571-28.571c-3.429-3.429-5.714-8-5.714-13.143 0-4.571 2.286-9.714 5.714-13.143l224.571-224.571-224.571-224.571c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l28.571-28.571c3.429-3.429 8.571-5.714 13.143-5.714s9.714 2.286 13.143 5.714l266.286 266.286c3.429 3.429 5.714 8.571 5.714 13.143z">
-                  </path>
-                </svg>
-                <img alt="image" src="public/MyFolder/arrow-right.svg" class="home-image19" />
+            <div class="blog__buttons">
+              <a class="button button-showmore" href="news.html">
+                <span>Більше новин</span>
+                <img class="button__arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+
+
       <footer id="contacts" class="home-footer">
         <footer class="home-container22">
           <div class="home-footer-inner">

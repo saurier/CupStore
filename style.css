@@ -15,7 +15,9 @@
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
   --dl-size-size-16px: 0.8rem;
+  --dl-size-size-20px: 1rem;
   --dl-size-size-48px: 2.4rem;
+  --dl-size-size-60px: 3rem;
   --dl-size-size-96px: 4.8rem;
   --dl-size-size-144px: 7.2rem;
   --dl-size-size-192px: 9.6rem;
@@ -77,7 +79,7 @@ body {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 p,
