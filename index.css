@@ -92,7 +92,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  padding: 50px;
+  padding: 22px 40px 40px 100px;
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.50);
   background-image: url('./public/MyFolder/bg-popup.jpg');
   z-index: 45;
@@ -308,6 +308,11 @@
   padding-bottom: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-twounits);
+}
+
+.popup-order__button-send{
+  margin-top: var(--dl-space-space-70px);
+  margin-left: 156px;
 }
 
 .popup-accepted__title {
@@ -762,7 +767,7 @@
   flex-direction: column;
   width: 1210px;
   height: 880px;
-  margin-bottom:20px;
+  margin-bottom:40px;
 }
 
 .gallery-row1,
