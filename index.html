@@ -5,484 +5,258 @@
   <title>CupStore</title>
   <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
   <meta charset="utf-8" />
-  <style data-tag="reset-style-sheet">
-    html {
-      line-height: 1.15;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-      border: 2px solid black;
-      /*---------------------------------------*/
-    }
-
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    figure,
-    blockquote,
-    figcaption {
-      margin: 0;
-      padding: 0;
-    }
-
-    button {
-      background-color: transparent;
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
-
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
-
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
-
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    input {
-      padding: 2px 4px;
-    }
-
-    img {
-      display: block;
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-  <style data-tag="default-style-sheet">
-    html {
-      font-family: "Bahnschrift";
-      font-size: 20px;
-    }
-
-    body {
-      min-width: 1400px;
-      /*!!fixed adaptive!!*/
-      min-height: 100%;
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      font-stretch: 75%;
-      line-height: 1.15;
-      color: var(--dl-color-gray-black);
-      background-color: var(--dl-color-gray-white);
-
-    }
-  </style>
   <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="./css/slick-theme.css" />
   <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    data-tag="font" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" data-tag="font" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
-  <main class="home-container">
-    <div class="popup popup-order" id="popup-order">
-      <div class="popup__container">
-        <form id="order" method="POST" action="" class="order" autocomplete="off">
-          <ul class="popup-order__list-col">
-            <li class="popup-order__col-list-item">
-              <div class="svg_container">
-                <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M29 13C29 17.9706 24.9706 22 20 22C15.0294 22 11 17.9706 11 13C11 8.02944 15.0294 4 20 4C24.9706 4 29 8.02944 29 13ZM33 13C33 20.1797 27.1797 26 20 26C12.8203 26 7 20.1797 7 13C7 5.8203 12.8203 0 20 0C27.1797 0 33 5.8203 33 13ZM36 47V48H40V47C40 35.9543 31.0457 27 20 27C8.95431 27 0 35.9543 0 47V48H4V47C4 38.1634 11.1634 31 20 31C28.8366 31 36 38.1634 36 47Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__input-label" for="fname">Ваше ім'я :<br></label>
-              <input class="popup-order__input" type="text" value="" pattern="[a-zA-Z\u0400-\u04FF\s]+" required>
-            </li>
-            <li class="popup-order__col-list-item">
-              <div class="svg_container">
-                <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="47" height="46" viewBox="0 0 47 46"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M7.10843 0.787109L8.51729 2.20665L17.9814 11.7424L19.3903 13.162L17.9707 14.5708L12.5808 19.9202C12.6747 20.207 12.7752 20.4919 12.8822 20.7748C13.7853 23.1617 15.1361 25.3495 16.8576 27.2223L16.8658 27.2222C17.3762 27.7778 17.9188 28.3053 18.4916 28.8018C20.2677 30.3416 22.2978 31.5523 24.486 32.3828C24.6526 32.446 24.8202 32.5069 24.9887 32.5656L24.9887 32.566C25.4367 32.7224 25.8908 32.8631 26.3504 32.9876C26.6423 33.0667 26.9356 33.1391 27.2301 33.2047L32.0316 27.3214L33.2961 25.7719L34.8456 27.0364L45.2543 35.5311L46.8038 36.7956L45.5392 38.3451C42.7794 41.7269 40.6594 43.4757 38.5733 44.3307C37.026 44.9648 35.4844 45.0573 34.2375 45.1321L34.2303 45.1325L33.2501 45.1702L33.2499 45.1679C29.9189 45.3455 26.5718 44.9934 23.3352 44.1165C22.3392 43.8466 21.3592 43.5286 20.3986 43.1641C16.4905 41.6833 12.9108 39.4375 9.87194 36.5525C6.43339 33.2881 3.77611 29.2896 2.09824 24.8551C0.911582 21.7188 0.236467 18.4217 0.0901779 15.0892L0.0879022 15.0891L0.0303128 14.1099L0.0300472 14.1027L0.0300468 14.1027C-0.0164583 12.8544 -0.0739509 11.3111 0.407127 9.70965C1.05578 7.55038 2.59074 5.27083 5.68889 2.19598L7.10843 0.787109ZM21.8124 39.4223C18.7996 38.2785 16.0046 36.6115 13.5591 34.4915C11.2003 32.4466 9.21252 30.02 7.67506 27.3199L7.66515 27.32C6.9585 26.0795 6.34751 24.7824 5.8394 23.4395C4.87436 20.889 4.29685 18.2166 4.11905 15.5109L4.07602 15.1053L4.07149 15.1053L4.06662 13.9376L4.06563 13.9376L4.11207 12.0567L4.12254 11.3067L4.12572 11.2921L4.13095 11.2921L4.13101 11.2896L4.12634 11.2892C4.15651 11.1512 4.19333 11.0092 4.23801 10.8605C4.53718 9.86456 5.25232 8.53167 7.1205 6.47759L13.7334 13.1406L11.6466 15.2117L11.6451 15.1907L8.10305 18.6409C8.3564 19.8456 8.70289 21.0324 9.14102 22.1903C10.4178 25.5647 12.4399 28.6074 15.0564 31.0915C17.3692 33.2872 20.0938 34.9964 23.0682 36.1232C23.7997 36.4007 24.5459 36.643 25.3044 36.8484C26.4994 37.1722 27.7141 37.402 28.9377 37.5373L32.0282 33.6773L32.007 33.6778L33.866 31.4L41.139 37.3355C39.2758 39.3941 38.0185 40.2351 37.0563 40.6295C36.9126 40.6884 36.7749 40.7388 36.6404 40.7822L36.6395 40.7776L36.6371 40.7779L36.6376 40.7831L36.6233 40.7877L35.8781 40.8708L34.0104 41.0995L34.0103 41.0985L32.8477 41.2069L32.8472 41.2024L32.4394 41.1989C29.9271 41.2781 27.41 41.0127 24.9591 40.4055L24.9591 40.4038C24.3604 40.2558 23.7659 40.0874 23.1766 39.8988C22.7172 39.7517 22.2623 39.5928 21.8124 39.4223Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__input-label" for="fname">Номер телефону :<br></label>
-              <input class="popup-order__input" type="tel" value="" pattern="([0-9+])\w{10,13}+" required>
-            </li>
-            <li class="popup-order__col-list-item">
-              <div class="svg_container">
-                <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="48" height="29" viewBox="0 0 48 29"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M48 0.212891H44H4.00004H4.25093e-05V0.213085H0V1.01271L4.25093e-05 1.01274V4.21289V24.2129V28.2129H4.00004H44H48V24.2129V4.21289V3.71289H48V0.212891ZM44 4.21838L24.0039 20.2129L4.00084 4.21289H4.00004V24.2129H44V4.21838ZM10.4046 4.21289L24.0039 15.0907L37.6032 4.21289H10.4046Z"
-                    fill="var(--dl-color-green)" />
-                </svg>
-              </div>
-              <label class="popup-order__input-label" for="fname">E-mail :<br></label>
-              <input class="popup-order__input" type="email" value="" pattern="[a-zA-Z0-9@_.-]+" required>
-            </li>
-          </ul>
-          <ul class="popup-order__list-row">
-            <li class="popup-order__row-list-item">
-              <div class="popup-order__row-list-item__container">
-                <div class="svg_container">
-                  <svg width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M25 3H25.9085H27.0175L27.6049 3.94073L32.0127 11H34V15H30.9037H3.10234H1.50204e-05H0V14.1885L1.50204e-05 14.1885V11H1.99427L6.4103 3.93945L6.99788 3H8.10595H21V0H25V3ZM27.297 11H6.71222L9.21402 7H24.7994L27.297 11ZM5.26983 17H2.99339L3.28647 19.2575L6.79177 46.2575L7.01799 48H8.77512H25.2913H27.0514L27.2751 46.2542L30.7345 19.2542L31.0233 17H28.7507H5.26983ZM10.5323 44L7.54626 21H26.4781L23.5312 44H10.5323Z"
-                      fill="var(--dl-color-green)" />
-                  </svg>
-                </div>
-                <label class="popup-order__row-select-label" for="typeOfProduct">Тип продукту :</label>
-              </div>
-              <div class="popup-order__row-custom-select">
-                <select class="popup-order__row-select" name="typeOfProduct" id="typeOfProduct" required>
-                  <option value="Не визначився">Не визначився</option>
-                  <option value="Одношаровий стакан">Одношаровий стакан</option>
-                  <option value="Двошаровий стакан">Двошаровий стакан</option>
-                  <option value="Гофрований стакан">Гофрований стакан</option>
-                  <option value="Тарілка">Тарілка</option>
-                </select>
-              </div>
-            </li>
-            <li class="popup-order__row-list-item">
-              <div class="popup-order__row-list-item__container" id="sizeLabel">
-                <div class="svg_container">
-                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M16 0L14 1.50001L3.33332 9.5001L0 12.0001L3.33334 14.5001L14 22.5L16 24V19.549L8.64942 14H39.3506L32 19.549V24L34 22.5L44.6667 14.5001L48 12.0001L44.6667 9.5001L34 1.50001L32 0V4.45093L39.3507 10H8.64928L16 4.45093V0Z"
-                      fill="var(--dl-color-green)" />
-                  </svg>
-                </div>
-                <label class="popup-order__row-select-label" for="sizeOfProduct">Розмір :</label>
-              </div>
-              <div class="popup-order__row-custom-select">
-                <select class="popup-order__row-select" name="sizeOfProduct" id="sizeOfProduct" required>
-                  <option value="Не визначився">Не визначився</option>
-                  <optgroup label="Стакан">
-                    <option value="110ml">110ml</option>
-                    <option value="185ml">185ml</option>
-                    <option value="255ml">255ml</option>
-                    <option value="340ml">340ml</option>
-                  </optgroup>
-                  <optgroup label="Тарілка">
-                    <option value="18cm">18cm</option>
-                    <option value="21cm">21cm</option>
-                    <option value="23cm">23cm</option>
-                    <option value="25cm">25cm</option>
-                  </optgroup>
-                </select>
-              </div>
-            </li>
-            <li class="popup-order__row-list-item">
-              <div class="popup-order__row-list-item__container">
-                <div class="svg_container">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M38.2829 38C34.653 41.7027 29.5948 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C29.5948 4 34.653 6.29728 38.2829 10H43.4958C39.1391 3.94373 32.0301 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C32.0301 48 39.1391 44.0563 43.4958 38H38.2829ZM34 26V36H38V26H48V22H38V12H34V22H24V26H34ZM18 15.1111V34H13V38H27V34H22V10H22V9V8H18.2061L12 14.8268V20.7732L18 14.1732V15.1111H18Z"
-                      fill="var(--dl-color-green)" />
-                  </svg>
-                </div>
-                <label class="popup-order__row-select-label" for="amount">Кількість :</label>
-              </div>
-              <div class="popup-order__row-custom-select">
-                <select class="popup-order__row-select" name="amount" id="amount" required>
-                  <option value="Не визначився">Не визначився</option>
-                  <option value="250">250</option>
-                  <option value="500">500</option>
-                  <option value="750">750</option>
-                  <option value="1000">1000</option>
-                </select>
-              </div>
-            </li>
-          </ul>
-          <ul class="popup-order__list-col">
-            <li class="popup-order__col-list-item">
-              <label class="popup-order__row-file-label" for="fname">Завантажити файли у векторі :</label>
-              <label class="popup-order__custom-label-file-input" for="file-upload">
-                <div class="box_container">
-                  <div class="svg_container">
-                    <svg width="63" height="52" viewBox="0 0 63 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M22.8301 19.3988C22.1495 17.9889 21.7679 16.4074 21.7679 14.7368C21.7679 8.80705 26.575 4 32.5048 4C37.5537 4 41.7887 7.48501 42.9355 12.1808C43.305 12.0594 43.6823 11.9554 44.0665 11.8696C45.032 11.6607 46.0394 11.5643 47.0739 11.5949C53.8986 11.7968 59.222 17.4466 59.0234 24.1582C58.876 29.1427 55.7228 33.3625 51.3142 35.1215V39.3473C57.9084 37.4268 62.8089 31.4689 63.0217 24.2765C63.2863 15.3309 56.1992 7.8631 47.1922 7.59665C46.5952 7.57898 46.0047 7.59341 45.4225 7.63834C42.915 3.08506 38.0702 0 32.5048 0C24.3801 0 17.7911 6.57478 17.768 14.694C15.0207 13.3368 11.7431 13.0041 8.56646 14.0156C2.13045 16.0648 -1.45378 22.8554 0.560859 29.1829C2.51842 35.3311 9.04181 38.7798 15.3142 37.0904V33.5399L11.8855 33.5188L11.8855 33.5169C8.48088 33.434 5.41856 31.2553 4.37233 27.9694C3.04728 23.8077 5.38765 19.2255 9.78002 17.827C13.5336 16.6319 17.4089 18.2003 19.2835 21.279C20.2199 20.5079 21.3125 19.8918 22.5331 19.4845C22.6316 19.4548 22.7306 19.4262 22.8301 19.3988ZM30.4529 23.159L33.0366 20L35.6204 23.159L44.4874 34L47.7591 38H42.5915H42.5629L35 28.4732V52H31V28.5655L23.5104 38H23.4818H18.3142L21.5859 34L30.4529 23.159Z"
-                        fill="var(--dl-color-green)" />
-                    </svg>
-                  </div>
-                  Завантажити
-                </div>
-              </label>
-              <input class="popup-order__input" id="file-upload" type="file" accept="image/svg" required>
-            </li>
-          </ul>
-          <button class="popup-order__button-close button" type="button" onclick="toggle_order()">
-            <a class="popup-order__button-cross">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="popup popup-order" id="popup-order">
+    <div class="popup__container">
+      <form id="order" method="POST" action="" class="order" autocomplete="off">
+        <ul class="popup-order__list-col">
+          <li class="popup-order__col-list-item">
+            <div class="svg_container">
+              <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z"
-                  fill="black" />
-              </svg>
-            </a>
-          </button>
-          <button class="popup-order__button-send button" type="submit" form="order" onclick="toggle_accept()">
-            <a class="popup-order__button-text">Надіслати замовлення</a>
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div class="popup popup-accepted" id="popup-accepted">
-      <div class="popup-accepted__container">
-        <div class="popup-accepted__decor">
-          <div class="popup-accepted__circle"><img class="popup-accepted__sign"
-              src="./public/MyFolder/img-thankyou-cup.png" alt="accepted"></div>
-        </div>
-        <h2 class="popup-accepted__title">Ваше замовлення прийнято!</h2>
-        <p class="popup-accepted__descr">Наш менеджер зв'яжеться з Вами найближчим часом</p>
-        <button type="button" class="popup-accepted__button button" onclick="toggle_thankyou()">
-          <a class="popup-accepted__button-text">Дякую!</a>
-        </button>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-    <div class="home-wrapper" id="blur">
-      <header class="header-header header-root-class-name1">
-        <div class="header-navbar">
-          <header data-thq="thq-navbar" class="header-navbar-interactive">
-            <div class="header-branding">
-              <a href="index.html" class="header-navlink">
-                <img alt="logo" src="public/MyFolder/logo.svg" class="header-image" />
-              </a>
-            </div>
-            <div data-thq="thq-navbar-nav" data-role="Nav" class="header-desktop-menu">
-              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="header-nav">
-                <nav class="nav-links-links">
-                  <a href="#about" class="nav-links-link navLink">
-                    <span>Про нас</span>
-                  </a>
-                  <a href="#product" class="nav-links-link1 navLink">
-                    <span>Продукція</span>
-                  </a>
-                  <a href="#branding" class="nav-links-link2 navLink">
-                    <span>Брендування</span>
-                  </a>
-                  <a href="#news" class="nav-links-link3 navLink">
-                    <span>Новини</span>
-                  </a>
-                  <a href="#contacts" class="nav-links-link4 navLink">
-                    <span>Контакти</span>
-                  </a>
-                </nav>
-              </nav>
-            </div>
-            <div data-thq="thq-burger-menu" class="header-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="header-icon">
-                <path
-                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
-                </path>
+                  d="M29 13C29 17.9706 24.9706 22 20 22C15.0294 22 11 17.9706 11 13C11 8.02944 15.0294 4 20 4C24.9706 4 29 8.02944 29 13ZM33 13C33 20.1797 27.1797 26 20 26C12.8203 26 7 20.1797 7 13C7 5.8203 12.8203 0 20 0C27.1797 0 33 5.8203 33 13ZM36 47V48H40V47C40 35.9543 31.0457 27 20 27C8.95431 27 0 35.9543 0 47V48H4V47C4 38.1634 11.1634 31 20 31C28.8366 31 36 38.1634 36 47Z"
+                  fill="var(--dl-color-green)" />
               </svg>
             </div>
-            <div data-thq="thq-mobile-menu" class="header-mobile-menu">
-              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="header-nav1">
-                <div class="header-top">
-                  <div class="header-branding1">
-                    <span class="header-text"><span>Cup Store</span></span>
-                  </div>
-                  <div data-thq="thq-close-menu" class="header-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="header-icon2">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                      </path>
-                    </svg>
-                  </div>
-                </div>
-                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="header-middle">
-                  <div class="header-links">
-                    <a href="#about" class="header-link navLink">
-                      <span>Про нас</span>
-                    </a>
-                    <a href="#product" class="header-link1 navLink">
-                      <span>Продукція</span>
-                    </a>
-                    <a href="#branding" class="header-link2 navLink">
-                      <span>Брендування</span>
-                    </a>
-                    <a href="#news" class="header-link3 navLink">
-                      <span>Новини</span>
-                    </a>
-                    <a href="#contacts" class="header-link4 navLink">
-                      <span>Контакти</span>
-                    </a>
-                  </div>
-                  <button class="header-work-with-us button">
-                    <span class="header-text1"><span>Замовити</span></span>
-                  </button>
-                </nav>
+            <label class="popup-order__input-label" for="fname">Ваше ім'я :<br></label>
+            <input class="popup-order__input" type="text" value="" pattern="[a-zA-Z\u0400-\u04FF\s]+" required>
+          </li>
+          <li class="popup-order__col-list-item">
+            <div class="svg_container">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="47" height="46" viewBox="0 0 47 46"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.10843 0.787109L8.51729 2.20665L17.9814 11.7424L19.3903 13.162L17.9707 14.5708L12.5808 19.9202C12.6747 20.207 12.7752 20.4919 12.8822 20.7748C13.7853 23.1617 15.1361 25.3495 16.8576 27.2223L16.8658 27.2222C17.3762 27.7778 17.9188 28.3053 18.4916 28.8018C20.2677 30.3416 22.2978 31.5523 24.486 32.3828C24.6526 32.446 24.8202 32.5069 24.9887 32.5656L24.9887 32.566C25.4367 32.7224 25.8908 32.8631 26.3504 32.9876C26.6423 33.0667 26.9356 33.1391 27.2301 33.2047L32.0316 27.3214L33.2961 25.7719L34.8456 27.0364L45.2543 35.5311L46.8038 36.7956L45.5392 38.3451C42.7794 41.7269 40.6594 43.4757 38.5733 44.3307C37.026 44.9648 35.4844 45.0573 34.2375 45.1321L34.2303 45.1325L33.2501 45.1702L33.2499 45.1679C29.9189 45.3455 26.5718 44.9934 23.3352 44.1165C22.3392 43.8466 21.3592 43.5286 20.3986 43.1641C16.4905 41.6833 12.9108 39.4375 9.87194 36.5525C6.43339 33.2881 3.77611 29.2896 2.09824 24.8551C0.911582 21.7188 0.236467 18.4217 0.0901779 15.0892L0.0879022 15.0891L0.0303128 14.1099L0.0300472 14.1027L0.0300468 14.1027C-0.0164583 12.8544 -0.0739509 11.3111 0.407127 9.70965C1.05578 7.55038 2.59074 5.27083 5.68889 2.19598L7.10843 0.787109ZM21.8124 39.4223C18.7996 38.2785 16.0046 36.6115 13.5591 34.4915C11.2003 32.4466 9.21252 30.02 7.67506 27.3199L7.66515 27.32C6.9585 26.0795 6.34751 24.7824 5.8394 23.4395C4.87436 20.889 4.29685 18.2166 4.11905 15.5109L4.07602 15.1053L4.07149 15.1053L4.06662 13.9376L4.06563 13.9376L4.11207 12.0567L4.12254 11.3067L4.12572 11.2921L4.13095 11.2921L4.13101 11.2896L4.12634 11.2892C4.15651 11.1512 4.19333 11.0092 4.23801 10.8605C4.53718 9.86456 5.25232 8.53167 7.1205 6.47759L13.7334 13.1406L11.6466 15.2117L11.6451 15.1907L8.10305 18.6409C8.3564 19.8456 8.70289 21.0324 9.14102 22.1903C10.4178 25.5647 12.4399 28.6074 15.0564 31.0915C17.3692 33.2872 20.0938 34.9964 23.0682 36.1232C23.7997 36.4007 24.5459 36.643 25.3044 36.8484C26.4994 37.1722 27.7141 37.402 28.9377 37.5373L32.0282 33.6773L32.007 33.6778L33.866 31.4L41.139 37.3355C39.2758 39.3941 38.0185 40.2351 37.0563 40.6295C36.9126 40.6884 36.7749 40.7388 36.6404 40.7822L36.6395 40.7776L36.6371 40.7779L36.6376 40.7831L36.6233 40.7877L35.8781 40.8708L34.0104 41.0995L34.0103 41.0985L32.8477 41.2069L32.8472 41.2024L32.4394 41.1989C29.9271 41.2781 27.41 41.0127 24.9591 40.4055L24.9591 40.4038C24.3604 40.2558 23.7659 40.0874 23.1766 39.8988C22.7172 39.7517 22.2623 39.5928 21.8124 39.4223Z"
+                  fill="var(--dl-color-green)" />
+              </svg>
+            </div>
+            <label class="popup-order__input-label" for="fname">Номер телефону :<br></label>
+            <input class="popup-order__input" type="tel" value="" pattern="([0-9+])\w{10,13}+" required>
+          </li>
+          <li class="popup-order__col-list-item">
+            <div class="svg_container">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="48" height="29" viewBox="0 0 48 29"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M48 0.212891H44H4.00004H4.25093e-05V0.213085H0V1.01271L4.25093e-05 1.01274V4.21289V24.2129V28.2129H4.00004H44H48V24.2129V4.21289V3.71289H48V0.212891ZM44 4.21838L24.0039 20.2129L4.00084 4.21289H4.00004V24.2129H44V4.21838ZM10.4046 4.21289L24.0039 15.0907L37.6032 4.21289H10.4046Z"
+                  fill="var(--dl-color-green)" />
+              </svg>
+            </div>
+            <label class="popup-order__input-label" for="fname">E-mail :<br></label>
+            <input class="popup-order__input" type="email" value="" pattern="[a-zA-Z0-9@_.-]+" required>
+          </li>
+        </ul>
+        <ul class="popup-order__list-row">
+          <li class="popup-order__row-list-item">
+            <div class="popup-order__row-list-item__container">
+              <div class="svg_container">
+                <svg width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25 3H25.9085H27.0175L27.6049 3.94073L32.0127 11H34V15H30.9037H3.10234H1.50204e-05H0V14.1885L1.50204e-05 14.1885V11H1.99427L6.4103 3.93945L6.99788 3H8.10595H21V0H25V3ZM27.297 11H6.71222L9.21402 7H24.7994L27.297 11ZM5.26983 17H2.99339L3.28647 19.2575L6.79177 46.2575L7.01799 48H8.77512H25.2913H27.0514L27.2751 46.2542L30.7345 19.2542L31.0233 17H28.7507H5.26983ZM10.5323 44L7.54626 21H26.4781L23.5312 44H10.5323Z"
+                    fill="var(--dl-color-green)" />
+                </svg>
               </div>
+              <label class="popup-order__row-select-label" for="typeOfProduct">Тип продукту :</label>
             </div>
-          </header>
+            <div class="popup-order__row-custom-select">
+              <select class="popup-order__row-select" name="typeOfProduct" id="typeOfProduct" required>
+                <option value="Не визначився">Не визначився</option>
+                <option value="Одношаровий стакан">Одношаровий стакан</option>
+                <option value="Двошаровий стакан">Двошаровий стакан</option>
+                <option value="Гофрований стакан">Гофрований стакан</option>
+                <option value="Тарілка">Тарілка</option>
+              </select>
+            </div>
+          </li>
+          <li class="popup-order__row-list-item">
+            <div class="popup-order__row-list-item__container" id="sizeLabel">
+              <div class="svg_container">
+                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 0L14 1.50001L3.33332 9.5001L0 12.0001L3.33334 14.5001L14 22.5L16 24V19.549L8.64942 14H39.3506L32 19.549V24L34 22.5L44.6667 14.5001L48 12.0001L44.6667 9.5001L34 1.50001L32 0V4.45093L39.3507 10H8.64928L16 4.45093V0Z"
+                    fill="var(--dl-color-green)" />
+                </svg>
+              </div>
+              <label class="popup-order__row-select-label" for="sizeOfProduct">Розмір :</label>
+            </div>
+            <div class="popup-order__row-custom-select">
+              <select class="popup-order__row-select" name="sizeOfProduct" id="sizeOfProduct" required>
+                <option value="Не визначився">Не визначився</option>
+                <optgroup label="Стакан">
+                  <option value="110ml">110ml</option>
+                  <option value="185ml">185ml</option>
+                  <option value="255ml">255ml</option>
+                  <option value="340ml">340ml</option>
+                </optgroup>
+                <optgroup label="Тарілка">
+                  <option value="18cm">18cm</option>
+                  <option value="21cm">21cm</option>
+                  <option value="23cm">23cm</option>
+                  <option value="25cm">25cm</option>
+                </optgroup>
+              </select>
+            </div>
+          </li>
+          <li class="popup-order__row-list-item">
+            <div class="popup-order__row-list-item__container">
+              <div class="svg_container">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M38.2829 38C34.653 41.7027 29.5948 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C29.5948 4 34.653 6.29728 38.2829 10H43.4958C39.1391 3.94373 32.0301 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C32.0301 48 39.1391 44.0563 43.4958 38H38.2829ZM34 26V36H38V26H48V22H38V12H34V22H24V26H34ZM18 15.1111V34H13V38H27V34H22V10H22V9V8H18.2061L12 14.8268V20.7732L18 14.1732V15.1111H18Z"
+                    fill="var(--dl-color-green)" />
+                </svg>
+              </div>
+              <label class="popup-order__row-select-label" for="amount">Кількість :</label>
+            </div>
+            <div class="popup-order__row-custom-select">
+              <select class="popup-order__row-select" name="amount" id="amount" required>
+                <option value="Не визначився">Не визначився</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="750">750</option>
+                <option value="1000">1000</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <ul class="popup-order__list-col">
+          <li class="popup-order__col-list-item">
+            <label class="popup-order__row-file-label" for="fname">Завантажити файли у векторі :</label>
+            <label class="popup-order__custom-label-file-input" for="file-upload">
+              <div class="box_container">
+                <div class="svg_container">
+                  <svg width="63" height="52" viewBox="0 0 63 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M22.8301 19.3988C22.1495 17.9889 21.7679 16.4074 21.7679 14.7368C21.7679 8.80705 26.575 4 32.5048 4C37.5537 4 41.7887 7.48501 42.9355 12.1808C43.305 12.0594 43.6823 11.9554 44.0665 11.8696C45.032 11.6607 46.0394 11.5643 47.0739 11.5949C53.8986 11.7968 59.222 17.4466 59.0234 24.1582C58.876 29.1427 55.7228 33.3625 51.3142 35.1215V39.3473C57.9084 37.4268 62.8089 31.4689 63.0217 24.2765C63.2863 15.3309 56.1992 7.8631 47.1922 7.59665C46.5952 7.57898 46.0047 7.59341 45.4225 7.63834C42.915 3.08506 38.0702 0 32.5048 0C24.3801 0 17.7911 6.57478 17.768 14.694C15.0207 13.3368 11.7431 13.0041 8.56646 14.0156C2.13045 16.0648 -1.45378 22.8554 0.560859 29.1829C2.51842 35.3311 9.04181 38.7798 15.3142 37.0904V33.5399L11.8855 33.5188L11.8855 33.5169C8.48088 33.434 5.41856 31.2553 4.37233 27.9694C3.04728 23.8077 5.38765 19.2255 9.78002 17.827C13.5336 16.6319 17.4089 18.2003 19.2835 21.279C20.2199 20.5079 21.3125 19.8918 22.5331 19.4845C22.6316 19.4548 22.7306 19.4262 22.8301 19.3988ZM30.4529 23.159L33.0366 20L35.6204 23.159L44.4874 34L47.7591 38H42.5915H42.5629L35 28.4732V52H31V28.5655L23.5104 38H23.4818H18.3142L21.5859 34L30.4529 23.159Z"
+                      fill="var(--dl-color-green)" />
+                  </svg>
+                </div>
+                Завантажити
+              </div>
+            </label>
+            <input class="popup-order__input" id="file-upload" type="file" accept="image/svg" required>
+          </li>
+        </ul>
+        <button class="popup-order__button-close button" type="button" onclick="toggle_order()">
+          <a class="popup-order__button-cross">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z"
+                fill="black" />
+            </svg>
+          </a>
+        </button>
+        <button class="popup-order__button-send button" type="submit" form="order" onclick="toggle_accept()">
+          <a class="popup-order__button-text">Надіслати замовлення</a>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup-accepted" id="popup-accepted">
+    <div class="popup-accepted__container">
+      <div class="popup-accepted__decor">
+        <div class="popup-accepted__circle">
+          <img class="popup-accepted__sign" src="./public/MyFolder/img-thankyou-cup.png" alt="accepted">
         </div>
-      </header>
-      <header class="home-header">
-        <div class="home-navbar">
-          <header data-thq="thq-navbar" class="home-navbar-interactive">
-            <div class="home-branding">
-              <a href="index.html" class="home-navlink">
-                <img alt="logo" src="public/MyFolder/logo.svg" class="home-image" />
-              </a>
-            </div>
-            <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
-              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav">
-                <nav class="nav-links-links">
-                  <a href="#about" class="nav-links-link navLink">
-                    <span>Про нас</span>
-                  </a>
-                  <a href="#product" class="nav-links-link1 navLink">
-                    <span>Продукція</span>
-                  </a>
-                  <a href="#branding" class="nav-links-link2 navLink">
-                    <span>Брендування</span>
-                  </a>
-                  <a href="#news" class="nav-links-link3 navLink">
-                    <span>Новини</span>
-                  </a>
-                  <a href="#contacts" class="nav-links-link4 navLink">
-                    <span>Контакти</span>
-                  </a>
-                </nav>
-              </nav>
-            </div>
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon">
+      </div>
+      <h2 class="popup-accepted__title">Ваше замовлення прийнято!</h2>
+      <p class="popup-accepted__descr">Наш менеджер зв'яжеться з Вами найближчим часом</p>
+      <button type="button" class="popup-accepted__button button" onclick="toggle_thankyou()">
+        <a class="popup-accepted__button-text">Дякую!</a>
+      </button>
+    </div>
+  </div>
+  <div class="wrapper" id="blur">
+    <header class="header" data-thq="thq-navbar">
+      <div class="header__container">
+        <a class="logo__link" href="index.html">
+          <img class="logo" alt="logo" src="public/MyFolder/logo.svg" />
+        </a>
+        <div class="header__desktop" data-thq="thq-navbar-nav" data-role="Nav">
+          <nav class="desktop__nav" data-thq="thq-navbar-nav-links" data-role="Nav">
+            <a class="nav-link" href="#about">Про нас</a>
+            <a class="nav-link" href="#product">Продукція</a>
+            <a class="nav-link" href="#branding">Брендування</a>
+            <a class="nav-link" href="#news">Новини</a>
+            <a class="nav-link" href="#contacts">Контакти</a>
+          </nav>
+        </div>
+        <!-- <div class="home-burger-menu header__burger" data-thq="thq-burger-menu" >
+              <svg class="home-icon01 burger__svg" viewBox="0 0 1024 1024">
                 <path
                   d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
                 </path>
               </svg>
             </div>
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="home-nav1">
-                <div class="home-top">
-                  <div class="home-branding1">
-                    <span class="home-text">Cup Store</span>
+            <div class="home-mobile-menu header__mobile" data-thq="thq-mobile-menu" >
+              <div class="home-nav1 ask" data-thq="thq-mobile-menu-nav" data-role="Nav">
+                <div class="home-top mobile__head">
+                  <div class="home-branding1 head__title">
+                    <span class="home-text none">Cup Store</span>
                   </div>
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                  <div class="home-menu-close head__close" data-thq="thq-close-menu">
+                    <svg class="home-icon02 none" viewBox="0 0 1024 1024">
                       <path
                         d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
                       </path>
                     </svg>
                   </div>
                 </div>
-                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="home-middle">
-                  <div class="home-links">
-                    <a href="#about" class="home-link navLink">Про нас</a>
-                    <a href="#product" class="home-link1 navLink">Продукція</a>
-                    <a href="#branding" class="home-link2 navLink">Брендування</a>
-                    <a href="#news" class="home-link3 navLink">Новини</a>
-                    <a href="#contacts" class="home-link4 navLink">Контакти</a>
+                <nav class="home-middle mobile__nav" data-thq="thq-mobile-menu-nav-links" data-role="Nav" >
+                  <div class="home-links none">
+                    <a class="home-link nav-link"  href="#about">Про нас</a>
+                    <a class="home-link nav-link" href="#product">Продукція</a>
+                    <a class="home-link nav-link" href="#branding">Брендування</a>
+                    <a class="home-link nav-link" href="#news">Новини</a>
+                    <a class="home-link nav-link" href="#contacts">Контакти</a>
                   </div>
                   <button class="home-work-with-us button">
-                    <span class="home-text01">Замовити</span>
+                    <span class="home-text01 none">Замовити</span>
                   </button>
                 </nav>
               </div>
-            </div>
-          </header>
-        </div>
-      </header>
-      <div class="home-section-top">
-        <div class="home-container01">
-          <h4 class="section__title home-title">Брендування</h4>
-          <img alt="image" src="public/MyFolder/cover-1500h.png" class="home-image01" />
-          <button type="button" class="home-button button button-showmore" onclick="toggle_order()">
+            </div> -->
+      </div>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="top__inner">
+          <h4 class="top__title section__title">Брендування</h4>
+          <span class="top__descr">Друк вашого дизайну на паперових стаканах</span>
+          <button class="button button-showmore top__button" type="button" onclick="toggle_order()">
             <span>Замовити</span>
           </button>
-          <span class="home-descr">
-            Друк вашого дизайну на паперових стаканах
-          </span>
-          <div data-thq="slider" data-loop="true" data-autoplay="true" data-navigation="false" data-pagination="false"
-            data-pause-autoplay-on-mouse-enter="true" data-disable-autoplay-on-interaction="false"
-            class="home-slider swiper">
-            <div data-thq="slider-wrapper" class="swiper-wrapper home-slider-wrapper">
-              <div data-thq="slider-slide" class="home-slider-slide swiper-slide"></div>
-              <div data-thq="slider-slide" class="home-slider-slide1 swiper-slide"></div>
-              <div data-thq="slider-slide" class="home-slider-slide2 swiper-slide"></div>
+          <img class="top__img" alt="image" src="public/MyFolder/cover-1500h.png" />
+          <div class="home-slider swiper" data-thq="slider" data-loop="true" data-autoplay="true"
+            data-navigation="false" data-pagination="false" data-pause-autoplay-on-mouse-enter="true"
+            data-disable-autoplay-on-interaction="false">
+            <div class="swiper-wrapper home-slider-wrapper" data-thq="slider-wrapper">
+              <div class="home-slider-slide swiper-slide" data-thq="slider-slide"></div>
+              <div class="home-slider-slide1 swiper-slide" data-thq="slider-slide"></div>
+              <div class="home-slider-slide2 swiper-slide" data-thq="slider-slide"></div>
             </div>
-            <div data-thq="slider-pagination"
-              class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
-              <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet swiper-pagination-bullet-active">
+            <div class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+              data-thq="slider-pagination">
+              <div class="swiper-pagination-bullet swiper-pagination-bullet-active" data-thq="slider-pagination-bullet">
               </div>
             </div>
-            <div data-thq="slider-button-prev" class="home-slider-button-prev swiper-button-prev"></div>
-            <div data-thq="slider-button-next" class="home-slider-button-next swiper-button-next"></div>
+            <div class="home-slider-button-prev swiper-button-prev" data-thq="slider-button-prev"></div>
+            <div class="home-slider-button-next swiper-button-next" data-thq="slider-button-next"></div>
           </div>
         </div>
-      </div>
-      
-      
-      
-      
+      </section>
       <section class="about section">
         <div class="section__inner">
           <h4 class="section__title" id="about">Про нас</h4>
@@ -499,10 +273,6 @@
           <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4"></iframe>
         </div>
       </section>
-
-
-
-
       <section class="products section">
         <div class="section__inner">
           <h4 class="section__title" id="product">Продукція</h4>
@@ -608,7 +378,6 @@
           </div>
         </div>
       </section>
-
       <section class="branding section">
         <div class="section__inner">
           <h4 class="section__title branding__title" id="branding">Брендування</h4>
@@ -681,7 +450,6 @@
           </div>
         </div>
       </section>
-
       <section class="blog section">
         <div class="section__inner">
           <h4 class="section__title" id="news">Новини</h4>
@@ -741,118 +509,59 @@
           </div>
         </div>
       </section>
-
-
-
-      <footer id="contacts" class="home-footer">
-        <footer class="home-container22">
-          <div class="home-footer-inner">
-            <div class="home-info-list">
-              <div class="home-info-item">
-                <img alt="image" src="public/MyFolder/geo.svg" class="home-geo-icon" />
-                <span class="home-geo-descr">
-                  <span>
-                    Адреса: м. Київ, вул. Богдана Хмельницького, 67
-                  </span>
-                  <br />
-                </span>
-              </div>
-              <div class="home-info-item1">
-                <img alt="image" src="public/MyFolder/phone.svg" class="home-phone-icon" />
-                <span class="home-phone-descr">
-                  Телефон: +380 67 989 34 56
-                </span>
-              </div>
-              <div class="home-info-item2">
-                <img alt="image" src="public/MyFolder/email.svg" class="home-email-icon" />
-                <span class="home-email-descr">
-                  <span>E-mail: lalalalal@gmail.com</span>
-                  <br />
-                </span>
-              </div>
-              <div class="home-info-item3">
-                <img alt="image" src="public/MyFolder/time.svg" class="home-time-icon" />
-                <span class="home-time-descr">
-                  <span class="home-text22">Час роботи:</span>
-                  <br class="home-text23" />
-                  <span class="home-text24">Пн-Пт: 9:00 - 17:00</span>
-                  <br class="home-text25" />
-                  <span class="home-text26">Сб: 9:00 - 16:00</span>
-                  <br />
-                </span>
-              </div>
-            </div>
-            <ul class="home-ul list">
-              <li class="home-li list-item">
-                <div class="home-container23">
-                  <img alt="image" src="public/MyFolder/geo.svg" class="home-image20" />
-                  <span class="home-text28">
-                    <span class="home-text29">
-                      Адреса: м. Київ, вул. Богдана Хмельницького, 67
-                    </span>
-                    <span></span>
-                  </span>
-                </div>
-              </li>
-              <li class="home-li1 list-item">
-                <div class="home-container24">
-                  <img alt="image" src="public/MyFolder/phone.svg" class="home-image21" />
-                  <a href="tel:+380680000000" class="home-link5">
-                    Телефон: +380 67 989 34 56
-                  </a>
-                </div>
-              </li>
-              <li class="home-li2 list-item">
-                <div class="home-container25">
-                  <img alt="image" src="public/MyFolder/email.svg" class="home-image22" />
-                  <a href="mailto:info@cupstore.com?subject=" class="home-link6">
-                    E-mail: info@cupstore.com
-                  </a>
-                </div>
-              </li>
-              <li class="home-li3 list-item">
-                <div class="home-container26">
-                  <img alt="image" src="public/MyFolder/time.svg" class="home-image23" />
-                  <div class="home-container27">
-                    <span class="home-text31">
-                      <span>Час роботи:</span>
-                      <br />
-                    </span>
-                    <span class="home-text34">
-                      <span>Пн-Пт: 9:00 - 17:00</span>
-                      <br />
-                      <span>Сб: 9:00 - 16:00</span>
-                    </span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div class="home-container28">
-              <div class="home-container29">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
-                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="home-copy">
-            <a href="index.html" class="home-navlink4">
-              <img alt="image" src="public/MyFolder/logo.svg" class="home-logo" />
-            </a>
-            <img alt="image" src="public/MyFolder/copyright.svg" class="home-copy-text" />
-          </div>
-        </footer>
-      </footer>
-    </div>
-  </main>
-
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <img class="list-item__img" alt="image" src="public/MyFolder/geo.svg" />
+              <span>
+                Адреса: м. Київ, вул. Богдана Хмельницького, 67
+              </span>
+            </li>
+            <li class="contacts__list-item">
+              <img class="list-item__img" alt="image" src="public/MyFolder/phone.svg" />
+              <a class="list-item__text" href="tel:+380680000000">
+                Телефон: +380 67 989 34 56
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <img class="list-item__img" alt="image" src="public/MyFolder/email.svg" />
+              <a class="list-item__text" href="mailto:info@cupstore.com?subject=">
+                E-mail: info@cupstore.com
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <img class="list-item__img" alt="image" src="public/MyFolder/time.svg" />
+              <span class="time-text">
+                <span>Час роботи:</span>
+              </span>
+              <span class="time-text">
+                <span>Пн-Пт: 9:00 - 17:00</span>
+                <br />
+                <span>Сб: 9:00 - 16:00</span>
+              </span>
+            </li>
+          </ul>
+          <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
+            width="540" height="322" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="footer__copy">
+          <a class="copy__logo" href="index.html">
+            <img class="logo" alt="image" src="public/MyFolder/logo.svg" />
+          </a>
+          <img class="copy__sign" alt="image" src="public/MyFolder/copyright.svg" />
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
-
-
 </body>
-
 </html>

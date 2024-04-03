@@ -16,6 +16,7 @@
   --dl-color-gray-900: #D9D9D9;
   --dl-size-size-16px: 0.8rem;
   --dl-size-size-20px: 1rem;
+  --dl-size-size-32px: 1.6rem;
   --dl-size-size-48px: 2.4rem;
   --dl-size-size-60px: 3rem;
   --dl-size-size-96px: 4.8rem;
@@ -46,22 +47,29 @@
   --dl-space-space-fourunits: 3.2rem;
   --dl-space-space-fiveunits: 4rem;
   --dl-space-space-sixunits: 4.8rem;
+  --dl-space-space-180px: 9rem;
+  --dl-space-space-200px: 10rem;
   --dl-radius-radius-round: 50%;
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius8: 8px;
 }
 
-/*--------------------------------------------------------------------------*/
 html {
-  line-height: 1.15;
   scroll-behavior: smooth;
   font-family: "Bahnschrift";
   font-size: 20px;
+
+  -ms-overflow-style: none;/*IE 10+*/
+  scrollbar-width: none;/*Firefox*/
+}
+
+::-webkit-scrollbar { /*Chrome based*/
+  width: 0px;
+  background: transparent;
 }
 
 body {
-  margin: 0;
   min-width: 1400px;
   /*!!fixed adaptive!!*/
   min-height: 100%;
@@ -79,7 +87,6 @@ body {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  /* border: 2px solid black; */
 }
 
 p,
@@ -100,176 +107,23 @@ figcaption {
   padding: 0;
 }
 
-button {
-  background-color: transparent;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focus,
-[type="button"]:-moz-focus,
-[type="reset"]:-moz-focus,
-[type="submit"]:-moz-focus {
-  outline: 1px dotted ButtonText;
-}
-
 a {
   color: inherit;
   text-decoration: inherit;
-}
-
-input {
-  padding: 2px 4px;
 }
 
 img {
   display: block;
 }
 
-/*-----------------------------------------------------------------*/
-.button {
-  cursor: pointer;
-  transition: 0.3s;
-}
-.button:hover {
-  opacity: 0.5;
-}
-.input {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.textarea {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.list {
-  width: 100%;
-  margin: 1em 0px 1em 0px;
-  display: block;
-  padding: 0px 0px 0px 1.5rem;
-  list-style-type: none;
-  list-style-position: outside;
-}
-.list-item {
-  display: list-item;
-}
-.teleport-show {
-  display: flex !important;
-  transform: translateY(0%) !important;
-}
-.navLink {
-  color: #27272D;
-  cursor: pointer;
-  font-size: 24px;
-  transition: 0.3s;
-  font-family: Inter;
-}
-.navLink:hover {
-  opacity: 0.5;
+button {
+  background-color: transparent;
 }
 
-.social {
-  width: 16px;
-  cursor: pointer;
-  object-fit: cover;
-  transition: 0.3s;
-  text-decoration: none;
-}
-.social:hover {
-  opacity: 0.5;
-}
-.quote {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.accordion-trigger-active {
-  border-color: black !important;
-}
-.accordion-content-active {
-  height: fit-content;
-  max-height: 100% !important;
-}
-.accordion-content {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  overflow: hidden;
-  max-height: 0px;
-  transition: 0.3s;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.accordion-trigger {
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  transition: 0.3s;
-  align-items: flex-start;
-  flex-direction: column;
-  border-bottom-color: transparent;
-  border-bottom-width: 1px;
-}
-.center {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.Content {
-  font-size: 20px;
-  font-family: "Bahnschrift";
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: 75%;
-  text-transform: none;
-  text-decoration: none;
+input {
+  padding: 2px 4px;
 }
 
-
-/* @media(max-width: 991px) {
-  .accordion-content {
-    gap: var(--dl-space-space-unit);
-  }
-} */
-
-
+input:focus {
+  outline: none;
+}
