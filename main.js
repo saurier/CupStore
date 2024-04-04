@@ -1,3 +1,30 @@
+
+function toggle_order() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+
+  let popup = document.getElementById('popup-order');
+  popup.classList.toggle('active');
+}
+
+function toggle_accept() {
+  let popup = document.getElementById('popup-order');
+  popup.classList.toggle('active');
+  let popup_accepted = document.getElementById('popup-accepted');
+  popup_accepted.classList.toggle('active');
+
+
+}
+
+function toggle_thankyou() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+  let popup_accepted = document.getElementById('popup-accepted');
+  popup_accepted.classList.toggle('active');
+}
+
+
+
 const swiper_text = new Swiper('.swiper_text', {
   direction: 'horizontal',
   loop: true,
@@ -49,30 +76,6 @@ const swiper_detail = new Swiper('.detail-slider', {
     prevEl: '.swiper-button-prev',
   },
 })
-
-function toggle_order() {
-  let blur = document.getElementById('blur');
-  blur.classList.toggle('active');
-
-  let popup = document.getElementById('popup-order');
-  popup.classList.toggle('active');
-}
-
-function toggle_accept() {
-  let popup = document.getElementById('popup-order');
-  popup.classList.toggle('active');
-  let popup_accepted = document.getElementById('popup-accepted');
-  popup_accepted.classList.toggle('active');
-
-
-}
-
-function toggle_thankyou() {
-  let blur = document.getElementById('blur');
-  blur.classList.toggle('active');
-  let popup_accepted = document.getElementById('popup-accepted');
-  popup_accepted.classList.toggle('active');
-}
 
 
 
