@@ -4,312 +4,153 @@
 <head>
   <title>Чорний одношаровий стакан - Cup Store</title>
   <meta property="og:title" content="Чорний одношаровий стакан - Cup Store" />
-  <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
   <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
-
-  <style data-tag="reset-style-sheet">
-    html {
-      line-height: 1.15;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
-
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    figure,
-    blockquote,
-    figcaption {
-      margin: 0;
-      padding: 0;
-    }
-
-    button {
-      background-color: transparent;
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
-
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
-
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
-
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    input {
-      padding: 2px 4px;
-    }
-
-    img {
-      display: block;
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-  <style data-tag="default-style-sheet">
-    html {
-      font-family: "Bahnschrift";
-      font-size: 20px;
-    }
-
-    body {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: 75%;
-      line-height: 1.15;
-      color: var(--dl-color-gray-black);
-      background-color: var(--dl-color-gray-white);
-
-    }
-  </style>
 
 
   <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32" />
   <link rel="stylesheet" href="./css/normalize.css" />
+  
   <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="./css/slick-theme.css" />
   <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./detail.css" />
 </head>
 
 <body>
-  <div class="detail-container">
-    <div class="detail-wrapper">
-      <header class="detail-header">
-        <div class="detail-navbar">
-          <header data-thq="thq-navbar" class="detail-navbar-interactive">
-            <div class="detail-branding">
-              <a href="index.html" class="detail-navlink">
-                <img alt="logo" src="public/MyFolder/logo.svg" class="detail-image" />
-              </a>
-            </div>
-            <div data-thq="thq-navbar-nav" data-role="Nav" class="detail-desktop-menu">
-              <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="detail-nav">
-                <nav class="nav-links-links">
-                  <a href="#about" class="nav-links-link navLink">
-                    <span>Про нас</span>
-                  </a>
-                  <a href="#product" class="nav-links-link1 navLink">
-                    <span>Продукція</span>
-                  </a>
-                  <a href="#branding" class="nav-links-link2 navLink">
-                    <span>Брендування</span>
-                  </a>
-                  <a href="#news" class="nav-links-link3 navLink">
-                    <span>Новини</span>
-                  </a>
-                  <a href="#contacts" class="nav-links-link4 navLink">
-                    <span>Контакти</span>
-                  </a>
-                </nav>
-              </nav>
-            </div>
-            <div data-thq="thq-burger-menu" class="detail-burger-menu"></div>
-            <div data-thq="thq-mobile-menu" class="detail-mobile-menu">
-              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="detail-nav1">
-                <div class="detail-top">
-                  <div class="detail-branding1">
-                    <span class="detail-text">Cup Store</span>
-                  </div>
-                  <div data-thq="thq-close-menu" class="detail-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="detail-icon">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                      </path>
-                    </svg>
+  <div class="wrapper">
+    <header class="header branding__header" data-thq="thq-navbar">
+      <div class="header__container">
+        <a class="logo__link" href="index.html">
+          <img class="logo" alt="logo" src="public/MyFolder/logo.svg" />
+        </a>
+        <div class="header__desktop" data-thq="thq-navbar-nav" data-role="Nav">
+          <nav class="desktop__nav" data-thq="thq-navbar-nav-links" data-role="Nav">
+            <a class="nav-link" href="index.html#about">Про нас</a>
+            <a class="nav-link" href="product.html">Продукція</a>
+            <a class="nav-link" href="branding.html">Брендування</a>
+            <a class="nav-link" href="news.html">Новини</a>
+            <a class="nav-link" href="index.html#contacts">Контакти</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="crumbs">
+      <img class="crumbs__bg" alt="image" src="public/MyFolder/crumbs-img-200h.png" />
+      <div class="crumbs__content">
+        <a class="crumbs__link1" href="index.html">
+          <svg width="48" height="48" viewBox="0 0 78 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_250_420)">
+              <path d="M14.5312 24H55.5001L42.3411 72H27.64L14.5312 24Z" fill="#114425" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M44 4.00279L51.1773 4.00225L54.0663 8.00354H15.9242L18.8112 4.00509L44 4.00217V4.00279ZM63 8.00354H58.9999L53.2294 0.0113411V0.00209165L53.2227 0.00209216L53.2212 0L53.2183 0.00209249L48.9998 0.0024108V0.00158691L16.7734 0.00532138V0.0112613L16.7634 0.00407248L10.9877 8.00354H7V12.0035H63V8.00354ZM5.0022 16.0035H65.0022V20.0035H9.14387L24.4438 76.0035H45.5498L59.7541 24.014L59.7561 24.0145V24.005L77.3462 24.0019V24.0035H78.4314L70.8414 51.9944V52.0037L56.2545 52.0062L49.0023 78.5505V78.5563L48.6068 80.0035H21.3848L20.292 76.0035H20.3009L5 20.0002L5.0022 19.9996V16.0035ZM67.7751 48.0042L73.1987 28.0027L62.8121 28.0045L57.3474 48.006L67.7751 48.0042ZM49 84H21V88H49V84Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_250_420">
+                <rect width="78" height="88" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <img class="crumbs-arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+        <a class="crumbs__link2" href="product.html">Продукція</a>
+        <img class="crumbs-arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+        <a class="crumbs__link2" href="product-1layer.html">Одношарові стакани</a>
+        <img class="crumbs-arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+        <a class="crumbs__link2" href="detail.html">Чорний стакан</a>
+      </div>
+    </div>
+    <main class="main detail-main">
+      <h1 class="detail-title">Чорний одношаровий стакан</h1>
+      <div class="detail-inner">
+        <p class="detail-card">
+          Кількість 25 шт/уп;
+          <br />
+          Кількість у ящ 500 шт;
+          <br />
+          Щільність стакану: 400-500 г/м2, 110 мл;
+          <br />
+          Розмір ящ (ш*в*г): 315*254*420 мм;
+          <br />
+          Об’ємна вага: 0,0336 м3;
+          <br />
+          Фактична вага: 2,9 кг;
+          <br />
+          Діаметр кришки: 60 мм; 175 мл;
+          <br />
+          Розмір ящ (ш*в*г)365*295*490 мм;
+          <br />
+          Об’ємна вага: 0,0528 м3;Фактична вага: 4,1 кг;
+          <br />
+          Діаметр кришки: 70 мм; 275 мл;
+          <br />
+          Розмір ящ (ш*в*г) 410*330*550мм;
+          <br />
+          Об’ємна вага: 0,0744 м3;
+          <br />
+          Фактична вага: 5,7 кг;
+          <br />
+          Діаметр кришки: 80 мм;
+        </p>
+        <div class="detail__slider">
+          <div class="swiper-container">
+            <div class="swiper swiper_detail">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img class="slide__img" src="./public/MyFolder/detail-slide-1.png" alt="" />
                   </div>
                 </div>
-                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="header-middle">
-                  <div class="header-links">
-                    <a href="#about" class="header-link navLink">
-                      <span>Про нас</span>
-                    </a>
-                    <a href="#product" class="header-link1 navLink">
-                      <span>Продукція</span>
-                    </a>
-                    <a href="#branding" class="header-link2 navLink">
-                      <span>Брендування</span>
-                    </a>
-                    <a href="#news" class="header-link3 navLink">
-                      <span>Новини</span>
-                    </a>
-                    <a href="#contacts" class="header-link4 navLink">
-                      <span>Контакти</span>
-                    </a>
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img class="slide__img" src="./public/MyFolder/detail-slide-2.jpg" alt="" />
                   </div>
-                  <button class="header-work-with-us button">
-                    <span class="header-text1"><span>Замовити</span></span>
-                  </button>
-                </nav>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img class="slide__img" src="./public/MyFolder/detail-slide-3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img class="slide__img" src="./public/MyFolder/detail-slide-4.jpg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-          </header>
-        </div>
-      </header>
-      <div class="detail-crumbs">
-        <div class="detail-crumbs-container">
-          <div class="detail-crumbs-inner">
-            <a href="product.html" class="detail-navlink1">
-              <span>Продукція</span>
-            </a>
-            <img alt="image" src="public/MyFolder/arrow-right.svg" class="detail-image1" />
-            <a href="product-1layer.html" class="detail-navlink2">
-              <span>Одношарові стакани</span>
-              <br />
-            </a>
-            <img alt="image" src="public/MyFolder/arrow-right.svg" class="detail-image2" />
-            <a href="detail.html" class="detail-navlink3">
-              <span>Чорний</span>
-              <br />
-            </a>
+            <div class="swiper-button-prev">
+              <svg class="swiper-button-prev__svg" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z" 
+                fill="#FFEED3"/>
+                <filter id='shadow' color-interpolation-filters="sRGB">
+                  <feDropShadow dx="2" dy="3" stdDeviation="2" flood-opacity="0.7"/>
+                </filter>  
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="swiper-button-next__svg" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 43L36.2918 24.854L43 21.4999L36.2918 18.1458L0 -0.000171517V6.70804L29.5836 21.4999L0 36.2917V43Z" 
+                fill="#FFEED3"/>
+                <filter id='shadow' color-interpolation-filters="sRGB">
+                  <feDropShadow dx="2" dy="3" stdDeviation="2" flood-opacity="0.7"/>
+                </filter>
+                </svg>
+            </div>
           </div>
         </div>
       </div>
-      <section class="detail-main">
-        <h1 class="detail-title">Чорний одношаровий стакан</h1>
-        <div class="detail-inner">
-          <div class="detail-card">
-            <span>
-              <span>Кількість 25 шт/уп;</span>
-              <br />
-              <span>Кількість у ящ 500 шт;</span>
-              <br />
-              <span>Щільність стакану: 400-500 г/м2, 110 мл;</span>
-              <br />
-              <span>Розмір ящ (ш*в*г): 315*254*420 мм;</span>
-              <br />
-              <span>Об’ємна вага: 0,0336 м3;</span>
-              <br />
-              <span>Фактична вага: 2,9 кг;</span>
-              <br />
-              <span>Діаметр кришки: 60 мм; 175 мл;</span>
-              <br />
-              <span>Розмір ящ (ш*в*г)365*295*490 мм;</span>
-              <br />
-              <span>Об’ємна вага: 0,0528 м3;Фактична вага: 4,1 кг;</span>
-              <br />
-              <span>Діаметр кришки: 70 мм; 275 мл;</span>
-              <br />
-              <span>Розмір ящ (ш*в*г) 410*330*550мм;</span>
-              <br />
-              <span>Об’ємна вага: 0,0744 м3;</span>
-              <br />
-              <span>Фактична вага: 5,7 кг;</span>
-              <br />
-              <span>Діаметр кришки: 80 мм;</span>
-            </span>
-          </div>
-          <div data-thq="slider" data-loop="true" data-autoplay="true" data-navigation="false" data-pagination="false"
-            data-pause-autoplay-on-mouse-enter="true" data-disable-autoplay-on-interaction="true"
-            class="detail-slider swiper">
-            <div data-thq="slider-wrapper" class="swiper-wrapper">
-              <div data-thq="slider-slide" class="detail-slider-slide swiper-slide">
-                <img src="./public/MyFolder/detail-slide-1.png" alt="" />
-              </div>
-              <div data-thq="slider-slide" class="detail-slider-slide1 swiper-slide">
-                <img src="./public/MyFolder/detail-slide-2.jpg" alt="" />
-              </div>
-              <div data-thq="slider-slide" class="detail-slider-slide2 swiper-slide">
-                <img src="./public/MyFolder/detail-slide-3.jpg" alt="" />
-              </div>
-              <div data-thq="slider-slide" class="detail-slider-slide3 swiper-slide">
-                <img src="./public/MyFolder/detail-slide-4.jpg" alt="" />
-              </div>
-            </div>
-            <div data-thq="slider-pagination"
-              class="detail-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
-              <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet swiper-pagination-bullet-active">
-              </div>
-              <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet"></div>
-              <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet"></div>
-            </div>
-            <div data-thq="slider-button-prev" class="detail-slider-button-prev swiper-button-prev">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                  d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-            <div data-thq="slider-button-next" class="detail-slider-button-next swiper-button-next">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="detail-footer">
-        <div class="detail-copy">
-          <img alt="image" src="public/MyFolder/copyright.svg" class="detail-copy-text" />
-        </div>
-      </footer>
-    </div>
+    </main>
+    <footer class="footer">
+      <img class="footer__copy" alt="copyrights" src="public/MyFolder/copyright.svg" />
+    </footer>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
 

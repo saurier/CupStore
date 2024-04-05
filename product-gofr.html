@@ -2,352 +2,177 @@
 <html lang="ua">
 
 <head>
-  <title>Гофровані стакани - Cup Store</title>
+  <title> Гофровані стакани - Cup Store</title>
   <meta property="og:title" content="Гофровані стакани - Cup Store" />
-  <meta name="viewport" content="width=1400px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
   <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
 
-  <style data-tag="reset-style-sheet">
-    html {
-      line-height: 1.15;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
-
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    figure,
-    blockquote,
-    figcaption {
-      margin: 0;
-      padding: 0;
-    }
-
-    button {
-      background-color: transparent;
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
-
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
-
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
-
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    input {
-      padding: 2px 4px;
-    }
-
-    img {
-      display: block;
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-  <style data-tag="default-style-sheet">
-    html {
-      font-family: "Bahnschrift";
-      font-size: 20px;
-    }
-
-    body {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: 75%;
-      line-height: 1.15;
-      color: var(--dl-color-gray-black);
-      background-color: var(--dl-color-gray-white);
-
-    }
-  </style>
-  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
-  <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./product-gofr.css" />
-
+  <link rel="shortcut icon" href="public/logo1.svg" type="icon/png" sizes="32x32"/>
+  <link rel="stylesheet" href="./css/normalize.css"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./product.css"/>
 </head>
 
 <body>
-    <div class="product-gofr-container">
-      <div class="product-gofr-wrapper">
-        <header class="product-gofr-header">
-          <div class="product-gofr-navbar">
-            <header data-thq="thq-navbar" class="product-gofr-navbar-interactive">
-              <div class="product-gofr-branding">
-                <a href="index.html" class="product-gofr-navlink">
-                  <img alt="logo" src="public/MyFolder/logo.svg" class="product-gofr-image" />
-                </a>
-              </div>
-              <div data-thq="thq-navbar-nav" data-role="Nav" class="product-gofr-desktop-menu">
-                <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="product-gofr-nav">
-                  <nav class="nav-links-links">
-                    <a href="#about" class="nav-links-link navLink">
-                      <span>Про нас</span>
-                    </a>
-                    <a href="#product" class="nav-links-link1 navLink">
-                      <span>Продукція</span>
-                    </a>
-                    <a href="#branding" class="nav-links-link2 navLink">
-                      <span>Брендування</span>
-                    </a>
-                    <a href="#news" class="nav-links-link3 navLink">
-                      <span>Новини</span>
-                    </a>
-                    <a href="#contacts" class="nav-links-link4 navLink">
-                      <span>Контакти</span>
-                    </a>
-                  </nav>
-                </nav>
-              </div>
-              <div data-thq="thq-burger-menu" class="product-gofr-burger-menu"></div>
-              <div data-thq="thq-mobile-menu" class="product-gofr-mobile-menu">
-                <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="product-gofr-nav1">
-                  <div class="product-gofr-top">
-                    <div class="product-gofr-branding1">
-                      <span class="product-gofr-text">Cup Store</span>
-                    </div>
-                    <div data-thq="thq-close-menu" class="product-gofr-menu-close">
-                      <svg viewBox="0 0 1024 1024" class="product-gofr-icon">
-                        <path
-                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                        </path>
-                      </svg>
-                    </div>
-                  </div>
-                  <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="header-middle">
-                    <div class="header-links">
-                      <a href="#about" class="header-link navLink">
-                        <span>Про нас</span>
-                      </a>
-                      <a href="#product" class="header-link1 navLink">
-                        <span>Продукція</span>
-                      </a>
-                      <a href="#branding" class="header-link2 navLink">
-                        <span>Брендування</span>
-                      </a>
-                      <a href="#news" class="header-link3 navLink">
-                        <span>Новини</span>
-                      </a>
-                      <a href="#contacts" class="header-link4 navLink">
-                        <span>Контакти</span>
-                      </a>
-                    </div>
-                    <button class="header-work-with-us button">
-                      <span class="header-text1"><span>Замовити</span></span>
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </header>
+    <div class="wrapper">
+      <header class="header product-gofr__header" data-thq="thq-navbar">
+        <div class="header__container">
+          <a class="logo__link" href="index.html">
+            <img class="logo" alt="logo" src="public/MyFolder/logo.svg" />
+          </a>
+          <div class="header__desktop" data-thq="thq-navbar-nav" data-role="Nav">
+            <nav class="desktop__nav" data-thq="thq-navbar-nav-links" data-role="Nav">
+              <a class="nav-link" href="index.html#about">Про нас</a>
+              <a class="nav-link" href="product.html">Продукція</a>
+              <a class="nav-link" href="branding.html">Брендування</a>
+              <a class="nav-link" href="news.html">Новини</a>
+              <a class="nav-link" href="index.html#contacts">Контакти</a>
+            </nav>
           </div>
-        </header>
-        <div class="product-gofr-crumbs">
-          <div class="product-gofr-crumbs-container">
-            <div class="product-gofr-crumbs-inner">
-              <a href="product.html" class="product-gofr-navlink1">
-                Продукція
+        </div>
+      </header>
+      <div class="crumbs">
+        <img class="crumbs__bg" alt="image" src="public/MyFolder/crumbs-img-200h.png" />
+        <div class="crumbs__content">
+          <a class="crumbs__link1" href="index.html">
+            <svg width="48" height="48" viewBox="0 0 78 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_250_420)">
+                <path d="M14.5312 24H55.5001L42.3411 72H27.64L14.5312 24Z" fill="#114425" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M44 4.00279L51.1773 4.00225L54.0663 8.00354H15.9242L18.8112 4.00509L44 4.00217V4.00279ZM63 8.00354H58.9999L53.2294 0.0113411V0.00209165L53.2227 0.00209216L53.2212 0L53.2183 0.00209249L48.9998 0.0024108V0.00158691L16.7734 0.00532138V0.0112613L16.7634 0.00407248L10.9877 8.00354H7V12.0035H63V8.00354ZM5.0022 16.0035H65.0022V20.0035H9.14387L24.4438 76.0035H45.5498L59.7541 24.014L59.7561 24.0145V24.005L77.3462 24.0019V24.0035H78.4314L70.8414 51.9944V52.0037L56.2545 52.0062L49.0023 78.5505V78.5563L48.6068 80.0035H21.3848L20.292 76.0035H20.3009L5 20.0002L5.0022 19.9996V16.0035ZM67.7751 48.0042L73.1987 28.0027L62.8121 28.0045L57.3474 48.006L67.7751 48.0042ZM49 84H21V88H49V84Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_250_420">
+                  <rect width="78" height="88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <img class="crumbs-arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+          <a class="crumbs__link2" href="product.html">Продукція</a>
+          <img class="crumbs-arrow" alt="image" src="public/MyFolder/arrow-right.svg" />
+          <a class="crumbs__link2" href="product-2layer.html">Гофровані стакани</a>
+        </div>
+      </div>
+      <main class="main">
+        <div class="product__cards">
+          <div class="cards__col">
+            <div class="cards__row">
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
               </a>
-              <img alt="image" src="public/MyFolder/arrow-right.svg" class="product-gofr-image1" />
-              <a href="product-gofr.html" class="product-gofr-navlink2">
-                <span>Гофровані стакани</span>
-                <br />
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cards__row">
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a class="card__link" href="detail.html">
+                <div class="product__card">
+                  <div class="card__img-inner">
+                    <img class="card__img" alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"/>
+                  </div>
+                  <div class="card__text-inner">
+                    <h1 class="card__title">Гофровані стакани</h1>
+                    <span class="card__descr">
+                      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis incidunt voluptatibus, id nemo enim animi ex obcaecati inventore, deserunt similique atque totam quo, eligendi sapiente! Repudiandae quasi hic vel?
+                    </span>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
         </div>
-        <section class="product-gofr-catalog">
-          <div class="product-gofr-cards">
-            <div class="product-gofr-cards-col">
-              <div class="product-gofr-cards-row">
-                <div class="product-gofr-card">
-                  <div class="product-gofr-card-img-inner">
-                    <img alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"
-                      class="product-gofr-card-img" />
-                  </div>
-                  <div class="product-gofr-card-text-inner">
-                    <h1 class="product-gofr-card-title">Гофровані стакани</h1>
-                    <span class="product-gofr-card-descr">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card1">
-                  <div class="product-gofr-card-img-inner1">
-                    <img alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"
-                      class="product-gofr-card-img01" />
-                  </div>
-                  <div class="product-gofr-card-text-inner1">
-                    <h1 class="product-gofr-card-title1">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-descr1">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card2">
-                  <div class="product-gofr-card-img-inner2">
-                    <img alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"
-                      class="product-gofr-card-img02" />
-                  </div>
-                  <div class="product-gofr-card-text-inner2">
-                    <h1 class="product-gofr-card-title2">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-descr2">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card3">
-                  <div class="product-gofr-card-img-inner3">
-                    <img alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"
-                      class="product-gofr-card-img03" />
-                  </div>
-                  <div class="product-gofr-card-text-inner3">
-                    <h1 class="product-gofr-card-title3">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-img04">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-gofr-cards-col1">
-              <div class="product-gofr-cards-row1">
-                <div class="product-gofr-card4">
-                  <div class="product-gofr-card-img-inner4">
-                    <img alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"
-                      class="product-gofr-card-img05" />
-                  </div>
-                  <div class="product-gofr-card-text-inner4">
-                    <h1 class="product-gofr-card-title4">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-descr3">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card5">
-                  <div class="product-gofr-card-img-inner5">
-                    <img alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"
-                      class="product-gofr-card-img06" />
-                  </div>
-                  <div class="product-gofr-card-text-inner5">
-                    <h1 class="product-gofr-card-title5">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-descr4">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card6">
-                  <div class="product-gofr-card-img-inner6">
-                    <img alt="image" src="public/MyFolder/products-slide-2-400h.png" loading="lazy"
-                      class="product-gofr-card-img07" />
-                  </div>
-                  <div class="product-gofr-card-text-inner6">
-                    <h1 class="product-gofr-card-title6">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-descr5">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-                <div class="product-gofr-card7">
-                  <div class="product-gofr-card-img-inner7">
-                    <img alt="image" src="public/MyFolder/card-img3-400h.png" loading="lazy"
-                      class="product-gofr-card-img08" />
-                  </div>
-                  <div class="product-gofr-card-text-inner7">
-                    <h1 class="product-gofr-card-title7">
-                      Гофровані стакани
-                    </h1>
-                    <span class="product-gofr-card-img09">
-                      Lorem ipsum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer class="product-gofr-footer">
-          <div class="product-gofr-copy">
-            <img alt="image" src="public/MyFolder/copyright.svg" class="product-gofr-copy-text" />
-          </div>
-        </footer>
-      </div>
-    </div>
-  <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+      </main>
+      <footer class="footer">
+        <img class="footer__copy" alt="copyrights" src="public/MyFolder/copyright.svg" />
+      </footer>
+  </div>
 </body>
 
 </html>

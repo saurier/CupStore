@@ -64,13 +64,41 @@ const swiper_img = new Swiper('.swiper_products', {
   },
 })
 
-const swiper_detail = new Swiper('.detail-slider', {
+// const swiper_detail = new Swiper('.detail-slider', {
+//   loop: true,
+//   grabCursor: true,
+//   mousewheelControl: true,
+//   keyboardControl: true,
+//   lazyLoading: true,
+//   centeredSlides: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// })
+
+const swiper_detail = new Swiper('.swiper_detail', {
+  direction: 'horizontal',
   loop: true,
   grabCursor: true,
   mousewheelControl: true,
   keyboardControl: true,
   lazyLoading: true,
   centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 2000,
+  },
+  // effect: 'coverflow',
+  // coverflowEffect: {
+  //   rotate: 0,
+  //   stretch: 5,
+  //   depth: 150,
+  //   modifier: 3,
+  //   slideShadows: false,
+  //   scale: 1,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
