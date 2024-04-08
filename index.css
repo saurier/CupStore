@@ -371,7 +371,7 @@
 
 .blog__card {
   width: 590px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .blog__card + .blog__card{
@@ -385,6 +385,16 @@
   position: relative;
   align-items: flex-end;
   justify-content: flex-start;
+}
+
+.card__head::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,0) 45%, rgba(0,0,0,0) 100%);
 }
 
 .card__img {
@@ -418,12 +428,22 @@
 }
 
 .card__descr {
-  color: rgb(0, 0, 0);
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1), rgba(0,0,0,0)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   font-size: 1rem;
   text-align: justify;
   font-family: "Bahnschrift";
   font-weight: 400;
   font-stretch: 75%;
+
+  /*Transparent shadow*/
+  /* background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1), rgba(0,0,0,0)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .card__button {

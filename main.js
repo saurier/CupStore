@@ -12,8 +12,6 @@ function toggle_accept() {
   popup.classList.toggle('active');
   let popup_accepted = document.getElementById('popup-accepted');
   popup_accepted.classList.toggle('active');
-
-
 }
 
 function toggle_thankyou() {
@@ -25,6 +23,8 @@ function toggle_thankyou() {
 
 
 
+
+/*------------------------------Sliders---------------------------------------*/
 const swiper_text = new Swiper('.swiper_text', {
   direction: 'horizontal',
   loop: true,
@@ -64,18 +64,6 @@ const swiper_img = new Swiper('.swiper_products', {
   },
 })
 
-// const swiper_detail = new Swiper('.detail-slider', {
-//   loop: true,
-//   grabCursor: true,
-//   mousewheelControl: true,
-//   keyboardControl: true,
-//   lazyLoading: true,
-//   centeredSlides: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// })
 
 const swiper_detail = new Swiper('.swiper_detail', {
   direction: 'horizontal',
@@ -90,15 +78,6 @@ const swiper_detail = new Swiper('.swiper_detail', {
   autoplay: {
     delay: 2000,
   },
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 0,
-  //   stretch: 5,
-  //   depth: 150,
-  //   modifier: 3,
-  //   slideShadows: false,
-  //   scale: 1,
-  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -108,7 +87,7 @@ const swiper_detail = new Swiper('.swiper_detail', {
 
 
 
-
+/*---------------Select-for-popup-order-start------------------------------*/
 
 let x, i, j, length, selectEllength, selElmnt, a, b, c;
 /* Look for any elements with the class "popup-order__row-custom-select": */
@@ -190,3 +169,5 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect); 
+
+/*------------------Select-for-popup-order-end---------------------*/
