@@ -365,7 +365,7 @@ input:focus {
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 98;
 
   white-space: nowrap;
   overflow-y:auto;
@@ -498,7 +498,25 @@ input:focus {
   top: 25%;
   left: 30%;
 }
+/*---------------------wrapper-with-blur--------------------------------------*/
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/MyFolder/bg-body-min-1500w.jpg");
+  background-repeat: repeat-y;
+  transition: 0.5s;
+}
+
+.wrapper#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
 /*-----------------------------header-------------------------------------*/
 
 .header {
@@ -507,7 +525,11 @@ input:focus {
   background-size: cover;
   justify-content: center;
   background-image: url("public/MyFolder/bg-header-200h.jpg");
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .header__container {
@@ -652,28 +674,11 @@ input:focus {
   display: flex;
   font-size: 30px;
 } */
-/*---------------------wrapper-with-blur--------------------------------------*/
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  overflow-x: hidden;
-  flex-direction: column;
-  background-size: cover;
-  background-image: url("public/MyFolder/bg-body-min-1500w.jpg");
-  background-repeat: repeat-y;
-  transition: 0.5s;
-}
-
-.wrapper#blur.active {
-  filter: blur(20px);
-  pointer-events: none;
-  user-select: none;
-}
+/*-------------------------main--------------------------------------------*/
 
 .main{
   flex-grow: 1;
+  padding-top: 132px;
 }
 /*-------------------------------crumbs-----------------------------------*/
 .crumbs {

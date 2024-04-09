@@ -1,11 +1,11 @@
 .detail-main {
-  /* flex: 0 0 auto; */
   width: 1200px;
   display: flex;
   align-self: center;
   margin: var(--dl-space-space-threeunits) auto var(--dl-space-space-fiveunits);
   align-items: flex-start;
   flex-direction: column;
+  padding-top: 0;
 }
 .detail-title {
   font-size: 40px;
