@@ -5,7 +5,7 @@
   min-height: 100%;
   flex-direction: column;
   background-size: cover;
-  background-image: url("public/MyFolder/bg-body-min-1500w.jpg");
+  background-image: url("../images/bg-body-min-1500w.jpg");
   background-repeat: repeat-y;
   transition: 0.5s;
 }

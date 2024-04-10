@@ -76,7 +76,7 @@
   align-items: center;
   background-size: cover;
   justify-content: center;
-  background-image: url('./public/MyFolder/top-slide-1-2000w.jpg');
+  background-image: url('../images/top-slide-1-2000w.jpg');
 
 }
 
@@ -86,7 +86,7 @@
   align-items: center;
   background-size: cover;
   justify-content: center;
-  background-image: url('./public/MyFolder/top-slide-2.jpg');
+  background-image: url('../images/top-slide-2.jpg');
 }
 
 .home-slider-slide2 {
@@ -470,7 +470,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("public/MyFolder/bg-footer-min-1500w.jpg");
+  background-image: url("../images/bg-footer-min-1500w.jpg");
   padding-top: var(--dl-space-space-180px);
   padding-bottom: 71px;
   box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
