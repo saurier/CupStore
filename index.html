@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
   <title>CupStore</title>
   <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="./images/logo.svg" type="icon/png" sizes="32x32" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-
-  <link rel="stylesheet" href="./css/slick.css" />
-  <link rel="stylesheet" href="./css/slick-theme.css" />
-  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/index.css" />
 </head>
@@ -31,32 +24,33 @@
                   fill="var(--dl-color-green)" />
               </svg>
             </div>
-            <label class="popup-order__input-label" for="fname">Ваше ім'я :<br></label>
-            <input class="popup-order__input" type="text" value="" pattern="[a-zA-Z\u0400-\u04FF\s]+" required>
+            <label class="popup-order__input-label" for="name">Ваше ім'я :<br></label>
+            <input id="name" class="popup-order__input" type="text" value="" pattern="[a-zA-Z\u0400-\u04FF\s]+"
+              autocomplete="given-name" required>
           </li>
           <li class="popup-order__col-list-item">
             <div class="svg_container">
-              <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="47" height="46" viewBox="0 0 47 46"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M7.10843 0.787109L8.51729 2.20665L17.9814 11.7424L19.3903 13.162L17.9707 14.5708L12.5808 19.9202C12.6747 20.207 12.7752 20.4919 12.8822 20.7748C13.7853 23.1617 15.1361 25.3495 16.8576 27.2223L16.8658 27.2222C17.3762 27.7778 17.9188 28.3053 18.4916 28.8018C20.2677 30.3416 22.2978 31.5523 24.486 32.3828C24.6526 32.446 24.8202 32.5069 24.9887 32.5656L24.9887 32.566C25.4367 32.7224 25.8908 32.8631 26.3504 32.9876C26.6423 33.0667 26.9356 33.1391 27.2301 33.2047L32.0316 27.3214L33.2961 25.7719L34.8456 27.0364L45.2543 35.5311L46.8038 36.7956L45.5392 38.3451C42.7794 41.7269 40.6594 43.4757 38.5733 44.3307C37.026 44.9648 35.4844 45.0573 34.2375 45.1321L34.2303 45.1325L33.2501 45.1702L33.2499 45.1679C29.9189 45.3455 26.5718 44.9934 23.3352 44.1165C22.3392 43.8466 21.3592 43.5286 20.3986 43.1641C16.4905 41.6833 12.9108 39.4375 9.87194 36.5525C6.43339 33.2881 3.77611 29.2896 2.09824 24.8551C0.911582 21.7188 0.236467 18.4217 0.0901779 15.0892L0.0879022 15.0891L0.0303128 14.1099L0.0300472 14.1027L0.0300468 14.1027C-0.0164583 12.8544 -0.0739509 11.3111 0.407127 9.70965C1.05578 7.55038 2.59074 5.27083 5.68889 2.19598L7.10843 0.787109ZM21.8124 39.4223C18.7996 38.2785 16.0046 36.6115 13.5591 34.4915C11.2003 32.4466 9.21252 30.02 7.67506 27.3199L7.66515 27.32C6.9585 26.0795 6.34751 24.7824 5.8394 23.4395C4.87436 20.889 4.29685 18.2166 4.11905 15.5109L4.07602 15.1053L4.07149 15.1053L4.06662 13.9376L4.06563 13.9376L4.11207 12.0567L4.12254 11.3067L4.12572 11.2921L4.13095 11.2921L4.13101 11.2896L4.12634 11.2892C4.15651 11.1512 4.19333 11.0092 4.23801 10.8605C4.53718 9.86456 5.25232 8.53167 7.1205 6.47759L13.7334 13.1406L11.6466 15.2117L11.6451 15.1907L8.10305 18.6409C8.3564 19.8456 8.70289 21.0324 9.14102 22.1903C10.4178 25.5647 12.4399 28.6074 15.0564 31.0915C17.3692 33.2872 20.0938 34.9964 23.0682 36.1232C23.7997 36.4007 24.5459 36.643 25.3044 36.8484C26.4994 37.1722 27.7141 37.402 28.9377 37.5373L32.0282 33.6773L32.007 33.6778L33.866 31.4L41.139 37.3355C39.2758 39.3941 38.0185 40.2351 37.0563 40.6295C36.9126 40.6884 36.7749 40.7388 36.6404 40.7822L36.6395 40.7776L36.6371 40.7779L36.6376 40.7831L36.6233 40.7877L35.8781 40.8708L34.0104 41.0995L34.0103 41.0985L32.8477 41.2069L32.8472 41.2024L32.4394 41.1989C29.9271 41.2781 27.41 41.0127 24.9591 40.4055L24.9591 40.4038C24.3604 40.2558 23.7659 40.0874 23.1766 39.8988C22.7172 39.7517 22.2623 39.5928 21.8124 39.4223Z"
                   fill="var(--dl-color-green)" />
               </svg>
             </div>
-            <label class="popup-order__input-label" for="fname">Номер телефону :<br></label>
-            <input class="popup-order__input" type="tel" value="" pattern="([0-9+])\w{10,13}+" required>
+            <label class="popup-order__input-label" for="phone">Номер телефону :<br></label>
+            <input id="phone" class="popup-order__input" type="tel" value="" pattern="([0-9+])\w{10,13}+"
+              autocomplete="tel" required>
           </li>
           <li class="popup-order__col-list-item">
             <div class="svg_container">
-              <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="48" height="29" viewBox="0 0 48 29"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="48" height="29" viewBox="0 0 48 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M48 0.212891H44H4.00004H4.25093e-05V0.213085H0V1.01271L4.25093e-05 1.01274V4.21289V24.2129V28.2129H4.00004H44H48V24.2129V4.21289V3.71289H48V0.212891ZM44 4.21838L24.0039 20.2129L4.00084 4.21289H4.00004V24.2129H44V4.21838ZM10.4046 4.21289L24.0039 15.0907L37.6032 4.21289H10.4046Z"
                   fill="var(--dl-color-green)" />
               </svg>
             </div>
-            <label class="popup-order__input-label" for="fname">E-mail :<br></label>
-            <input class="popup-order__input" type="email" value="" pattern="[a-zA-Z0-9@_.-]+" required>
+            <label class="popup-order__input-label" for="email">E-mail :<br></label>
+            <input id="email" class="popup-order__input" type="email" value="" pattern="[a-zA-Z0-9@_.-]+"
+              autocomplete="email" required>
           </li>
         </ul>
         <ul class="popup-order__list-row">
@@ -69,10 +63,10 @@
                     fill="var(--dl-color-green)" />
                 </svg>
               </div>
-              <label class="popup-order__row-select-label" for="typeOfProduct">Тип продукту :</label>
+              <label class="popup-order__row-select-label" for="type">Тип продукту :</label>
             </div>
             <div class="popup-order__row-custom-select">
-              <select class="popup-order__row-select" name="typeOfProduct" id="typeOfProduct" required>
+              <select class="popup-order__row-select" name="type" id="type" required>
                 <option value="Не визначився">Не визначився</option>
                 <option value="Одношаровий стакан">Одношаровий стакан</option>
                 <option value="Двошаровий стакан">Двошаровий стакан</option>
@@ -90,10 +84,10 @@
                     fill="var(--dl-color-green)" />
                 </svg>
               </div>
-              <label class="popup-order__row-select-label" for="sizeOfProduct">Розмір :</label>
+              <label class="popup-order__row-select-label" for="size">Розмір :</label>
             </div>
             <div class="popup-order__row-custom-select">
-              <select class="popup-order__row-select" name="sizeOfProduct" id="sizeOfProduct" required>
+              <select class="popup-order__row-select" name="size" id="size" required>
                 <option value="Не визначився">Не визначився</option>
                 <optgroup label="Стакан">
                   <option value="110ml">110ml</option>
@@ -134,8 +128,8 @@
         </ul>
         <ul class="popup-order__list-col">
           <li class="popup-order__col-list-item">
-            <label class="popup-order__row-file-label" for="fname">Завантажити файли у векторі :</label>
-            <label class="popup-order__custom-label-file-input" for="file-upload">
+            <p class="popup-order__row-file-label">Завантажити файли у векторі :</p>
+            <label class="popup-order__custom-label-file-input" for="file">
               <div class="box_container">
                 <div class="svg_container">
                   <svg width="63" height="52" viewBox="0 0 63 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,12 +141,12 @@
                 Завантажити
               </div>
             </label>
-            <input class="popup-order__input" id="file-upload" type="file" accept="image/svg" required>
+            <input class="popup-order__input" id="file" type="file" name="file" accept="image/svg" required>
           </li>
         </ul>
         <button class="popup-order__button-close" type="button" onclick="toggle_order()">
           <a class="popup-order__button-cross">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="transparent" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M24 26.8284L45 47.8284L47.8284 45L26.8284 24L48 2.82843L45.1716 0L24 21.1716L2.82843 0L0 2.82843L21.1716 24L0.171574 45L3 47.8284L24 26.8284Z"
                 fill="black" />
@@ -181,13 +175,13 @@
     </div>
   </div>
   <div class="wrapper" id="blur">
-    <header class="header" data-thq="thq-navbar">
+    <header class="header">
       <div class="header__container">
         <a class="logo__link" href="./index.html">
           <img class="logo" alt="logo" src="./images/logo.svg" />
         </a>
-        <div class="header__desktop" data-thq="thq-navbar-nav" data-role="Nav">
-          <nav class="desktop__nav" data-thq="thq-navbar-nav-links" data-role="Nav">
+        <div class="header__desktop">
+          <nav class="desktop__nav">
             <a class="nav-link" href="#about">Про нас</a>
             <a class="nav-link" href="#product">Продукція</a>
             <a class="nav-link" href="#branding">Брендування</a>
@@ -206,27 +200,30 @@
             Замовити
           </button>
           <img class="top__img" alt="image" src="./images/cover-1500h.png" />
-          <div class="home-slider swiper" data-thq="slider" data-loop="true" data-autoplay="true"
-            data-navigation="false" data-pagination="false" data-pause-autoplay-on-mouse-enter="true"
-            data-disable-autoplay-on-interaction="false">
-            <div class="swiper-wrapper home-slider-wrapper" data-thq="slider-wrapper">
-              <div class="home-slider-slide swiper-slide" data-thq="slider-slide"></div>
-              <div class="home-slider-slide1 swiper-slide" data-thq="slider-slide"></div>
-              <div class="home-slider-slide2 swiper-slide" data-thq="slider-slide"></div>
-            </div>
-            <div class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
-              data-thq="slider-pagination">
-              <div class="swiper-pagination-bullet swiper-pagination-bullet-active" data-thq="slider-pagination-bullet">
+          <div class="swiper swiper-home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/top-slide-1-2000w.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/blog-1-500h.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/top-slide-2.jpg" alt="">
+                </div>
               </div>
             </div>
-            <div class="home-slider-button-prev swiper-button-prev" data-thq="slider-button-prev"></div>
-            <div class="home-slider-button-next swiper-button-next" data-thq="slider-button-next"></div>
           </div>
         </div>
       </section>
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="section__inner">
-          <h4 class="section__title" id="about">Про нас</h4>
+          <h4 class="section__title">Про нас</h4>
           <p class="about__descr">
             Паперові стакани від компанії «WestCupGroup» виготовляються у
             наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
@@ -240,9 +237,9 @@
           <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4" loading="lazy"></iframe>
         </div>
       </section>
-      <section class="products section">
+      <section class="products section" id="product">
         <div class="section__inner">
-          <h4 class="section__title" id="product">Продукція</h4>
+          <h4 class="section__title">Продукція</h4>
           <p class="products__descr">
             Паперові стакани від компанії «WestCupGroup» виготовляються у
             наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
@@ -251,7 +248,7 @@
             кінцевого продукту.
           </p>
           <div class="products__slider">
-            <div class="swiper-container">
+            <div class="products__swiper-container">
               <div class="swiper swiper_products">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -287,18 +284,10 @@
                 </div>
               </div>
               <div class="swiper-button-prev">
-                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
-                    fill="black"></path>
-                </svg>
+                <img src="./images/arrow-left-slider.svg" alt="" class="btn-prev">
               </div>
               <div class="swiper-button-next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
-                    fill="black"></path>
-                </svg>
+                <img src="./images/arrow-right-slider.svg" alt="" class="btn-next">
               </div>
 
               <div class="swiper swiper_text">
@@ -345,33 +334,33 @@
           </div>
         </div>
       </section>
-      <section class="branding section">
+      <section class="branding section" id="branding">
         <div class="section__inner">
-          <h4 class="section__title branding__title" id="branding">Брендування</h4>
+          <h4 class="section__title branding__title">Брендування</h4>
           <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
           <div class="branding__content">
             <div class="branding__gallery">
               <div class="gallery-row1">
                 <div class="gallery-row1col1">
                   <div class="gallery-card">
-                    <img class="image01" alt="image" src="./images/gallery-1-500h.jpg" loading="lazy"/>
+                    <img class="image01" alt="image" src="./images/gallery-1-500h.jpg" loading="lazy" />
                   </div>
                 </div>
                 <div class="gallery-row1col2">
                   <div class="gallery-row1col2-row1">
                     <div class="gallery-card">
-                      <img class="image02" alt="image" src="./images/gallery-2-500w.jpg" loading="lazy"/>
+                      <img class="image02" alt="image" src="./images/gallery-2-500w.jpg" loading="lazy" />
                     </div>
                     <div class="gallery-card">
-                      <img class="image03" alt="image" src="./images/gallery-3-300w.jpg" loading="lazy"/>
+                      <img class="image03" alt="image" src="./images/gallery-3-300w.jpg" loading="lazy" />
                     </div>
                   </div>
                   <div class="gallery-row1col2-row2">
                     <div class="gallery-card">
-                      <img class="image04" alt="image" src="./images/gallery-4-300h.jpg" loading="lazy"/>
+                      <img class="image04" alt="image" src="./images/gallery-4-300h.jpg" loading="lazy" />
                     </div>
                     <div class="gallery-card">
-                      <img class="image05" alt="image" src="./images/gallery-5-300h.jpg" loading="lazy"/>
+                      <img class="image05" alt="image" src="./images/gallery-5-300h.jpg" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -379,28 +368,28 @@
               <div class="gallery-row2">
                 <div class="gallery-row2col1">
                   <div class="gallery-card">
-                    <img class="image06" alt="image" src="./images/gallery-6-200h.jpg" loading="lazy"/>
+                    <img class="image06" alt="image" src="./images/gallery-6-200h.jpg" loading="lazy" />
                   </div>
                   <div class="gallery-card">
-                    <img class="image07" alt="image" src="./images/gallery-7-300h.jpg" loading="lazy"/>
+                    <img class="image07" alt="image" src="./images/gallery-7-300h.jpg" loading="lazy" />
                   </div>
                 </div>
                 <div class="gallery-row2col2">
                   <div class="gallery-card">
-                    <img class="image08" alt="image" src="./images/gallery-8-300w.jpg" loading="lazy"/>
+                    <img class="image08" alt="image" src="./images/gallery-8-300w.jpg" loading="lazy" />
                   </div>
                 </div>
                 <div class="gallery-row2col3">
                   <div class="gallery-card">
-                    <img class="image09" alt="image" src="./images/gallery-9-400h.jpg" loading="lazy"/>
+                    <img class="image09" alt="image" src="./images/gallery-9-400h.jpg" loading="lazy" />
                   </div>
                   <div class="gallery-card">
-                    <img class="image10" alt="image" src="./images/gallery-10-200h.jpg" loading="lazy"/>
+                    <img class="image10" alt="image" src="./images/gallery-10-200h.jpg" loading="lazy" />
                   </div>
                 </div>
                 <div class="gallery-row2col4">
                   <div class="gallery-card">
-                    <img class="image11" alt="image" src="./images/gallery-11-500h.jpg" loading="lazy"/>
+                    <img class="image11" alt="image" src="./images/gallery-11-500h.jpg" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -409,17 +398,16 @@
               <button class="button" type="button" onclick="toggle_order()">
                 <a class="button__text">Замовити</a>
               </button>
-              <a href="./pages/branding.html" class="button button-showmore">
-                Більше прикладів
-                <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
+              <a href="./pages/branding.html" class="button button-showmore">Більше прикладів<img class="button__arrow"
+                  alt="image" src="./images/arrow-right.svg" />
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="blog section">
+      <section class="blog section" id="news">
         <div class="section__inner">
-          <h4 class="section__title" id="news">Новини</h4>
+          <h4 class="section__title">Новини</h4>
           <div class="blog__content">
             <div class="blog__cards">
               <div class="blog__card">
@@ -446,7 +434,7 @@
               </div>
               <div class="blog__card">
                 <div class="card__head">
-                  <img class="card__img" alt="image" src="./images/blog-2-700w.jpg" loading="lazy"/>
+                  <img class="card__img" alt="image" src="./images/blog-2-700w.jpg" loading="lazy" />
                   <p class="card__title">Заголовок статті</p>
                 </div>
                 <div class="card__content">
@@ -461,7 +449,7 @@
                   <div class="card__button">
                     <a class="button button-readnext" href="./pages/news.html#news2">
                       Читати далі
-                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" loading="lazy"/>
+                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" loading="lazy" />
                     </a>
                   </div>
                 </div>
@@ -470,65 +458,117 @@
             <div class="blog__buttons">
               <a class="button button-showmore" href="./pages/news.html">
                 Більше новин
-                <img class="button__arrow" alt="image" src="../images/arrow-right.svg" />
+                <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
               </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer-main" id="contacts">
+
       <div class="footer-main__inner">
+
         <div class="footer-main__contacts">
+
           <ul class="contacts__list">
+
             <li class="contacts__list-item">
+
               <img class="list-item__img" alt="image" src="./images/geo.svg" />
+
               <a class="list-item__text" href="https://www.google.com/maps/search/?api=1&query=50.448508,30.4956964">
+
                 Адреса: м. Київ, вул. Богдана Хмельницького, 67
+
               </a>
+
             </li>
+
             <li class="contacts__list-item">
+
               <img class="list-item__img" alt="image" src="./images/phone.svg" />
+
               <a class="list-item__text" href="tel:+380680000000">
+
                 Телефон: +380 67 989 34 56
+
               </a>
+
             </li>
+
             <li class="contacts__list-item">
+
               <img class="list-item__img" alt="image" src="./images/email.svg" />
+
               <a class="list-item__text" href="mailto:info@cupstore.com?subject=">
+
                 E-mail: info@cupstore.com
+
               </a>
+
             </li>
+
             <li class="contacts__list-item">
+
               <img class="list-item__img" alt="image" src="./images/time.svg" />
+
               <p class="time-text">
+
                 <span>Час роботи:</span>
+
               </p>
+
               <p class="time-text">
+
                 <span>Пн-Пт: 9:00 - 17:00</span>
+
                 <br />
+
                 <span>Сб: 9:00 - 16:00</span>
+
               </p>
+
             </li>
+
           </ul>
+
           <iframe class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
             width="540" height="322" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
+
           </iframe>
+
         </div>
+
         <div class="footer-main__copy">
+
           <a class="copy-main__logo" href="./index.html">
+
             <img class="logo" alt="image" src="./images/logo.svg" />
+
           </a>
+
           <img class="copy-main__sign" alt="image" src="./images/copyright.svg" />
+
         </div>
+
       </div>
+
     </footer>
+
   </div>
 
-  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts" data-section-id="navbar"></script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
+
+  <script src="./js/main.min.js"></script>
+
 </body>
+
+
+
 </html>
