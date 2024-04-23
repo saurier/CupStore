@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <title>CupStore</title>
+  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta charset="utf-8" />
+  <link rel="icon" href="../images/favicon.svg" type="image/svg"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <!--=include popup-order.html-->
+  <!--=include popup-accepted.html-->
+  <div class="wrapper" id="blur">
+    <!--=include header.html-->
+    <main class="main">
+      <section class="top">
+        <div class="top__inner">
+          <h4 class="top__title section__title">Брендування</h4>
+          <p class="top__descr">Друк вашого дизайну на паперових стаканах</p>
+          <button class="button button-showmore top__button" type="button" onclick="toggle_order()">
+            Замовити
+          </button>
+          <img class="top__img" alt="image" src="./images/cover-1500h.png" />
+          <div class="swiper swiper-home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/top-slide-1-2000w.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/blog-1-500h.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img class="slide__img" src="./images/top-slide-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="section__inner">
+          <h4 class="section__title">Про нас</h4>
+          <p class="about__descr">
+            Паперові стакани від компанії «WestCupGroup» виготовляються у
+            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
+            Виробництво якісних паперових стаканчиків відбувається
+            виключно на високоякісному обладнанні, що є гарантом високої
+            якості кінцевого продукту. Ми виготовляємо як одношарові
+            паперові стаканчики, так і двошарові паперові стаканчики.
+            Європейський картон не дає паперовому стакану зіпсуватись
+            навіть після його тривалого контакту з напоєм.
+          </p>
+          <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4" loading="lazy"></iframe>
+        </div>
+      </section>
+      <section class="products section" id="product">
+        <div class="section__inner">
+          <h4 class="section__title">Продукція</h4>
+          <p class="products__descr">
+            Паперові стакани від компанії «WestCupGroup» виготовляються у
+            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
+            Виробництво якісних паперових стаканчиків відбувається виключно
+            на високоякісному обладнанні, що є гарантом високої якості
+            кінцевого продукту.
+          </p>
+          <div class="products__slider">
+            <div class="products__swiper-container">
+              <div class="swiper swiper_products">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./images/products-slide-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev">
+                <!-- <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
+                    fill="black"></path>
+                </svg> -->
+                <img src="../images/arrow-left-slider.svg" alt="" class="btn-prev">
+              </div>
+              <div class="swiper-button-next">
+                <!-- <svg width="43" height="43" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
+                    fill="black"></path>
+                </svg> -->
+                <img src="../images/arrow-right-slider.svg" alt="" class="btn-next">
+              </div>
+
+              <div class="swiper swiper_text">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Гофровані</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Гофровані</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Одношарові</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="txt">Двошарові</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__buttons">
+            <a class="button button-showmore" href="./pages/product.html">
+              Детальніше
+              <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="branding section" id="branding">
+        <div class="section__inner">
+          <h4 class="section__title branding__title">Брендування</h4>
+          <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
+          <div class="branding__content">
+            <div class="branding__gallery">
+              <div class="gallery-row1">
+                <div class="gallery-row1col1">
+                  <div class="gallery-card">
+                    <img class="image01" alt="image" src="./images/gallery-1-500h.jpg" loading="lazy" />
+                  </div>
+                </div>
+                <div class="gallery-row1col2">
+                  <div class="gallery-row1col2-row1">
+                    <div class="gallery-card">
+                      <img class="image02" alt="image" src="./images/gallery-2-500w.jpg" loading="lazy" />
+                    </div>
+                    <div class="gallery-card">
+                      <img class="image03" alt="image" src="./images/gallery-3-300w.jpg" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="gallery-row1col2-row2">
+                    <div class="gallery-card">
+                      <img class="image04" alt="image" src="./images/gallery-4-300h.jpg" loading="lazy" />
+                    </div>
+                    <div class="gallery-card">
+                      <img class="image05" alt="image" src="./images/gallery-5-300h.jpg" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-row2">
+                <div class="gallery-row2col1">
+                  <div class="gallery-card">
+                    <img class="image06" alt="image" src="./images/gallery-6-200h.jpg" loading="lazy" />
+                  </div>
+                  <div class="gallery-card">
+                    <img class="image07" alt="image" src="./images/gallery-7-300h.jpg" loading="lazy" />
+                  </div>
+                </div>
+                <div class="gallery-row2col2">
+                  <div class="gallery-card">
+                    <img class="image08" alt="image" src="./images/gallery-8-300w.jpg" loading="lazy" />
+                  </div>
+                </div>
+                <div class="gallery-row2col3">
+                  <div class="gallery-card">
+                    <img class="image09" alt="image" src="./images/gallery-9-400h.jpg" loading="lazy" />
+                  </div>
+                  <div class="gallery-card">
+                    <img class="image10" alt="image" src="./images/gallery-10-200h.jpg" loading="lazy" />
+                  </div>
+                </div>
+                <div class="gallery-row2col4">
+                  <div class="gallery-card">
+                    <img class="image11" alt="image" src="./images/gallery-11-500h.jpg" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="branding__buttons">
+              <button class="button" type="button" onclick="toggle_order()">
+                <a class="button__text">Замовити</a>
+              </button>
+              <a href="./pages/branding.html" class="button button-showmore">Більше прикладів<img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog section" id="news">
+        <div class="section__inner">
+          <h4 class="section__title">Новини</h4>
+          <div class="blog__content">
+            <div class="blog__cards">
+              <div class="blog__card">
+                <div class="card__head">
+                  <img class="card__img" alt="image" src="./images/blog-1-700w.jpg" />
+                  <p class="card__title">Заголовок статті</p>
+                </div>
+                <div class="card__content">
+                  <p class="card__descr">
+                    Паперові стакани від компанії «WestCupGroup»
+                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                    280 мл, 420 мл, 500 мл. Виробництво якісних
+                    паперових стаканчиків відбувається виключно на
+                    високоякісному обладнанні, що є гарантом високої
+                    якості кінцевого продукту...
+                  </p>
+                  <div class="card__button">
+                    <a class="button button-readnext" href="./pages/news.html#news1">
+                      Читати далі
+                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog__card">
+                <div class="card__head">
+                  <img class="card__img" alt="image" src="./images/blog-2-700w.jpg" loading="lazy" />
+                  <p class="card__title">Заголовок статті</p>
+                </div>
+                <div class="card__content">
+                  <p class="card__descr">
+                    Паперові стакани від компанії «WestCupGroup»
+                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
+                    280 мл, 420 мл, 500 мл. Виробництво якісних
+                    паперових стаканчиків відбувається виключно на
+                    високоякісному обладнанні, що є гарантом високої
+                    якості кінцевого продукту...
+                  </p>
+                  <div class="card__button">
+                    <a class="button button-readnext" href="./pages/news.html#news2">
+                      Читати далі
+                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__buttons">
+              <a class="button button-showmore" href="./pages/news.html">
+                Більше новин
+                <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=include footer.html-->
