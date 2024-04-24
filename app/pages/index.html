@@ -3,7 +3,7 @@
 
 <head>
   <title>CupStore</title>
-  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
   <link rel="icon" href="../images/favicon.svg" type="image/svg"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -27,20 +27,25 @@
           <img class="top__img" alt="image" src="./images/cover-1500h.png" />
           <div class="swiper swiper-home">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/top-slide-1-2000w.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-1.avif);">
+                <!--<div class="swiper-zoom-container">
+                  <img class="slide__img" src="../images/top-slider-1.avif" alt="">
+                </div>-->
               </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/blog-1-500h.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-2.avif);">
+                <!--<div class="swiper-zoom-container">
+                  <img class="slide__img" src="../images/top-slider-2.avif" alt="">
+                </div>-->
               </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/top-slide-2.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-3.avif);">
+                <!--<div class="swiper-zoom-container">
+                  <img class="slide__img" src="../images/top-slider-3.avif" alt="">
+                </div>-->
+              </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-4.avif);">
+                <!--<div class="swiper-zoom-container">
+                  <img class="slide__img" src="../images/top-slider-4.avif" alt="">
+                </div>-->
               </div>
             </div>
           </div>
@@ -59,7 +64,7 @@
             Європейський картон не дає паперовому стакану зіпсуватись
             навіть після його тривалого контакту з напоєм.
           </p>
-          <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4" loading="lazy"></iframe>
+          <iframe class="about__video" width="560px" height="315px" src="https://www.youtube.com/embed/DeQkMK5LME4" loading="lazy"></iframe>
         </div>
       </section>
       <section class="products section" id="product">
@@ -74,34 +79,34 @@
           </p>
           <div class="products__slider">
             <div class="products__swiper-container">
-              <div class="swiper swiper_products">
+              <div class="swiper swiper__products">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-3.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-2.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-3.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
@@ -109,36 +114,14 @@
                 </div>
               </div>
               <div class="swiper-button-prev">
-                <!-- <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M43 42.9999L6.70813 24.8539L0 21.4999L6.70813 18.1458L43 -0.000244141V6.70801L13.4164 21.4999L43 36.2917V42.9999Z"
-                    fill="black"></path>
-                </svg> -->
-                <img src="../images/arrow-left-slider.svg" alt="" class="btn-prev">
+                <img class="btn-prev" src="../images/arrow-left-slider.svg" alt="" >
               </div>
               <div class="swiper-button-next">
-                <!-- <svg width="43" height="43" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 24.0001L19.5279 14.2361L24 12L19.5279 9.76397L0 0V4.47214L15.0557 12L0 19.5279V24.0001Z"
-                    fill="black"></path>
-                </svg> -->
-                <img src="../images/arrow-right-slider.svg" alt="" class="btn-next">
+                <img class="btn-next" src="../images/arrow-right-slider.svg" alt="" >
               </div>
 
               <div class="swiper swiper_text">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p class="txt">Одношарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Гофровані</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
                   <div class="swiper-slide">
                     <p class="txt">Одношарові</p>
                   </div>
@@ -170,7 +153,7 @@
         </div>
       </section>
       <section class="branding section" id="branding">
-        <div class="section__inner">
+        <div class="section__inner branding__inner">
           <h4 class="section__title branding__title">Брендування</h4>
           <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
           <div class="branding__content">

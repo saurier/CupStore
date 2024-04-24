@@ -1,3 +1,10 @@
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu__list--active');
+});
+
 
 function toggle_order() {
   let blur = document.getElementById('blur');
@@ -33,9 +40,9 @@ const swiper_home = new Swiper('.swiper-home', {
   centeredSlides: true,
   slidesPerView: 1,
   spaceBetween: 40,
-  autoplay: {
+  /*autoplay: {
     delay: 2000,
-  }
+  }*/
 })
 
 
@@ -47,7 +54,7 @@ const swiper_text = new Swiper('.swiper_text', {
   spaceBetween: 10,
 })
 
-const swiper_img = new Swiper('.swiper_products', {
+const swiper_img = new Swiper('.swiper__products', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
@@ -55,17 +62,17 @@ const swiper_img = new Swiper('.swiper_products', {
   keyboardControl: true,
   lazyLoading: true,
   centeredSlides: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
-  autoplay: {
+  slidesPerView: 'auto',
+  /*spaceBetween: 20,*/
+  /*autoplay: {
     delay: 2000,
-  },
+  },*/
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 0,
-    stretch: 5,
-    depth: 130,
-    modifier: 3,
+    stretch: 15,
+    depth: 110,
+    modifier: 2,
     slideShadows: false,
     scale: 1,
   },
@@ -89,9 +96,9 @@ const swiper_detail = new Swiper('.swiper_detail', {
   centeredSlides: true,
   slidesPerView: 1,
   spaceBetween: 40,
-  autoplay: {
+  /*autoplay: {
     delay: 2000,
-  },
+  },*/
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
