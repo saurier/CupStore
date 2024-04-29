@@ -3,16 +3,16 @@
 
 <head>
   <title>CupStore</title>
-  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
-  <link rel="icon" href="./images/favicon.svg" type="image/svg" />
+  <link rel="icon" href="./sprite.svg#logo" type="image/svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
-  <div class="popup popup-order" id="popup-order">
+  <div class="popup popup-order" id="popup-order" style="background-image: url(../images/bg-popup.jpg);">
     <div class="popup__container">
       <form id="order" method="POST" action="" class="order" autocomplete="off">
         <ul class="popup-order__list-col">
@@ -153,14 +153,14 @@
             </svg>
           </a>
         </button>
-
+  
         <button class="popup-order__button-send button" type="submit" form="order" onclick="toggle_accept()">
           <a class="popup-order__button-text">Надіслати замовлення</a>
         </button>
       </form>
     </div>
   </div>
-  <div class="popup popup-accepted" id="popup-accepted">
+  <div class="popup popup-accepted" id="popup-accepted" style="background-image: url(../images/bg-popup.jpg);">
     <div class="popup-accepted__container">
       <div class="popup-accepted__decor">
         <div class="popup-accepted__circle">
@@ -174,19 +174,36 @@
       </button>
     </div>
   </div>
-  <div class="wrapper" id="blur">
-    <header class="header">
+  <div class="wrapper" id="blur" style=" background-image: url(../images/bg-body-min-1500w.jpg);">
+    <header class="header" style="background-image: url(../images/bg-header-200h.jpg);">
       <div class="header__container">
         <a class="logo__link" href="./index.html">
           <img class="logo" alt="logo" src="./images/logo.svg" />
         </a>
         <div class="header__desktop">
-          <nav class="desktop__nav">
-            <a class="nav-link" href="#about">Про нас</a>
-            <a class="nav-link" href="#product">Продукція</a>
-            <a class="nav-link" href="#branding">Брендування</a>
-            <a class="nav-link" href="#news">Новини</a>
-            <a class="nav-link" href="#contacts">Контакти</a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#about">Про нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#product">Продукція</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#branding">Брендування</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#news">Новини</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -196,26 +213,19 @@
         <div class="top__inner">
           <h4 class="top__title section__title">Брендування</h4>
           <p class="top__descr">Друк вашого дизайну на паперових стаканах</p>
-          <button class="button button-showmore top__button" type="button" onclick="toggle_order()">
+          <button class="top__button button-showmore button" type="button" onclick="toggle_order()">
             Замовити
           </button>
           <img class="top__img" alt="image" src="./images/cover-1500h.png" />
           <div class="swiper swiper-home">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/top-slide-1-2000w.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-1.avif);">
               </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/blog-1-500h.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-2.avif);">
               </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img class="slide__img" src="./images/top-slide-2.jpg" alt="">
-                </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-3.avif);">
+              </div>
+              <div class="swiper-slide" style="background-image: url(../images/top-slider-4.avif);">
               </div>
             </div>
           </div>
@@ -234,7 +244,9 @@
             Європейський картон не дає паперовому стакану зіпсуватись
             навіть після його тривалого контакту з напоєм.
           </p>
-          <iframe class="about__video" src="https://www.youtube.com/embed/DeQkMK5LME4" loading="lazy"></iframe>
+          <iframe class="about__video" width="560px" height="315px"
+            src="https://www.youtube.com/embed/qs9rEvRT7XM?si=JNZz3dUu3HpHL5P5" loading="lazy"></iframe>
+
         </div>
       </section>
       <section class="products section" id="product">
@@ -249,34 +261,34 @@
           </p>
           <div class="products__slider">
             <div class="products__swiper-container">
-              <div class="swiper swiper_products">
+              <div class="swiper swiper__products">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-3.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-2.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-3.png" alt="" />
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products__slide">
                     <div class="swiper-zoom-container">
                       <img src="./images/products-slide-1.png" alt="" />
                     </div>
@@ -284,26 +296,14 @@
                 </div>
               </div>
               <div class="swiper-button-prev">
-                <img src="./images/arrow-left-slider.svg" alt="" class="btn-prev">
+                <img class="btn-prev" src="../images/arrow-left-slider.svg" alt="">
               </div>
               <div class="swiper-button-next">
-                <img src="./images/arrow-right-slider.svg" alt="" class="btn-next">
+                <img class="btn-next" src="../images/arrow-right-slider.svg" alt="">
               </div>
 
               <div class="swiper swiper_text">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p class="txt">Одношарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Гофровані</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
                   <div class="swiper-slide">
                     <p class="txt">Одношарові</p>
                   </div>
@@ -335,61 +335,67 @@
         </div>
       </section>
       <section class="branding section" id="branding">
-        <div class="section__inner">
+        <div class="section__inner branding__inner">
           <h4 class="section__title branding__title">Брендування</h4>
           <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
           <div class="branding__content">
-            <div class="branding__gallery">
-              <div class="gallery-row1">
-                <div class="gallery-row1col1">
-                  <div class="gallery-card">
-                    <img class="image01" alt="image" src="./images/gallery-1-500h.jpg" loading="lazy" />
-                  </div>
-                </div>
-                <div class="gallery-row1col2">
-                  <div class="gallery-row1col2-row1">
-                    <div class="gallery-card">
-                      <img class="image02" alt="image" src="./images/gallery-2-500w.jpg" loading="lazy" />
+            <div class="branding__gallery branding__gallery-desktop">
+              <figure class="gallery-card item1">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-1-500h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item2">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-2-500w.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item3">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-3-300w.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item4">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-4-300h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item5">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-5-300h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item6">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-6-200h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item7">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-7-300h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item8">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-8-300w.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item9">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-9-400h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item10">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-10-200h.jpg" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item11">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-11-500h.jpg" loading="lazy" />
+              </figure>
+            </div>
+            <div class="branding__gallery-mobile">
+              <div class="branding__swiper-container">
+                <div class="swiper swiper__branding">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-1-500h.avif);">
                     </div>
-                    <div class="gallery-card">
-                      <img class="image03" alt="image" src="./images/gallery-3-300w.jpg" loading="lazy" />
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-2-500w.avif);">
                     </div>
-                  </div>
-                  <div class="gallery-row1col2-row2">
-                    <div class="gallery-card">
-                      <img class="image04" alt="image" src="./images/gallery-4-300h.jpg" loading="lazy" />
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-3-300w.avif);">
                     </div>
-                    <div class="gallery-card">
-                      <img class="image05" alt="image" src="./images/gallery-5-300h.jpg" loading="lazy" />
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-4-300h.avif);">
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-row2">
-                <div class="gallery-row2col1">
-                  <div class="gallery-card">
-                    <img class="image06" alt="image" src="./images/gallery-6-200h.jpg" loading="lazy" />
-                  </div>
-                  <div class="gallery-card">
-                    <img class="image07" alt="image" src="./images/gallery-7-300h.jpg" loading="lazy" />
-                  </div>
-                </div>
-                <div class="gallery-row2col2">
-                  <div class="gallery-card">
-                    <img class="image08" alt="image" src="./images/gallery-8-300w.jpg" loading="lazy" />
-                  </div>
-                </div>
-                <div class="gallery-row2col3">
-                  <div class="gallery-card">
-                    <img class="image09" alt="image" src="./images/gallery-9-400h.jpg" loading="lazy" />
-                  </div>
-                  <div class="gallery-card">
-                    <img class="image10" alt="image" src="./images/gallery-10-200h.jpg" loading="lazy" />
-                  </div>
-                </div>
-                <div class="gallery-row2col4">
-                  <div class="gallery-card">
-                    <img class="image11" alt="image" src="./images/gallery-11-500h.jpg" loading="lazy" />
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-5-300h.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-6-200h.avif);">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -466,7 +472,7 @@
       </section>
     </main>
 
-    <footer class="footer-main" id="contacts">
+    <footer class="footer-main" id="contacts" style="background-image: url(./images/bg-footer-min-1500w.jpg);">
 
       <div class="footer-main__inner">
 
@@ -535,8 +541,11 @@
           </ul>
 
           <iframe class="contacts__map"
+
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
+
             width="540" height="322" style="border:0;" allowfullscreen="" loading="lazy"
+
             referrerpolicy="no-referrer-when-downgrade">
 
           </iframe>
@@ -559,16 +568,16 @@
 
     </footer>
 
-  </div>
+    </div>
 
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.min.js"></script>
 
-  <script src="./js/main.min.js"></script>
+    </body>
 
-</body>
+    
 
-
-
-</html>
+    </html>

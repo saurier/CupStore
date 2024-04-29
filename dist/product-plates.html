@@ -13,19 +13,36 @@
 </head>
 
 <body>
-    <div class="wrapper">
-      <header class="header product-gofr__header" data-thq="thq-navbar">
+    <div class="wrapper" style=" background-image: url(./images/bg-body-min-1500w.jpg);">
+      <header class="header" style="background-image: url(../images/bg-header-200h.jpg);">
         <div class="header__container">
           <a class="logo__link" href="./index.html">
             <img class="logo" alt="logo" src="./images/logo.svg" />
           </a>
-          <div class="header__desktop" data-thq="thq-navbar-nav" data-role="Nav">
-            <nav class="desktop__nav" data-thq="thq-navbar-nav-links" data-role="Nav">
-              <a class="nav-link" href="./index.html#about">Про нас</a>
-              <a class="nav-link" href="./product.html">Продукція</a>
-              <a class="nav-link" href="./branding.html">Брендування</a>
-              <a class="nav-link" href="./news.html">Новини</a>
-              <a class="nav-link" href="./index.html#contacts">Контакти</a>
+          <div class="header__desktop">
+            <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#about">Про нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./product.html">Продукція</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./branding.html">Брендування</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./news.html">Новини</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#contacts">Контакти</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
@@ -33,7 +50,7 @@
       <div class="crumbs">
         <img class="crumbs__bg" alt="image" src="./images/crumbs-img-200h.png" />
         <div class="crumbs__content">
-          <a class="crumbs__link1" href="../index.html">
+          <a class="crumbs__link1" href="./index.html">
             <svg width="48" height="48" viewBox="0 0 78 88" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_250_420)">
                 <path d="M14.5312 24H55.5001L42.3411 72H27.64L14.5312 24Z" fill="#114425" />
@@ -168,10 +185,12 @@
           </div>
         </div>
       </main>
-      <footer class="footer">
-        <img class="footer__copy" alt="copyrights" src="./images/copyright.svg" />
+      <footer class="footer" style=" background-image: url(./images/bg-footer-min-1500w.avif);">
+          <img class="footer__copy" alt="copyrights" src="./images/copyright.svg" />
       </footer>
-  </div>
-</body>
-
-</html>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+      </body>
+      
+      </html>
