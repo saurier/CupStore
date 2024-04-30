@@ -66,16 +66,16 @@ html {
   font-stretch: condensed;
   font-size: 20px;
 
-  -ms-overflow-style: none;
+  /*-ms-overflow-style: none;*/
   /*IE 10+*/
-  scrollbar-width: none;
+  /*scrollbar-width: none;*/
   /*Firefox*/
 }
 
 ::-webkit-scrollbar {
   /*Chrome based*/
-  width: 0px;
-  background: transparent;
+  /*width: 0px;
+  background: transparent;*/
 }
 
 body {
@@ -590,26 +590,35 @@ input:focus {
 }
 /*-------------------------------crumbs-----------------------------------*/
 .crumbs {
-  padding-top: 132px;
+  /*padding-top: 132px;*/
   width: 100%;
   position: relative;
+  margin-top: 132px;
+  background-image: url(./images/crumbs-img-200h.png);
+  background-size: auto auto;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-.crumbs__bg {
+/*.crumbs__bg {
   width: 100%;
   height: 90px;
   object-fit: cover;
-}
+}*/
 
 .crumbs__content {
-  padding-top: 132px;
-  z-index: 1;
-  position: absolute;
-  top: 17px;
-  left: 365px;
+  /*padding-top: 132px;*/
+  /*z-index: 1;*/
+  /*position: absolute;*/
+  /*top: 17px;
+  left: 356px;*/
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.3rem;
+  max-width: 1220px;
+  padding: 0 410px 15px 10px;
+  margin: 10px auto;
+  text-align: center;
 }
 .crumbs__link .crumbs-arrow {
   text-decoration: none;

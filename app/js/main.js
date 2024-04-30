@@ -28,7 +28,7 @@ function toggle_thankyou() {
 }
 
 /*------------------------------Sliders---------------------------------------*/
-const swiper_home = new Swiper('.swiper-home', {
+const swiper_home = new Swiper('.swiper__home', {
   direction: 'horizontal',
   loop: true,
   grabCursor: false,
@@ -44,7 +44,7 @@ const swiper_home = new Swiper('.swiper-home', {
   }
 });
 
-const swiper_text = new Swiper('.swiper_text', {
+const swiper_text = new Swiper('.swiper__text', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
@@ -97,7 +97,7 @@ const swiper_branding = new Swiper('.swiper__branding', {
   },
 });
 
-const swiper_detail = new Swiper('.swiper_detail', {
+const swiper_detail = new Swiper('.swiper__detail', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
@@ -107,9 +107,9 @@ const swiper_detail = new Swiper('.swiper_detail', {
   centeredSlides: true,
   slidesPerView: 1,
   spaceBetween: 40,
-  autoplay: {
+  /*autoplay: {
     delay: 2000,
-  },
+  },*/
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
