@@ -321,7 +321,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-stretch: condensed;
-  src: url("../fonts/src/Impact.ttf");
+  src: url("../fonts/Impact.woff");
 }
 :root {
   --dl-color-gray-500: #595959;
@@ -449,7 +449,7 @@ input:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: var(--dl-space-space-180px);
+  padding-top: 180px;
 }
 
 .section__inner {
@@ -529,7 +529,6 @@ input:focus {
   background-color: transparent;
   top: 0;
   right: 0;
-  border: none;
 }
 
 .popup-order,
@@ -900,28 +899,23 @@ input:focus {
 
 /*-------------------------------crumbs-----------------------------------*/
 .crumbs {
-  padding-top: 132px;
   width: 100%;
-  position: relative;
-}
-
-.crumbs__bg {
-  width: 100%;
-  height: 90px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  margin-top: 132px;
+  background-image: url(./images/crumbs-img-200h.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .crumbs__content {
-  padding-top: 132px;
-  z-index: 1;
-  position: absolute;
-  top: 17px;
-  left: 365px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.3rem;
+  max-width: 1220px;
+  padding: 0 410px 15px 10px;
+  margin: 10px auto;
+  text-align: center;
 }
 
 .crumbs__link .crumbs-arrow {

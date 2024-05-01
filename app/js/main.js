@@ -107,9 +107,9 @@ const swiper_detail = new Swiper('.swiper__detail', {
   centeredSlides: true,
   slidesPerView: 1,
   spaceBetween: 40,
-  /*autoplay: {
+  autoplay: {
     delay: 2000,
-  },*/
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

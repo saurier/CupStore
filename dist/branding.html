@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-<head>
+<head> 
   <title>Брендування - Cup Store</title>
   <meta property="og:title" content="Брендування - Cup Store" />
-  <meta name="viewport" content="width=1920px, initial-scale=1.0" /> <!--!!fixed adaptive!!-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
 
-  <link rel="shortcut icon" href="./images/logo.svg" type="icon/png" sizes="32x32" />
+  <link rel="shortcut icon" href="./images/sprite.svg#logo" type="icon/png" sizes="32x32" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/branding.css"/>
+  <link rel="stylesheet" href="./css/branding.css" />
+  <link rel="stylesheet" href="./css/media.css" />
 </head>
 
 <body>
@@ -161,7 +163,7 @@
       </form>
     </div>
   </div>
-  <div class="popup popup-accepted" id="popup-accepted" style="background-image: url(./images/bg-popup.jpg);">
+  <div class="popup popup-accepted" id="popup-accepted" style="background-image: url(../images/bg-popup.jpg);">
     <div class="popup-accepted__container">
       <div class="popup-accepted__decor">
         <div class="popup-accepted__circle">
@@ -175,44 +177,44 @@
       </button>
     </div>
   </div>
-  <div class="wrapper" id="blur" style=" background-image: url(./images/bg-body-min-1500w.jpg);">
+  <div class="wrapper" id="blur" style=" background-image: url(./images/bg-body-min-1500w.avif);">
     <header class="header" style="background-image: url(../images/bg-header-200h.jpg);">
-      <div class="header__container">
-        <a class="logo__link" href="./index.html">
-          <img class="logo" alt="logo" src="./images/logo.svg" />
-        </a>
-        <div class="header__desktop">
-          <nav class="menu">
-            <button class="menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="./index.html#about">Про нас</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="./product.html">Продукція</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="./branding.html">Брендування</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="./news.html">Новини</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="./index.html#contacts">Контакти</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header__container">
+          <a class="logo__link" href="./index.html">
+            <img class="logo" alt="logo" src="./images/logo.svg" />
+          </a>
+          <div class="header__desktop">
+            <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#about">Про нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./product.html">Продукція</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./branding.html">Брендування</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./news.html">Новини</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#contacts">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
-    <div class="crumbs">
-      <img class="crumbs__bg" alt="image" src="./images/crumbs-img-200h.png" />
+      </header>
+    <div class="crumbs" style="background-image: url(./images/crumbs-img-200h.avif);">
+      <!-- <img class="crumbs__bg" alt="image" src="../images/crumbs-img-200h.png" /> -->
       <div class="crumbs__content">
-        <a class="crumbs__link1" href="./index.html">
+        <a class="crumbs__link1" href="../index.html">
           <svg width="48" height="48" viewBox="0 0 78 88" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_250_420)">
               <path d="M14.5312 24H55.5001L42.3411 72H27.64L14.5312 24Z" fill="#114425" />
@@ -227,138 +229,126 @@
             </defs>
           </svg>
         </a>
-        <img class="crumbs-arrow" alt="image" src="./images/arrow-right.svg" />
+        <img class="crumbs-arrow" alt="image" src="../images/arrow-right.svg" />
         <a class="crumbs__link2" href="./branding.html">Брендування</a>
       </div>
     </div>
     <main class="main">
-      <div class="container">
-        <p class="branding__descr">
-          Друк вашого дизайну на паперових стаканах
-        </p>
-        <div class="branding__gallery">
-          <div class="gallery-row1">
-            <div class="gallery-row1col1">
-              <div class="gallery-card">
-                <img class="image01" alt="image" src="./images/gallery-1-500h.jpg" />
-              </div>
+      <section class="branding section">
+        <div class="section__inner branding__inner">
+          <h4 class="section__title branding__title">Брендування</h4>
+          <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
+          <div class="branding__content">
+            <div class="branding__gallery branding__gallery-desktop">
+              <figure class="gallery-card item1">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-1-500h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item2">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-2-500w.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item3">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-3-300w.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item4">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-4-300h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item5">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-5-300h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item6">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-6-200h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item7">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-7-300h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item8">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-8-300w.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item9">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-9-400h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item10">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-10-200h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item11">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-11-500h.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item12">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-12.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item13">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-13.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item14">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-14.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item15">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-15.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item16">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-16.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item17">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-17.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item18">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-18.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item19">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-19.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item20">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-20.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item21">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-21.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item22">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-22.avif" loading="lazy" />
+              </figure>
             </div>
-            <div class="gallery-row1col2">
-              <div class="gallery-row1col2-row1">
-                <div class="gallery-card">
-                  <img class="image02" alt="image" src="./images/gallery-2-500w.jpg" />
+            <div class="branding__gallery-mobile">
+              <div class="branding__swiper-container">
+                <div class="swiper swiper__branding">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-1-500h.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-2-500w.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-3-300w.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-4-300h.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-5-300h.avif);">
+                    </div>
+                    <div class="swiper-slide branding__slide"
+                      style="background-image: url(./images/gallery-6-200h.avif);">
+                    </div>
+                  </div>
                 </div>
-                <div class="gallery-card">
-                  <img class="image03" alt="image" src="./images/gallery-3-300w.jpg" />
-                </div>
-              </div>
-              <div class="gallery-row1col2-row2">
-                <div class="gallery-card">
-                  <img class="image04" alt="image" src="./images/gallery-4-300h.jpg" />
-                </div>
-                <div class="gallery-card">
-                  <img class="image05" alt="image" src="./images/gallery-5-300h.jpg" />
-                </div>
               </div>
             </div>
-          </div>
-          <div class="gallery-row2">
-            <div class="gallery-row2col1">
-              <div class="gallery-card">
-                <img class="image06" alt="image" src="./images/gallery-6-200h.jpg" />
-              </div>
-              <div class="gallery-card">
-                <img class="image07" alt="image" src="./images/gallery-7-300h.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col2">
-              <div class="gallery-card">
-                <img class="image08" alt="image" src="./images/gallery-8-300w.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col3">
-              <div class="gallery-card">
-                <img class="image09" alt="image" src="./images/gallery-9-400h.jpg" />
-              </div>
-              <div class="gallery-card">
-                <img class="image10" alt="image" src="./images/gallery-10-200h.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col4">
-              <div class="gallery-card">
-                <img class="image11" alt="image" src="./images/gallery-11-500h.jpg" />
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row1">
-            <div class="gallery-row1col1">
-              <div class="gallery-card">
-                <img class="image01" alt="image" src="./images/gallery-12.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row1col2">
-              <div class="gallery-row1col2-row1">
-                <div class="gallery-card">
-                  <img class="image02" alt="image" src="./images/gallery-13.jpg" />
-                </div>
-                <div class="gallery-card">
-                  <img class="image03" alt="image" src="./images/gallery-14.jpg" />
-                </div>
-              </div>
-              <div class="gallery-row1col2-row2">
-                <div class="gallery-card">
-                  <img class="image04" alt="image" src="./images/gallery-15.jpg" />
-                </div>
-                <div class="gallery-card">
-                  <img class="image05" alt="image" src="./images/gallery-16.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row2">
-            <div class="gallery-row2col1">
-              <div class="gallery-card">
-                <img class="image06" alt="image" src="./images/gallery-17.jpg" />
-              </div>
-              <div class="gallery-card">
-                <img class="image07" alt="image" src="./images/gallery-18.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col2">
-              <div class="gallery-card">
-                <img class="image08" alt="image" src="./images/gallery-19.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col3">
-              <div class="gallery-card">
-                <img class="image09" alt="image" src="./images/gallery-20.jpg" />
-              </div>
-              <div class="gallery-card">
-                <img class="image10" alt="image" src="./images/gallery-21.jpg" />
-              </div>
-            </div>
-            <div class="gallery-row2col4">
-              <div class="gallery-card">
-                <img class="image11" alt="image" src="./images/gallery-22.jpg" />
-              </div>
+            <div class="branding__buttons">
+              <button class="button" type="button" onclick="toggle_order()">
+                <a class="button__text">Замовити</a>
+              </button>
             </div>
           </div>
         </div>
-        <div class="branding__buttons">
-          <button class="button" type="button" onclick="toggle_order()">
-            <span class="button__text">Замовити</span>
-          </button>
-        </div>
-      </div>
-
-
+      </section>
     </main>
-      <footer class="footer" style=" background-image: url(./images/bg-footer-min-1500w.avif);">
-          <img class="footer__copy" alt="copyrights" src="./images/copyright.svg" />
-      </footer>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <script src="./js/main.min.js"></script>
-      </body>
-      
-      </html>
+    <footer class="footer" style=" background-image: url(../images/bg-footer-min-1500w.avif);">
+        <img class="footer__copy" alt="copyrights" src="../images/copyright.svg" />
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/news.js"></script>
+    <script src="./js/main.min.js"></script>
+    </body>
+    
+    </html>

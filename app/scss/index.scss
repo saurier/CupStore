@@ -75,10 +75,6 @@
   max-width: none;
 }
 /*--------------------------about----------------------------------*/
-.about {
-  margin-top: var(--dl-space-space-180px);
-}
-
 .about__descr {
   font-size: 1rem;
 
@@ -216,6 +212,10 @@
 }
 
 /*----------------------blog-----------------------------------------*/
+.blog{
+  padding-bottom: 90px;
+}
+
 .blog__content {
   flex: 1;
   display: flex;
