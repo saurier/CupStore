@@ -1,3 +1,9 @@
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu__list--active');
+});
 
 function toggle_order() {
   let blur = document.getElementById('blur');
@@ -22,7 +28,7 @@ function toggle_thankyou() {
 }
 
 /*------------------------------Sliders---------------------------------------*/
-const swiper_home = new Swiper('.swiper-home', {
+const swiper_home = new Swiper('.swiper__home', {
   direction: 'horizontal',
   loop: true,
   grabCursor: false,
@@ -36,18 +42,17 @@ const swiper_home = new Swiper('.swiper-home', {
   autoplay: {
     delay: 2000,
   }
-})
+});
 
-
-const swiper_text = new Swiper('.swiper_text', {
+const swiper_text = new Swiper('.swiper__text', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
   allowTouchMove: false,
   spaceBetween: 10,
-})
+});
 
-const swiper_img = new Swiper('.swiper_products', {
+const swiper_img = new Swiper('.swiper__products', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
@@ -55,7 +60,7 @@ const swiper_img = new Swiper('.swiper_products', {
   keyboardControl: true,
   lazyLoading: true,
   centeredSlides: true,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   spaceBetween: 20,
   autoplay: {
     delay: 2000,
@@ -63,9 +68,9 @@ const swiper_img = new Swiper('.swiper_products', {
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 0,
-    stretch: 5,
-    depth: 130,
-    modifier: 3,
+    stretch: 15,
+    depth: 110,
+    modifier: 2,
     slideShadows: false,
     scale: 1,
   },
@@ -76,10 +81,23 @@ const swiper_img = new Swiper('.swiper_products', {
   thumbs: {
     swiper: swiper_text,
   },
-})
+});
 
+const swiper_branding = new Swiper('.swiper__branding', {
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+  mousewheelControl: true,
+  keyboardControl: true,
+  lazyLoading: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  autoplay: {
+    delay: 2000,
+  },
+});
 
-const swiper_detail = new Swiper('.swiper_detail', {
+const swiper_detail = new Swiper('.swiper__detail', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
@@ -96,7 +114,7 @@ const swiper_detail = new Swiper('.swiper_detail', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+});
 
 /*---------------Select-for-popup-order-start------------------------------*/
 
@@ -120,32 +138,32 @@ for (i = 0; i < length; i++) {
     create a new DIV that will act as an option item: */
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
+    c.addEventListener("click", function (e) {
+      /* When an item is clicked, update the original select box,
+      and the selected item: */
+      var y, i, k, s, h, sl, yl;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      sl = s.length;
+      h = this.parentNode.previousSibling;
+      for (i = 0; i < sl; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          yl = y.length;
+          for (k = 0; k < yl; k++) {
+            y[k].removeAttribute("class");
           }
+          this.setAttribute("class", "same-as-selected");
+          break;
         }
-        h.click();
+      }
+      h.click();
     });
     b.appendChild(c);
   }
   x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
+  a.addEventListener("click", function (e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();
@@ -179,6 +197,6 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
-document.addEventListener("click", closeAllSelect); 
+document.addEventListener("click", closeAllSelect);
 
 /*------------------Select-for-popup-order-end---------------------*/

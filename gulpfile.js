@@ -82,7 +82,7 @@ function styles() {
     }))/*берем инклюденные файлы из отсюда*/
     .pipe(autoprefixer({overrifeBrowserlist: ['last 10 version']}))/*повыставляем все префиксы в коде для всех браузеров во всех этих файлах*/
     // .pipe(concat('*.min.css'))/*создать из нескольких файлов новый файл с новым именем*/
-    .pipe(scss({outputStyle: 'compressed'}))/*в новый файл scss конвертируем в css и минифицируем*/
+    .pipe(scss({outputStyle: 'expanded'}))/*в новый файл scss конвертируем в css и минифицируем*/
     .pipe(dest('app/css/'))/*выплёвываем сюда*/
     .pipe(browserSync.stream())
 }
