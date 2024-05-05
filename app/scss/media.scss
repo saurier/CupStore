@@ -303,6 +303,10 @@
   .popup-order__input {
     width: 250px;
   }
+  .popup-accepted{
+    max-width: 80vw;
+    padding: 24px;
+  }
 }
 @media (max-width: 601px) {
   .crumbs__content {
@@ -357,6 +361,11 @@
   }
   .popup-order__list-row {
     max-width: 350px;
+  }
+}
+@media (max-wigth: 524px) {
+  .popup-accepted{
+    min-width: 350px;
   }
 }
 @media (max-width: 475px) {
