@@ -8,7 +8,7 @@ From Kryzhanivska Olena, Berezin Vladyslav, Kondratenko Polina and Korolkova Kat
 With love :)
 
 
-##Instructions for this gulp-pack
+## Instructions for this gulp-pack
 
 1. npm i - for start
 
