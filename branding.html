@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-<head>
-  <title>CupStore</title>
+<head> 
+  <title>Брендування - Cup Store</title>
+  <meta property="og:title" content="Брендування - Cup Store" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
-  <link rel="icon" href="./images/sprite.svg#logo" type="image/svg" />
+
+  <link rel="shortcut icon" href="./images/sprite.svg#logo" type="icon/png" sizes="32x32" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/branding.css" />
   <link rel="stylesheet" href="./css/media.css" />
 </head>
 
@@ -178,164 +180,61 @@
   </div>
   <div class="wrapper" id="blur" style=" background-image: url(./images/bg-body-min-1500w.avif);">
     <header class="header" style="background-image: url(./images/bg-header-200h.jpg);">
-      <div class="header__container">
-        <a class="logo__link" href="./index.html">
-          <img class="logo" alt="logo" src="./images/logo.svg" />
+        <div class="header__container">
+          <a class="logo__link" href="./index.html">
+            <img class="logo" alt="logo" src="./images/logo.svg" />
+          </a>
+          <div class="header__desktop">
+            <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#about">Про нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./product.html">Продукція</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./branding.html">Брендування</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./news.html">Новини</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./index.html#contacts">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <div class="crumbs" style="background-image: url(./images/crumbs-img-200h.avif);">
+      <div class="crumbs__content">
+        <a class="crumbs__link1" href="./index.html">
+          <svg width="48" height="48" viewBox="0 0 78 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_250_420)">
+              <path d="M14.5312 24H55.5001L42.3411 72H27.64L14.5312 24Z" fill="#114425" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M44 4.00279L51.1773 4.00225L54.0663 8.00354H15.9242L18.8112 4.00509L44 4.00217V4.00279ZM63 8.00354H58.9999L53.2294 0.0113411V0.00209165L53.2227 0.00209216L53.2212 0L53.2183 0.00209249L48.9998 0.0024108V0.00158691L16.7734 0.00532138V0.0112613L16.7634 0.00407248L10.9877 8.00354H7V12.0035H63V8.00354ZM5.0022 16.0035H65.0022V20.0035H9.14387L24.4438 76.0035H45.5498L59.7541 24.014L59.7561 24.0145V24.005L77.3462 24.0019V24.0035H78.4314L70.8414 51.9944V52.0037L56.2545 52.0062L49.0023 78.5505V78.5563L48.6068 80.0035H21.3848L20.292 76.0035H20.3009L5 20.0002L5.0022 19.9996V16.0035ZM67.7751 48.0042L73.1987 28.0027L62.8121 28.0045L57.3474 48.006L67.7751 48.0042ZM49 84H21V88H49V84Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_250_420">
+                <rect width="78" height="88" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </a>
-        <div class="header__desktop">
-          <nav class="menu">
-            <button class="menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <ul class="menu__list">
-              <li class="menu__list-item"">
-                <a class="menu__list-link" href="#about" >Про нас</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#product">Продукція</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#branding">Брендування</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#news">Новини</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#contacts">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <img class="crumbs-arrow" alt="image" src="./images/arrow-right.svg" />
+        <a class="crumbs__link2" href="./branding.html">Брендування</a>
       </div>
-    </header>
+    </div>
     <main class="main">
-      <section class="top">
-        <div class="top__inner">
-          <h4 class="top__title section__title">Брендування</h4>
-          <p class="top__descr">Друк вашого дизайну на паперових стаканах</p>
-          <button class="top__button button-showmore button" type="button" onclick="toggle_order()">
-            Замовити
-          </button>
-          <img class="top__img" alt="image" src="./images/cover-1500h.png" />
-          <div class="swiper swiper-home">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image: url(./images/top-slider-1.avif);">
-              </div>
-              <div class="swiper-slide" style="background-image: url(./images/top-slider-2.avif);">
-              </div>
-              <div class="swiper-slide" style="background-image: url(./images/top-slider-3.avif);">
-              </div>
-              <div class="swiper-slide" style="background-image: url(./images/top-slider-4.avif);">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about section" id="about">
-        <div class="section__inner">
-          <h4 class="section__title">Про нас</h4>
-          <p class="about__descr">
-            Паперові стакани від компанії «WestCupGroup» виготовляються у
-            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
-            Виробництво якісних паперових стаканчиків відбувається
-            виключно на високоякісному обладнанні, що є гарантом високої
-            якості кінцевого продукту. Ми виготовляємо як одношарові
-            паперові стаканчики, так і двошарові паперові стаканчики.
-            Європейський картон не дає паперовому стакану зіпсуватись
-            навіть після його тривалого контакту з напоєм.
-          </p>
-          <iframe class="about__video" width="560px" height="315px"
-            src="https://www.youtube.com/embed/qs9rEvRT7XM?si=JNZz3dUu3HpHL5P5" loading="lazy"></iframe>
-        </div>
-      </section>
-      <section class="products section" id="product">
-        <div class="section__inner">
-          <h4 class="section__title">Продукція</h4>
-          <p class="products__descr">
-            Паперові стакани від компанії «WestCupGroup» виготовляються у
-            наступних об’ємах: 110 мл, 175 мл, 280 мл, 420 мл, 500 мл.
-            Виробництво якісних паперових стаканчиків відбувається виключно
-            на високоякісному обладнанні, що є гарантом високої якості
-            кінцевого продукту.
-          </p>
-          <div class="products__slider">
-            <div class="products__swiper-container">
-              <div class="swiper swiper__products">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-3.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-1.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-2.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-1.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-3.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide products__slide">
-                    <div class="swiper-zoom-container">
-                      <img src="./images/products-slide-1.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-prev">
-                <img class="btn-prev" src="./images/arrow-left-slider.svg" alt="">
-              </div>
-              <div class="swiper-button-next">
-                <img class="btn-next" src="./images/arrow-right-slider.svg" alt="">
-              </div>
-
-              <div class="swiper swiper__text">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p class="txt">Одношарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Гофровані</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Одношарові</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="txt">Двошарові</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products__buttons">
-            <a class="button button-showmore" href="./product.html">
-              Детальніше
-              <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="branding section" id="branding">
+      <section class="branding section">
         <div class="section__inner branding__inner">
           <h4 class="section__title branding__title">Брендування</h4>
           <p class="branding__descr">Друк вашого дизайну на паперових стаканах</p>
@@ -374,6 +273,39 @@
               <figure class="gallery-card item11">
                 <img class="gallery-card__img" alt="image" src="./images/gallery-11-500h.avif" loading="lazy" />
               </figure>
+              <figure class="gallery-card item12">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-12.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item13">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-13.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item14">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-14.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item15">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-15.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item16">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-16.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item17">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-17.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item18">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-18.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item19">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-19.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item20">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-20.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item21">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-21.avif" loading="lazy" />
+              </figure>
+              <figure class="gallery-card item22">
+                <img class="gallery-card__img" alt="image" src="./images/gallery-22.avif" loading="lazy" />
+              </figure>
             </div>
             <div class="branding__gallery-mobile">
               <div class="branding__swiper-container">
@@ -405,180 +337,18 @@
               <button class="button" type="button" onclick="toggle_order()">
                 <a class="button__text">Замовити</a>
               </button>
-              <a href="./branding.html" class="button button-showmore">Більше прикладів<img class="button__arrow"
-                  alt="image" src="./images/arrow-right.svg" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog section" id="news">
-        <div class="section__inner">
-          <h4 class="section__title">Новини</h4>
-          <div class="blog__content">
-            <div class="blog__cards">
-              <div class="blog__card">
-                <div class="card__head">
-                  <img class="card__img" alt="image" src="./images/blog-1-700w.jpg" />
-                  <p class="card__title">Заголовок статті</p>
-                </div>
-                <div class="card__content">
-                  <p class="card__descr">
-                    Паперові стакани від компанії «WestCupGroup»
-                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                    280 мл, 420 мл, 500 мл. Виробництво якісних
-                    паперових стаканчиків відбувається виключно на
-                    високоякісному обладнанні, що є гарантом високої
-                    якості кінцевого продукту...
-                  </p>
-                  <div class="card__button">
-                    <a class="button button-readnext" href="./news.html#news1">
-                      Читати далі
-                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="blog__card">
-                <div class="card__head">
-                  <img class="card__img" alt="image" src="./images/blog-2-700w.jpg" loading="lazy" />
-                  <p class="card__title">Заголовок статті</p>
-                </div>
-                <div class="card__content">
-                  <p class="card__descr">
-                    Паперові стакани від компанії «WestCupGroup»
-                    виготовляються у наступних об’ємах: 110 мл, 175 мл,
-                    280 мл, 420 мл, 500 мл. Виробництво якісних
-                    паперових стаканчиків відбувається виключно на
-                    високоякісному обладнанні, що є гарантом високої
-                    якості кінцевого продукту...
-                  </p>
-                  <div class="card__button">
-                    <a class="button button-readnext" href="./news.html#news2">
-                      Читати далі
-                      <img class="button__arrow" alt="image" src="./images/arrow-right.svg" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog__buttons">
-              <a class="button button-showmore" href="./news.html">
-                Більше новин
-                <img class="button__arrow" alt="image" src="./images/arrow-right.svg" />
-              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="footer-main" id="contacts" style="background-image: url(./images/bg-footer-min-1500w.jpg);">
-
-      <div class="footer-main__inner">
-
-        <div class="footer-main__contacts">
-
-          <ul class="contacts__list">
-
-            <li class="contacts__list-item">
-
-              <img class="list-item__img" alt="image" src="./images/geo.svg" />
-
-              <a class="list-item__text" href="https://www.google.com/maps/search/?api=1&query=50.448508,30.4956964">
-
-                Адреса: м. Київ, вул. Богдана Хмельницького, 67
-
-              </a>
-
-            </li>
-
-            <li class="contacts__list-item">
-
-              <img class="list-item__img" alt="image" src="./images/phone.svg" />
-
-              <a class="list-item__text" href="tel:+380680000000">
-
-                Телефон: +380 67 989 34 56
-
-              </a>
-
-            </li>
-
-            <li class="contacts__list-item">
-
-              <img class="list-item__img" alt="image" src="./images/email.svg" />
-
-              <a class="list-item__text" href="mailto:info@cupstore.com?subject=">
-
-                E-mail: info@cupstore.com
-
-              </a>
-
-            </li>
-
-            <li class="contacts__list-item">
-
-              <img class="list-item__img" alt="image" src="./images/time.svg" />
-
-              <p class="time-text">
-
-                <span>Час роботи:</span>
-
-              </p>
-
-              <p class="time-text">
-
-                <span>Пн-Пт: 9:00 - 17:00</span>
-
-                <br />
-
-                <span>Сб: 9:00 - 16:00</span>
-
-              </p>
-
-            </li>
-
-          </ul>
-
-          <iframe class="contacts__map"
-
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2346242600524!2d30.630073177565112!3d50.43673028835032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5416d84e61d%3A0x818de044c4ef2b14!2z0KXQsNGA0LrRltCy0YHRjNC60LUg0YjQvtGB0LUsIDExLzEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706131867169!5m2!1suk!2sua"
-
-            width="540" height="322" style="border:0;" allowfullscreen="" loading="lazy"
-
-            referrerpolicy="no-referrer-when-downgrade">
-
-          </iframe>
-
-        </div>
-
-        <div class="footer-main__copy">
-
-          <a class="copy-main__logo" href="./index.html">
-
-            <img class="logo" alt="image" src="./images/logo.svg" />
-
-          </a>
-
-          <img class="copy-main__sign" alt="image" src="./images/copyright.svg" />
-
-        </div>
-
-      </div>
-
+    <footer class="footer" style=" background-image: url(./images/bg-footer-min-1500w.avif);">
+        <img class="footer__copy" alt="copyrights" src="./images/copyright.svg" />
     </footer>
-
     </div>
-
-    
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+    <script src="./js/news.js"></script>
     <script src="./js/main.min.js"></script>
-
     </body>
-
     
-
     </html>

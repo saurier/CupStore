@@ -1,1 +1,23 @@
-.wrapper{width:100%;display:flex;overflow-x:hidden;min-height:100%;flex-direction:column;background-size:cover;background-image:url("../images/bg-body-min-1500w.jpg");background-repeat:repeat-y;transition:.5s}.main{flex-grow:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:0}.container{display:flex;flex-direction:column;justify-content:center;align-items:center;width:1200px;margin:80px auto}.news__cards{width:100%;display:flex;align-items:center;flex-direction:column;justify-content:space-between}.news__card{width:900px;box-shadow:5px 10px 5px 0px rgba(0,0,0,.5)}.news__card+.news__card{margin-top:var(--dl-space-space-twounits)}.card__container{width:900px}.card__head{width:100%;height:300px;position:relative}.card__head::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0) 100%)}.card__img{width:100%;height:100%;z-index:10;-o-object-fit:cover;object-fit:cover}.card__title{z-index:11;position:absolute;left:35px;bottom:32px;font-size:60px;font-family:"Impact";color:var(--dl-color-beigefull)}.card__content{display:flex;padding:var(--dl-space-space-twounits);align-items:flex-start;will-change:transform;flex-direction:column;background-color:rgba(var(--dl-color-beige), 0.4)}.card__descr{text-align:justify;margin-bottom:var(--dl-space-space-unit);background:#000;background:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0)}.card__button{display:flex;align-self:flex-end}.card__content--active .card__descr{-webkit-text-fill-color:#000}.card__content--active .card__hide-descr{display:block}.card__content--active #btn-down{display:none}.card__content--active #btn-up{display:flex}#btn-down{display:flex}#btn-up{display:none}#btn-up .button__arrow{transform:rotate(180deg)}.card__descr{cursor:pointer}.card__hide-descr{display:none}.card__hide-descr p{margin-bottom:10px}
+.wrapper{width:100%;display:flex;overflow-x:hidden;min-height:100%;flex-direction:column;background-size:cover;background-image:url(../images/bg-body-min-1500w.jpg);background-repeat:repeat-y;transition:.5s}
+.main{display:flex;flex-direction:column;align-items:center;padding-top:0}
+.container{display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:1200px;margin:80px auto}
+.news__cards{width:100%;display:flex;align-items:center;flex-direction:column;justify-content:space-between;padding:0 10px}
+.news__card{max-width:900px;box-shadow:5px 10px 5px 0 rgba(0,0,0,.5)}
+.news__card+.news__card{margin-top:var(--dl-space-space-twounits)}
+.card__container{max-width:900px}
+.card__head{width:100%;position:relative;height:300px;background-repeat:no-repeat;background-size:cover;background-position:center;padding:25px;display:flex;flex-direction:column-reverse}
+.card__head::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(0,0,0,.5),rgba(0,0,0,0) 45%,rgba(0,0,0,0) 100%)}
+.card__title{font-size:60px;font-family:Impact;color:var(--dl-color-beigefull);max-width:830px;max-height:150px;overflow:hidden;text-overflow:ellipsis}
+.card__content{display:flex;padding:var(--dl-space-space-twounits);align-items:flex-start;will-change:transform;flex-direction:column;background-color:rgba(var(--dl-color-beige),.4)}
+.card__descr{text-align:justify;margin-bottom:var(--dl-space-space-unit);background:#000;background:linear-gradient(180deg,#000,rgba(0,0,0,0));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card__button{display:flex;align-self:flex-end}
+.card__content--active .card__descr{-webkit-text-fill-color:#000;-webkit-background-clip:border-box;background:0 0}
+.card__content--active .card__hide-descr{display:block}
+.card__content--active #btn-down{display:none}
+.card__content--active #btn-up{display:flex}
+#btn-down{display:flex}
+#btn-up{display:none}
+#btn-up .button__arrow{transform:rotate(180deg)}
+.card__descr{cursor:pointer}
+.card__hide-descr{display:none}
+.card__hide-descr p{margin-bottom:10px}
