@@ -173,11 +173,7 @@
   .popup-order__row-list-item {
     width: 100%;
   }
-  /*.popup-order__input-label{
-    font-size: 20px;
-  }*/
   .popup-order__custom-label-file-input {
-    /*font-size: 20px;*/
     height: 70px;
   }
   .popup-order__button-send {
@@ -220,7 +216,6 @@
   }
   .popup-order__list-row {
     align-items: stretch;
-    /*gap: 25px;*/
   }
 }
 @media (max-width: 795px) {

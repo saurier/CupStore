@@ -558,10 +558,7 @@ input:focus {
 }
 
 .popup-order__button-close {
-  /*position: absolute;*/
   background-color: transparent;
-  /*top: 0;*/
-  /*right: 0;*/
   border: none;
 }
 
@@ -751,7 +748,7 @@ input:focus {
 
 .popup-order.active,
 .popup-accepted.active {
-  top: 43%;
+  top: 50%;
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
@@ -790,7 +787,6 @@ input:focus {
 
 .popup-accepted__descr {
   padding: 2px 5px;
-  /*width: 430px;*/
   font-size: 1rem;
   font-family: "Bahnschrift";
   width: 100%;
